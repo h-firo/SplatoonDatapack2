@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+      "moss_block",
+      "rooted_dirt",
+      "polished_tuff",
+      "polished_tuff_slab",
+      "polished_andesite",
+      "jungle_planks",
+      "tuff_bricks",
+      "#terracotta",
+      "deepslate",
+      "cobbled_deepslate",
+      "deepslate_tiles",
+      "stone",
+      "#core:concreate",
+      "oak_planks",
+      "stripped_oak_wood",
+      "birch_planks",
+      "pale_oak_planks",
+      "stripped_pale_oak_wood"
+    ]
+  }
+  

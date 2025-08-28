@@ -1,0 +1,1 @@
+function core:specialweapons/wavebreaker/circle {radius:1}

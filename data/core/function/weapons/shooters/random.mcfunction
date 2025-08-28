@@ -1,0 +1,1 @@
+$execute store result score @s accuracyRandom_ run random value 0..$(accuracy)

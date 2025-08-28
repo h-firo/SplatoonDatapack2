@@ -1,0 +1,1 @@
+$execute as @n[type=armor_stand,tag=waveBreaker$(num)] at @s positioned ~ ~0.5 ~ run function core:specialweapons/wavebreaker/armorstand_tick with entity @s data

@@ -1,0 +1,21 @@
+# [ImportKey]: NobwRALgngDgpmAXGGB7ANlA5qgdmAGjAFdiBLAEyTAEMAOAMzoEY4A2AFgFoAjABmYBOLhzgBjMVxpsArACYRzAMxKxMwbOYc6hMLhoBbBMkBYmoCXIwEb6AAma6YNAE6GAzknBjUxXBCQyiYuG84BzcwADcadGJjcAAPJD4iKASAXxSiJwoyYldEJSJnCEcfRA4-MDh0dDIYZ2NmPkSwB1QiiGMmjwdcYKQOIgArYgMYJGYiHjgALzJexCayZwBRKpq6pYBHYkjMAGV7AKpEBki6okWAIWnZh03tqqh9mkOkE-Q6tIBdIA_3
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~2.12132 ~ ~-2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~2.12132 ~ ~-1.27279 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~2.12132 ~ ~-0.42426 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~2.12132 ~ ~0.42426 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~2.12132 ~ ~1.27279 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~2.12132 ~ ~2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~1.27279 ~ ~2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~0.42426 ~ ~2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-0.42426 ~ ~2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-1.27279 ~ ~2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-2.12132 ~ ~2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-2.12132 ~ ~1.27279 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-2.12132 ~ ~0.42426 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-2.12132 ~ ~-0.42426 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-2.12132 ~ ~-1.27279 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-2.12132 ~ ~-2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-1.27279 ~ ~-2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~-0.42426 ~ ~-2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~0.42426 ~ ~-2.12132 0 0 0 0 1 force @a
+$particle block{block_state:"minecraft:$(color)_stained_glass"} ~1.27279 ~ ~-2.12132 0 0 0 0 1 force @a

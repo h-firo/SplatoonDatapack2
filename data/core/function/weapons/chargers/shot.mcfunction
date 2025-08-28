@@ -1,0 +1,3 @@
+$execute if data storage shot_temp: {$(num):{name:"eliter4k"}} run function core:weapons/chargers/eliter4k with storage shot_temp: $(num)
+$execute if data storage shot_temp: {$(num):{name:"splatcharger"}} run function core:weapons/chargers/splatcharger with storage shot_temp: $(num)
+$execute if data storage shot_temp: {$(num):{name:"squiffer"}} run function core:weapons/chargers/squiffer with storage shot_temp: $(num)

@@ -1,0 +1,1 @@
+$function core:damage {distance:20,num:$(shotNum),team:$(team),damage:$(damage),objDamage:$(objDamage),volume:1,objNum:$(objNum),owner:$(owner)}

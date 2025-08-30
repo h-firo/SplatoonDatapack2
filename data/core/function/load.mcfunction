@@ -44,6 +44,7 @@ scoreboard objectives add markingTimer dummy
 scoreboard objectives add nowPaintAreaBlocks dummy
 scoreboard objectives add nowPaitnAreaMyTeamBlocks dummy
 scoreboard objectives add weaponCount dummy
+scoreboard objectives add rotate dummy
 
 #Health
 scoreboard objectives add health dummy
@@ -199,7 +200,7 @@ shooter:{\
 splattershot:{subWeapon:"suctionbomb",specialWeapon:"trizooka",specialPoint:210},\
 splattershot_pro:{subWeapon:"angleshooter",specialWeapon:"crabtank",specialPoint:180},\
 ftgal:{subWeapon:"splashwall",specialWeapon:"killerwail51",specialPoint:200},\
-aerospray:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint:190}},\
+aerospray:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:190}},\
 roller:{\
 splatroller:{subWeapon:"curingbomb",specialWeapon:"bigbubbler",specialPoint:180},\
 carbonroller:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:190},\

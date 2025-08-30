@@ -13,6 +13,9 @@ $execute if data storage player: {$(num):{specialWeapon:tacticooler}} run functi
 #ホップソナー
 $execute if data storage player: {$(num):{specialWeapon:wavebreaker}} run function core:specialweapons/wavebreaker/tick with storage player: $(num)
 
+#サメライド
+$execute if data storage player: {$(num):{specialWeapon:reefslider}} run function core:specialweapons/reefslider/tick with storage player: $(num)
+
 #共通
 scoreboard players remove @s useSpecialWeapon 1
 execute if score @s useSpecialWeapon matches 1.. if score @s specialUseCount >= @s maxSpecialUseCount run scoreboard players set @s useSpecialWeapon 0

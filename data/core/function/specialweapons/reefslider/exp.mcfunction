@@ -10,3 +10,7 @@ $execute store result storage special_temp: $(XpLevel).shotNum int 1 run scorebo
 
 #爆発
 $function core:specialweapons/reefslider/explosion/set with storage special_temp: $(XpLevel)
+
+#終了
+$kill @n[type=minecart,tag=float$(XpLevel)]
+scoreboard players set @s specialUseCount 1

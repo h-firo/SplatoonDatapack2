@@ -1,0 +1,2 @@
+$execute if block ~ ~ ~ #core:can_inking run setblock ~ ~ ~ minecraft:$(color)_concrete
+execute if entity @s[distance=..5] positioned ^ ^ ^-1 run function core:specialweapons/reefslider/explosion/color_ind_minus with entity @s data

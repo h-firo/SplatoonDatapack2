@@ -20,6 +20,7 @@ scoreboard objectives add setAirBlur dummy
 scoreboard objectives add playerCount dummy
 scoreboard objectives add particleTimer dummy
 scoreboard objectives add stage dummy
+scoreboard objectives add spanwerRotate dummy
 
 #CoreTime
 scoreboard objectives add coreTime dummy
@@ -154,8 +155,8 @@ tag @a[tag=!player] add player
 
 #ストレージ
 data merge storage team_color: {0:"blue",1:"yellow",2:"orange",3:"pink",4:"lime"}
-data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251},1:{x:14,y:-6,z:-251},2:{x:19,y:-6,z:-251},3:{x:24,y:-6,z:-251}},\
-                                      team2:{0:{x:20,y:-6,z:-131},1:{x:25,y:-6,z:-131},2:{x:30,y:-6,z:-131},3:{x:35,y:-6,z:-131}}}}
+data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14,y:-6,z:-251,yaw:180},2:{x:19,y:-6,z:-251,yaw:180},3:{x:24,y:-6,z:-251,yaw:180}},\
+                                      team2:{0:{x:20,y:-8,z:-131,yaw:0},1:{x:25,y:-8,z:-131,yaw:0},2:{x:30,y:-8,z:-131,yaw:0},3:{x:35,y:-8,z:-131,yaw:0}}}}
 
 #[連射レート(フレーム/3×10),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\
@@ -214,6 +215,17 @@ blasters:{\
 blaster:{subWeapon:"inkmine",specialWeapon:"bigbubbler",specialPoint:180},\
 rangeblaster:{subWeapon:"suctionbomb",specialWeapon:"wavebreaker",specialPoint:210},\
 clashblaster:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:180}}}
+
+#モデル
+data merge storage models {\
+shooter:{\
+splattershot:"splatter_sot",splattershot_pro:"splatter_shot_pro",ftgal:"52gal",aerospray:"aerospray"},\
+roller:{\
+splatroller:"splat_roller",carbonroller:"carbon_roller",dynamoroller:"dynamo_roller",wideroller:"wide_roller"},\
+charger:{\
+eliter4k:"e_liter_4k",splatcharger:"splat_charger",squiffer:"squiffer"},\
+blasters:{\
+blaster:"blaster",rangeblaster:"range_blaster",clashblaster:"clashblaster"}}
 
 #エフェクト
 effect give @a saturation infinite 0 true

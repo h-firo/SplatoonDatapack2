@@ -8,6 +8,9 @@ $data modify storage player: $(pNum).category set value $(category)
 $data modify storage shot_temp: $(pNum) set from storage player: $(pNum).weapon
 $data modify storage shot_temp: $(pNum).category set from storage player: $(pNum).category
 
+#モデルの反映
+$data modify storage player: $(pNum).weapon.model set from storage models $(category).$(weapon)
+
 #サブスペの反映
 scoreboard players set @s specialPoint 0
 $execute store result score @s MaxSpecialPoint run data get storage subspecials: $(category).$(weapon).specialPoint

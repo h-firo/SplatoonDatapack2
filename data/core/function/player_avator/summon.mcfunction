@@ -4,6 +4,7 @@ $summon minecraft:item_display ~-0.25 ~1.4 ~ {Tags:["arm_l","avator$(XpLevel)","
 $summon minecraft:item_display ~ ~1.4 ~ {Tags:["torso","avator$(XpLevel)","playerAvator"],item_display:"thirdperson_righthand",view_range:0.6f,transformation:{translation:[0.0f,-3072.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 $summon minecraft:item_display ~0.125 ~0.7 ~ {Tags:["leg_r","avator$(XpLevel)","playerAvator"],item_display:"thirdperson_righthand",view_range:0.6f,transformation:{translation:[0.0f,-4096.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 $summon minecraft:item_display ~-0.125 ~0.7 ~ {Tags:["leg_l","avator$(XpLevel)","playerAvator"],item_display:"thirdperson_righthand",view_range:0.6f,transformation:{translation:[0.0f,-5120.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+$summon item_display ~0.35 ~0.7 ~-0.2 {view_range:0.6f,item_display:"thirdperson_righthand",Tags:["weapon","avator$(XpLevel)","playerAvator"],item:{id:"minecraft:emerald",count:1,components:{"minecraft:item_model":"splat_charger"}}}
 
 $item replace entity @n[type=item_display,tag=head] hotbar.0 with minecraft:player_head[minecraft:item_model="animated_java:blueprint/player_display/head",minecraft:profile={id:$(UUID)}]
 $item replace entity @n[type=item_display,tag=arm_r] hotbar.0 with minecraft:player_head[minecraft:item_model="animated_java:blueprint/player_display/right_arm",minecraft:profile={id:$(UUID)}]
@@ -11,3 +12,5 @@ $item replace entity @n[type=item_display,tag=arm_l] hotbar.0 with minecraft:pla
 $item replace entity @n[type=item_display,tag=torso] hotbar.0 with minecraft:player_head[minecraft:item_model="animated_java:blueprint/player_display/torso",minecraft:profile={id:$(UUID)}]
 $item replace entity @n[type=item_display,tag=leg_r] hotbar.0 with minecraft:player_head[minecraft:item_model="animated_java:blueprint/player_display/right_leg",minecraft:profile={id:$(UUID)}]
 $item replace entity @n[type=item_display,tag=leg_l] hotbar.0 with minecraft:player_head[minecraft:item_model="animated_java:blueprint/player_display/left_leg",minecraft:profile={id:$(UUID)}]
+
+$data modify entity @n[type=item_display,tag=weapon] item.components."minecraft:item_model" set from storage player: $(XpLevel).weapon.model

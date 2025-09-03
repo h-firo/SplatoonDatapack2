@@ -1,0 +1,1 @@
+$data modify storage opponent_color $(num).color set from storage team_color: $(opponent)

@@ -16,7 +16,7 @@ $function core:actions/add_specialpoint {fx:-0.3,fy:-5,fz:-0.3,tx:0.3,ty:0,tz:0.
 
 #塗り
 $fill ~-0.3 ~-5 ~-0.3 ~0.3 ~ ~0.3 $(color)_concrete replace #core:can_inking
-$particle block{block_state:"minecraft:$(color)_concrete"} ~ ~ ~ 0.1 0.1 0.1 0 10 force
+$particle block{block_state:"minecraft:$(color)_concrete"} ~ ~ ~ 0.1 0.1 0.1 0 3 force
 $execute if data entity @s {OnGround:true} run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 $(color)_concrete replace #core:can_inking
 
 #攻撃

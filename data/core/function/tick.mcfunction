@@ -9,6 +9,7 @@ execute as @e[tag=player,scores={health=..0}] at @s run function core:deaths/mai
 
 #コアタイム
 execute if score is isGame matches 1 run function core:game/tick
+execute if score value mode matches 3 as @a at @s run function core:game/gaze_particle with entity @s
 
 #人数カウント
 scoreboard players set count playerCount 0

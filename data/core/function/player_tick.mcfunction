@@ -20,6 +20,8 @@ execute unless entity @s[tag=Click] run scoreboard players set @s chargeDisplay 
 #スペシャルゲージの更新
 function core:specialbar with entity @s
 
+#ダメージ演出
+$function core:damage_effect with storage opponent_color $(XpLevel)
 #スペシャル発動
 $execute if score @s rightClick matches 1 if items entity @s weapon.mainhand carrot_on_a_stick[custom_data={item:"specialUse"}] run function core:specialweapons/use with storage player: $(XpLevel)
 

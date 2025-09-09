@@ -16,7 +16,7 @@ $execute as @e[distance=..1,tag=player,tag=!attack$(num)] unless score @s team m
 #爆発
 $execute at @n[type=minecart,tag=float$(num)] unless block ~ ~-0.0625 ~ rail unless block ~ ~-0.0625 ~ air run function core:specialweapons/reefslider/exp with entity @s
 
-$execute at @n[type=minecart,tag=float$(num)] if block ~ ~-0.0625 ~ rail run setblock ~ ~ ~ air
+#$execute at @n[type=minecart,tag=float$(num)] if block ~ ~-0.0625 ~ rail run setblock ~ ~ ~ air
 
 #発動後3秒経過していたら強制的に爆発
 $execute if score @s useSpecialWeapon matches 1 at @n[type=minecart,tag=float$(num)] run function core:specialweapons/reefslider/exp with entity @s

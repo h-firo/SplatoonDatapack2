@@ -160,30 +160,30 @@ data merge storage team_color: {0:"blue",1:"yellow",2:"orange",3:"pink",4:"lime"
 data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14,y:-6,z:-251,yaw:180},2:{x:19,y:-6,z:-251,yaw:180},3:{x:24,y:-6,z:-251,yaw:180}},\
                                       team2:{0:{x:20,y:-8,z:-131,yaw:0},1:{x:25,y:-8,z:-131,yaw:0},2:{x:30,y:-8,z:-131,yaw:0},3:{x:35,y:-8,z:-131,yaw:0}}}}
 
-#[連射レート(フレーム/3×10),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
+#[連射レート(フレーム/3×10),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,最大拡散(拡散/補正悪化量[発]),射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\
 (チャージャー:チャージ時間,チャージキープ時間,チャージキープレート,射程増加割合,空中チャージ減衰),\
 (ブラスター:爆風範囲,爆風ダメージ,弾持続時間)\
 (スピナー:チャージ時間,チャージキープ時間,チャージキープレート,射程増加割合,空中チャージ減衰,最大チャージレート)
 data merge storage weapons: {\
 shooter:{\
-splattershot:{FireRate:20,Damage:37,Ink:9,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
-splattershot_pro:{FireRate:26,Damage:45,Ink:20,Blur:1,AirBlur:1,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2},\
-ftgal:{FireRate:31,Damage:52,Ink:13,Blur:5,AirBlur:5,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2},\
-aerospray:{FireRate:10,Damage:24,Ink:5,Blur:10,AirBlur:5,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.44,DamageAT:1,PreGap:2}},\
+splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
+splattershot_pro:{FireRate:26,Damage:45,Ink:20,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2},\
+ftgal:{FireRate:30,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2},\
+aerospray:{FireRate:10,Damage:24,Ink:5,Blur:300,AirBlur:5,MaxBlur:300,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.44,DamageAT:1,PreGap:2}},\
 roller:{\
-splatroller:{FireRate:140,Damage:120,Ink:85,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:2,MinRange:0,MaxRange:1,RollingSpeed:0.6,RollingDamage:125,FireRate2:145,VSpeed:0.001},\
-carbonroller:{FireRate:100,Damage:107,Ink:39,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:1,MinRange:0,MaxRange:1,RollingSpeed:0.7,RollingDamage:70,FireRate2:140,VSpeed:0.001},\
-dynamoroller:{FireRate:40,Damage:180,Ink:180,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:7,PreGap:19,MinRange:-1,MaxRange:1,RollingSpeed:0.4,RollingDamage:125,FireRate2:42,VSpeed:0.002},\
+splatroller:{FireRate:140,Damage:120,Ink:85,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:2,MinRange:0,MaxRange:1,RollingSpeed:0.6,RollingDamage:125,FireRate2:145,VSpeed:0.001},\
+carbonroller:{FireRate:100,Damage:107,Ink:39,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:1,MinRange:0,MaxRange:1,RollingSpeed:0.7,RollingDamage:70,FireRate2:140,VSpeed:0.001},\
+dynamoroller:{FireRate:40,Damage:180,Ink:180,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:7,PreGap:19,MinRange:-1,MaxRange:1,RollingSpeed:0.4,RollingDamage:125,FireRate2:42,VSpeed:0.002},\
 wideroller:{FireRate:130,Damage:70,Ink:90,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.08,SSpeed:2,HSpeed:1,DamageAT:3,PreGap:2,MinRange:-2,MaxRange:2,RollingSpeed:0.7,RollingDamage:70,FireRate2:150,VSpeed:0.002}},\
 charger:{\
-eliter4k:{FireRate:40,Damage:180,Ink:250,Blur:0,AirBlur:1,Speed:0.008,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:2,ChargeTime:30,CKTime:25,CKRate:8,AirCharge:2},\
-splatcharger:{FireRate:40,Damage:160,Ink:180,Blur:0,AirBlur:1,Speed:0.006,Gravity:0,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:20,CKTime:25,CKRate:8,AirCharge:3},\
-squiffer:{FireRate:40,Damage:140,Ink:100,Blur:0,AirBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:13,CKTime:25,CKRate:8,AirCharge:0}},\
+eliter4k:{FireRate:40,Damage:180,Ink:250,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.008,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:2,ChargeTime:30,CKTime:25,CKRate:8,AirCharge:2},\
+splatcharger:{FireRate:40,Damage:160,Ink:180,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.006,Gravity:0,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:20,CKTime:25,CKRate:8,AirCharge:3},\
+squiffer:{FireRate:40,Damage:140,Ink:100,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:13,CKTime:25,CKRate:8,AirCharge:0}},\
 blasters:{\
-blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
-rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:7},\
-clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3}}}
+blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
+rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:7},\
+clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3}}}
 
 #対物性能
 data merge storage objectdamage: {\

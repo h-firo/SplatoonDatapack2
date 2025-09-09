@@ -14,5 +14,6 @@ scoreboard players set @s delay 9
 $scoreboard players remove @s ink $(Ink)
 $scoreboard players set @s shotDelay $(FireRate)
 $scoreboard players add @s accuracy $(Blur)
+$execute if score @s accuracy matches $(MaxBlur).. run scoreboard players set @s accuracy $(MaxBlur)
 
 $tag @e[type=armor_stand,tag=sn$(shotNum)] remove sn$(shotNum)

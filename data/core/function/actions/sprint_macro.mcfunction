@@ -9,7 +9,7 @@ execute if score @s rightHold matches 1.. run scoreboard players set @s isSprint
 execute if score @s shotDelay matches 1.. run scoreboard players set @s isSprint 0
 
 #イカ移動演出
-$execute if score @s isSprint matches 1 if predicate core:is_moving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 5 force
+$execute if score @s isSprint matches 1 if predicate core:is_moving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 1 force
 execute if score @s isSprint matches 1 run scoreboard players add @s health 2
 execute if score @s isSprint matches 1 if score @s health matches 100.. run scoreboard players set @s health 100
 

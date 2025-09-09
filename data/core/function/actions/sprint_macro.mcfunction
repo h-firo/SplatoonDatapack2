@@ -11,6 +11,7 @@ execute if score @s shotDelay matches 1.. run scoreboard players set @s isSprint
 #イカ移動演出
 $execute if score @s isSprint matches 1 if predicate core:is_moving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 5 force
 execute if score @s isSprint matches 1 run scoreboard players add @s health 2
+execute if score @s isSprint matches 1 if score @s health matches 100.. run scoreboard players set @s health 100
 
 #武器透明化
 execute if score @s isSprint matches 1 if score @s chargeKeepTime matches -1 if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run item modify entity @s weapon.mainhand {function:"set_custom_model_data",strings:{values:["1"],mode:"replace_section"}}

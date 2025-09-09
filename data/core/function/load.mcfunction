@@ -21,6 +21,8 @@ scoreboard objectives add playerCount dummy
 scoreboard objectives add particleTimer dummy
 scoreboard objectives add stage dummy
 scoreboard objectives add spanwerRotate dummy
+scoreboard objectives add damageType dummy
+scoreboard objectives add damageOwner dummy
 
 #CoreTime
 scoreboard objectives add coreTime dummy

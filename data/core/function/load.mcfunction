@@ -94,6 +94,9 @@ scoreboard objectives add isCube dummy
 scoreboard objectives add waveBreakerTimer dummy
 scoreboard objectives add waveTimer dummy
 scoreboard objectives add waveParticle dummy
+scoreboard objectives add rsPrepareExplosion dummy
+scoreboard objectives add isAirRail dummy
+scoreboard objectives add havePassenger dummy
 
 #Delay
 scoreboard objectives add delay dummy

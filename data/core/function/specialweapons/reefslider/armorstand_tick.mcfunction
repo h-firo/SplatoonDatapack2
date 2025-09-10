@@ -1,15 +1,19 @@
-execute if data entity @s {OnGround:false} run return fail
-
-#何かしらのバグで空中に浮いていたら、石を下に置く
-#execute unless block ~ ~-1 ~ #core:can_sticking run return run setblock ~ ~-1 ~ stone
-
-#正面がブロックだったら、レールを途切れさせる
-execute if block ^ ^ ^1 #core:can_sticking run return run setblock ~ ~ ~ air
-
-#周りに既にレールがある場合、接続を防ぐためにレールを消す
-#execute if block ^1 ^ ^ rail run setblock ^1 ^ ^ air destroy
-#execute if block ^-1 ^ ^ rail run setblock ^1 ^ ^ air destroy
+execute unless block ^ ^ ^1 #air run return fail
 
 #移動
 tp @s ^ ^ ^1
-setblock ~ ~ ~ rail
+
+#レールを引く
+$execute if block ~ ~-1 ~ #air unless score @s isAirRail matches 1 run summon block_display ~ ~ ~ {Tags:["rail$(num)"],block_state:{Name:"rail"}}
+execute if block ~ ~-1 ~ #air run rotate @s ~ 45
+execute if block ~ ~-1 ~ #air unless score @s isAirRail matches 1 run scoreboard players set @s isAirRail 1
+$execute if block ~ ~-1 ~ #air if score @s isAirRail matches 1 run summon block_display ~ ~ ~ {Tags:["rail$(num)"],block_state:{Name:"rail"}}
+$execute unless block ~ ~-1 ~ #air if score @s isAirRail matches 1 run summon block_display ~ ~-1 ~ {Tags:["rail$(num)"],block_state:{Name:"rail",Properties:{shape:"ascending_north"}}}
+execute unless block ~ ~-1 ~ #air run rotate @s ~ 0
+execute unless block ~ ~-1 ~ #air if score @s isAirRail matches 1 run scoreboard players set @s isAirRail 0
+$execute unless block ~ ~-1 ~ #air unless score @s isAirRail matches 1 run summon block_display ~ ~ ~ {Tags:["rail$(num)"],block_state:{Name:"rail"}}
+
+#レール塗り
+$fill ~-0.5 ~-1 ~-0.5 ~0.5 ~ ~0.5 $(color)_concrete replace #core:can_inking
+
+$execute rotated as @s run rotate @n[type=block_display,tag=rail$(num)] ~ ~

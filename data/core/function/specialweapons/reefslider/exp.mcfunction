@@ -1,16 +1,17 @@
 #プレイヤーが所属しているteamと、プレイヤーが使うスペシャルを、storageに保存
-$data modify storage special_temp: $(XpLevel) set from storage player: $(XpLevel).weapon
-$data modify storage special_temp: $(XpLevel).team set from storage player: $(XpLevel).team
-$data modify storage special_temp: $(XpLevel).color set from storage player: $(XpLevel).color
-$data modify storage special_temp: $(XpLevel).num set from storage player: $(XpLevel).num
+$data modify storage special_temp: $(owner) set from storage player: $(owner).weapon
+$data modify storage special_temp: $(owner).team set from storage player: $(owner).team
+$data modify storage special_temp: $(owner).color set from storage player: $(owner).color
+$data modify storage special_temp: $(owner).num set from storage player: $(owner).num
 
 #shotNumの増加
 scoreboard players add num shotNum 1
-$execute store result storage special_temp: $(XpLevel).shotNum int 1 run scoreboard players get num shotNum
+$execute store result storage special_temp: $(owner).shotNum int 1 run scoreboard players get num shotNum
 
 #爆発
-$function core:specialweapons/reefslider/explosion/set with storage special_temp: $(XpLevel)
+$function core:specialweapons/reefslider/explosion/set with storage special_temp: $(owner)
 
 #終了
-$kill @n[type=minecart,tag=float$(XpLevel)]
-scoreboard players set @s specialUseCount 1
+kill @s
+kill @n[type=armor_stand,tag=sphereExplosion]
+$scoreboard players set @p[level=$(owner)] useSpecialWeapon 2

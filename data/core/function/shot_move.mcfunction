@@ -6,4 +6,4 @@ $execute if data storage player: {$(num):{category:roller}} run function core:we
 
 #チャージャー:チャージキープ
 $execute if data storage player: {$(num):{category:charger}} if score @s rightHold matches 1.. if predicate core:is_sneaking if score @s chargeKeepTime matches -1 run \
-scoreboard players set @s chargeKeepTime 30
+function core:set_chargekeeptime with storage shot_temp: $(num)

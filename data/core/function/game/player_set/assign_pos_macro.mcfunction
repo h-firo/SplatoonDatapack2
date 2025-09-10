@@ -1,5 +1,4 @@
 #カウント増加＆カウント保存
-say 2
 $scoreboard players add team$(team) playerSetCount 1
 $execute store result storage core: psetCount int 1 run scoreboard players get team$(team) playerSetCount
 

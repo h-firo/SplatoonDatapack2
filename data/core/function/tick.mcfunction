@@ -37,7 +37,7 @@ execute as @a at @s if items entity @s player.cursor *[custom_data~{item:"button
 execute as @e[type=text_display,tag=particle] at @s run function core:particles/tick with entity @s data
 
 #Debug
-scoreboard players set @a ink 999
+#scoreboard players set @a ink 999
 
 #モード別処理
 execute if score value mode matches 1 run gamemode spectator @a

@@ -38,3 +38,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["not"]}}}],\
                         item_name={translate:"item.weapon.squiffer",bold:true},item_model="squiffer",custom_data={item:"button",type:"weapon",content:"squiffer"},\
                         lore=[{"color":"gray","translate":"item.weapon.squiffer.lore1"},{"color":"gray","translate":"item.weapon.squiffer.lore2"}]]
+
+#R-PEN/5H
+item replace entity @s inventory.3 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["sprinkler"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["tacticooler"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick_hold"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["not"]}}}],\
+                        item_name={translate:"item.weapon.snipewriter",bold:true},item_model="snipewriter",custom_data={item:"button",type:"weapon",content:"snipewriter"},\
+                        lore=[{"color":"gray","translate":"item.weapon.snipewriter.lore1"},{"color":"gray","translate":"item.weapon.snipewriter.lore2"}]]

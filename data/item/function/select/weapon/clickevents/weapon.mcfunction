@@ -12,6 +12,7 @@ execute if items entity @s player.cursor *[custom_data~{content:"wideroller"}] r
 execute if items entity @s player.cursor *[custom_data~{content:"splatcharger"}] run function command:set_weapon {category:charger,weapon:splatcharger}
 execute if items entity @s player.cursor *[custom_data~{content:"eliter4k"}] run function command:set_weapon {category:charger,weapon:eliter4k}
 execute if items entity @s player.cursor *[custom_data~{content:"squiffer"}] run function command:set_weapon {category:charger,weapon:squiffer}
+execute if items entity @s player.cursor *[custom_data~{content:"snipewriter"}] run function command:set_weapon {category:charger,weapon:snipewriter}
 
 execute if items entity @s player.cursor *[custom_data~{content:"blaster"}] run function command:set_weapon {category:blasters,weapon:blaster}
 execute if items entity @s player.cursor *[custom_data~{content:"rangeblaster"}] run function command:set_weapon {category:blasters,weapon:rangeblaster}

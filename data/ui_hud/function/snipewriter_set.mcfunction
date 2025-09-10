@@ -1,0 +1,2 @@
+$execute if score @s snipewriterBullet matches 2.. run title @s title {text:"oo\uE55$(SWBullet)",font:"ui",shadow_color:16777215}
+execute if score @s snipewriterBullet matches 1 run title @s title {text:"oo\uE548",font:"ui",shadow_color:16777215}

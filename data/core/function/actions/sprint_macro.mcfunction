@@ -7,6 +7,7 @@ $execute if predicate core:is_sneaking unless block ~ ~-1 ~ $(color)_concrete ru
 execute if predicate core:else_sprint run scoreboard players set @s isSprint 0
 execute if score @s rightHold matches 1.. run scoreboard players set @s isSprint 0
 execute if score @s shotDelay matches 1.. run scoreboard players set @s isSprint 0
+execute if score @s charged matches 1.. run scoreboard players set @s isSprint 0
 
 #イカ移動演出
 $execute if score @s isSprint matches 1 if predicate core:is_moving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 1 force

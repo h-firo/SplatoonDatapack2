@@ -6,16 +6,20 @@ execute if score @s rsPrepareExplosion matches 1.. run scoreboard players add @s
 
 #プレイヤーを動かす
 execute unless score @s rsPrepareExplosion matches 1.. run tp @s ^ ^ ^0.7
+execute unless score @s rsPrepareExplosion matches 1.. run playsound item.bucket.empty master @a ~ ~ ~ 1 2
+$execute unless score @s rsPrepareExplosion matches 1.. run particle block{block_state:"$(color)_concrete"} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a
 
 #降りる動作をしたら爆発準備
 scoreboard players set @s havePassenger 0
 execute on passengers on vehicle run scoreboard players set @s havePassenger 1
 execute if score @s havePassenger matches 0 unless score @s rsPrepareExplosion matches 1.. run rotate @s ~-90 ~
+execute if score @s havePassenger matches 0 unless score @s rsPrepareExplosion matches 1.. run playsound entity.creeper.primed master @a ~ ~ ~ 2 2
 execute if score @s havePassenger matches 0 unless score @s rsPrepareExplosion matches 1.. run scoreboard players add @s rsPrepareExplosion 1
 $execute if score @s havePassenger matches 0 run ride @p[level=$(num)] mount @s
 
 #レールの終端に来たら爆発準備
 $execute if entity @e[type=armor_stand,tag=reefsliderRail$(num),distance=..1.5] unless score @s rsPrepareExplosion matches 1.. run rotate @s ~-90 ~
+$execute if entity @e[type=armor_stand,tag=reefsliderRail$(num),distance=..1.5] unless score @s rsPrepareExplosion matches 1.. run playsound entity.creeper.primed master @a ~ ~ ~ 2 2
 $execute if entity @e[type=armor_stand,tag=reefsliderRail$(num),distance=..1.5] unless score @s rsPrepareExplosion matches 1.. run scoreboard players add @s rsPrepareExplosion 1\
 
 execute if score @s rsPrepareExplosion matches 14.. run function core:specialweapons/reefslider/exp with entity @s data

@@ -4,7 +4,7 @@ $execute if score @s useSpecialWeapon matches 125.. as @e[type=armor_stand,tag=r
 #execute if score @s useSpecialWeapon matches 120.. run return fail
 
 #プレイヤーを動かす
-$execute if score @s useSpecialWeapon matches ..130 as @n[type=item_display,tag=reefsliderReef$(num)] at @s run function core:specialweapons/reefslider/reef_tick {num:$(num)}
+$execute if score @s useSpecialWeapon matches ..130 as @n[type=item_display,tag=reefsliderReef$(num)] at @s run function core:specialweapons/reefslider/reef_tick {num:$(num),color:$(color)}
 
 $execute if score @s useSpecialWeapon matches ..1 run kill @e[type=item_display,tag=reefsliderReef$(num)]
 $execute if score @s useSpecialWeapon matches ..1 run kill @e[type=armor_stand,tag=reefsliderRail$(num)]

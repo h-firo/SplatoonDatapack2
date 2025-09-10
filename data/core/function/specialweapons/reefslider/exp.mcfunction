@@ -9,6 +9,7 @@ scoreboard players add num shotNum 1
 $execute store result storage special_temp: $(owner).shotNum int 1 run scoreboard players get num shotNum
 
 #爆発
+playsound entity.generic.explode master @a ~ ~ ~ 1 1.3
 $function core:specialweapons/reefslider/explosion/set with storage special_temp: $(owner)
 
 #終了

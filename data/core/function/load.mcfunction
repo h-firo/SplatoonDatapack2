@@ -37,6 +37,7 @@ scoreboard objectives add resetNum dummy
 #Player
 scoreboard objectives add team dummy
 scoreboard objectives add ink dummy
+scoreboard objectives add isClimbd dummy
 scoreboard objectives add specialPoint dummy
 scoreboard objectives add MaxSpecialPoint dummy
 scoreboard objectives add specialPointPerMax dummy

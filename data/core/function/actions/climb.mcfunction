@@ -1,5 +1,5 @@
 #壁があるとき、浮遊効果を与える
-scoreboard players set @s isSprint 1
+scoreboard players set @s isClimbd 1
 effect give @s levitation 100 5 true
 $summon area_effect_cloud ~ ~ ~ \
 {custom_particle:{type:"block",block_state:{Name:$(color)_concrete}},Radius:0.8f,Duration:10,Age:3,ReapplicationDelay:10,WaitTime:0,potion_contents:{potion:"minecraft:water",\

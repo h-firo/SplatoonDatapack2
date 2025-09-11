@@ -38,3 +38,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
                         item_name={translate:"item.weapon.clashblaster",bold:true},item_model="clashblaster",custom_data={item:"button",type:"weapon",content:"clashblaster"},\
                         lore=[{"color":"gray","translate":"item.weapon.clashblaster.lore1"},{"color":"gray","translate":"item.weapon.clashblaster.lore2"}]]
+
+#S-BLAST92
+item replace entity @s inventory.3 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["sprinkler"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["reefslider"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
+                        item_name={translate:"item.weapon.sblast92",bold:true},item_model="sblast92",custom_data={item:"button",type:"weapon",content:"sblast92"},\
+                        lore=[{"color":"gray","translate":"item.weapon.sblast92.lore1"},{"color":"gray","translate":"item.weapon.sblast92.lore2"}]]

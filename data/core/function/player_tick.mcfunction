@@ -60,6 +60,9 @@ execute unless score @s chargeKeepTime matches 1.. if predicate core:else_sneaki
 #ローラーの塗り
 $execute if score @s rightHold matches 10.. if predicate core:is_moving if score @s ink matches 1.. run function core:weapons/rollers/rolling with storage shot_temp: $(XpLevel)
 
+#Sブラモード
+execute if items entity @s weapon.mainhand emerald[item_model=sblast92] run function core:weapons/blasters/sblast/modechange
+
 #壁のぼりの処理
 $function core:actions/wall_climb with storage player: $(XpLevel)
 

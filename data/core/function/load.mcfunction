@@ -32,6 +32,7 @@ scoreboard objectives add pNum dummy
 scoreboard objectives add shotNum dummy
 scoreboard objectives add bombNum dummy
 scoreboard objectives add objNum dummy
+scoreboard objectives add resetNum dummy
 
 #Player
 scoreboard objectives add team dummy
@@ -72,6 +73,7 @@ scoreboard objectives add maxAirCharge dummy
 scoreboard objectives add airCharge dummy
 scoreboard objectives add snipewriterBullet dummy
 scoreboard objectives add charged dummy
+scoreboard objectives add blastMode dummy
 
 #subweapon
 scoreboard objectives add explosionTimer dummy
@@ -150,6 +152,8 @@ bossbar set squidlamp name [{"text":"\uE500\uE900\uE500\uE900\uE500","color":"wh
 #bossbar set squidlamp name {"text":"\uE501\uE501\uE501\uE501\uE500\uE501\uE501\uE501\uE501","color":"white","shadow_color":16777215}
 
 #初期化
+#タグ消去
+function core:game/reset/shotnum
 scoreboard players set num pNum 0
 scoreboard players set num shotNum 0
 scoreboard players set num objNum 0
@@ -189,14 +193,15 @@ snipewriter:{FireRate:46,Damage:68,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004
 blasters:{\
 blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
 rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:7},\
-clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3}}}
+clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3},\
+sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4}}}
 
 #対物性能
 data merge storage objectdamage: {\
 shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24},\
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300},\
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116},\
-blasters:{blaster:125,rangeblaster:125,clashblaster:80},\
+blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
 }
 
@@ -223,18 +228,19 @@ snipewriter:{subWeapon:"sprinkler",specialWeapon:"tacticooler",specialPoint:220}
 blasters:{\
 blaster:{subWeapon:"inkmine",specialWeapon:"bigbubbler",specialPoint:180},\
 rangeblaster:{subWeapon:"suctionbomb",specialWeapon:"wavebreaker",specialPoint:210},\
-clashblaster:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:180}}}
+clashblaster:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:180},\
+sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}}}
 
 #モデル
 data merge storage models {\
 shooter:{\
-splattershot:"splatter_sot",splattershot_pro:"splatter_shot_pro",ftgal:"52gal",aerospray:"aerospray"},\
+splattershot:"splatter_shot",splattershot_pro:"splatter_shot_pro",ftgal:"52gal",aerospray:"aerospray"},\
 roller:{\
 splatroller:"splat_roller",carbonroller:"carbon_roller",dynamoroller:"dynamo_roller",wideroller:"wide_roller"},\
 charger:{\
-eliter4k:"e_liter_4k",splatcharger:"splat_charger",squiffer:"squiffer"},\
+eliter4k:"e_liter_4k",splatcharger:"splat_charger",squiffer:"squiffer",snipewriter:"snipewriter"},\
 blasters:{\
-blaster:"blaster",rangeblaster:"range_blaster",clashblaster:"clashblaster"}}
+blaster:"blaster",rangeblaster:"range_blaster",clashblaster:"clashblaster",sblast92:"sblast92"}}
 
 #エフェクト
 effect give @a saturation infinite 0 true

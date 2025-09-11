@@ -44,7 +44,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
 #プロモデラーMG
 item replace entity @s inventory.3 with \
 bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["angleshooter"]}}},\
-                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["bigbubbler"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["reefslider"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\

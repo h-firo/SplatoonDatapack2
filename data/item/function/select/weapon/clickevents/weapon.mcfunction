@@ -3,6 +3,7 @@ execute if items entity @s player.cursor *[custom_data~{content:"splattershot"}]
 execute if items entity @s player.cursor *[custom_data~{content:"splattershot_pro"}] run function command:set_weapon {category:shooter,weapon:splattershot_pro}
 execute if items entity @s player.cursor *[custom_data~{content:"ftgal"}] run function command:set_weapon {category:shooter,weapon:ftgal}
 execute if items entity @s player.cursor *[custom_data~{content:"aerospray"}] run function command:set_weapon {category:shooter,weapon:aerospray}
+execute if items entity @s player.cursor *[custom_data~{content:"nzap85"}] run function command:set_weapon {category:shooter,weapon:nzap85}
 
 execute if items entity @s player.cursor *[custom_data~{content:"splatroller"}] run function command:set_weapon {category:roller,weapon:splatroller}
 execute if items entity @s player.cursor *[custom_data~{content:"carbonroller"}] run function command:set_weapon {category:roller,weapon:carbonroller}

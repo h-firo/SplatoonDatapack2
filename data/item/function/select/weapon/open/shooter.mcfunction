@@ -11,7 +11,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["high"]}}},\
                         {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
-                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["small"]}}}],\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
                         item_name={translate:"item.weapon.splattershot",bold:true},item_model="splatter_shot",custom_data={item:"button",type:"weapon",content:"splattershot"},\
                         lore=[{"color":"gray","translate":"item.weapon.splattershot.lore1"},{"color":"gray","translate":"item.weapon.splattershot.lore2"}]]
 
@@ -53,3 +53,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],custom_data={item:"button",type:"weapon",content:"aerospray"},\
                         item_name={translate:"item.weapon.aerospray",bold:true},item_model="aerospray",\
                         lore=[{"color":"gray","translate":"item.weapon.aerospray.lore1"},{"color":"gray","translate":"item.weapon.aerospray.lore2"}]]
+
+#N-ZAP85
+item replace entity @s inventory.4 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["suctionbomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["tacticooler"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["small"]}}}],custom_data={item:"button",type:"weapon",content:"nzap85"},\
+                        item_name={translate:"item.weapon.nzap85",bold:true},item_model="nzap85",\
+                        lore=[{"color":"gray","translate":"item.weapon.nzap85.lore1"},{"color":"gray","translate":"item.weapon.nzap85.lore2"}]]

@@ -180,7 +180,8 @@ shooter:{\
 splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
 splattershot_pro:{FireRate:26,Damage:45,Ink:20,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2},\
 ftgal:{FireRate:30,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2},\
-aerospray:{FireRate:10,Damage:24,Ink:5,Blur:300,AirBlur:5,MaxBlur:300,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.44,DamageAT:1,PreGap:2}},\
+aerospray:{FireRate:10,Damage:24,Ink:5,Blur:300,AirBlur:5,MaxBlur:300,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.44,DamageAT:1,PreGap:2},\
+nzap85:{FireRate:16,Damage:30,Ink:8,Blur:1,AirBlur:1,MaxBlur:206,Speed:0.0013,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:1}},\
 roller:{\
 splatroller:{FireRate:140,Damage:120,Ink:85,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:2,MinRange:0,MaxRange:1,RollingSpeed:0.6,RollingDamage:125,FireRate2:145,VSpeed:0.001},\
 carbonroller:{FireRate:100,Damage:107,Ink:39,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:1,MinRange:0,MaxRange:1,RollingSpeed:0.7,RollingDamage:70,FireRate2:140,VSpeed:0.001},\
@@ -199,7 +200,7 @@ sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.00
 
 #対物性能
 data merge storage objectdamage: {\
-shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24},\
+shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24,nzap85:30},\
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300},\
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125},\
@@ -215,7 +216,8 @@ shooter:{\
 splattershot:{subWeapon:"suctionbomb",specialWeapon:"trizooka",specialPoint:210},\
 splattershot_pro:{subWeapon:"angleshooter",specialWeapon:"crabtank",specialPoint:180},\
 ftgal:{subWeapon:"splashwall",specialWeapon:"killerwail51",specialPoint:200},\
-aerospray:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:190}},\
+aerospray:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:190},\
+nzap85:{subWeapon:"suctionbomb",specialWeapon:"tacticooler",specialPoint:200}},\
 roller:{\
 splatroller:{subWeapon:"curingbomb",specialWeapon:"bigbubbler",specialPoint:180},\
 carbonroller:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:190},\
@@ -235,7 +237,7 @@ sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}}}
 #モデル
 data merge storage models {\
 shooter:{\
-splattershot:"splatter_shot",splattershot_pro:"splatter_shot_pro",ftgal:"52gal",aerospray:"aerospray"},\
+splattershot:"splatter_shot",splattershot_pro:"splatter_shot_pro",ftgal:"52gal",aerospray:"aerospray",nzap85:"nzap85"},\
 roller:{\
 splatroller:"splat_roller",carbonroller:"carbon_roller",dynamoroller:"dynamo_roller",wideroller:"wide_roller"},\
 charger:{\

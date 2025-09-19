@@ -50,6 +50,7 @@ scoreboard objectives add nowPaintAreaBlocks dummy
 scoreboard objectives add nowPaitnAreaMyTeamBlocks dummy
 scoreboard objectives add weaponCount dummy
 scoreboard objectives add rotate dummy
+scoreboard objectives add resurrectionTime dummy
 
 #Health
 scoreboard objectives add health dummy

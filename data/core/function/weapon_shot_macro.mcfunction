@@ -23,7 +23,7 @@ $execute if data storage player: {$(XpLevel):{category:charger}} if score @s sho
 function core:weapons/chargers/charge with storage shot_temp: $(XpLevel)
 
 $execute if data storage player: {$(XpLevel):{category:charger}} if score @s shotDelay matches ..0 if score @s ink matches ..1 if score @s chargeKeepTime matches -1 run \
-function core:weapons/chargers/charge_reset with storage shot_temp: $(XpLevel)
+function core:weapons/chargers/charge_reset
 
 $execute if data storage player: {$(XpLevel):{category:blasters}} if score @s shotDelay matches ..0 if score @s ink matches 1.. run \
 function core:weapons/blasters/shot_macro with entity @s

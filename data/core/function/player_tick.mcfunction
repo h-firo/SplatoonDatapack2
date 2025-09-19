@@ -13,6 +13,10 @@ execute unless score @s sprintDelay matches 0 run scoreboard players remove @s s
 execute if score @s delay matches 0 run scoreboard players set @s accuracy 0
 $execute unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 
+#復活
+execute if score @s resurrectionTime matches 1.. run scoreboard players remove @s resurrectionTime 1
+execute if score @s resurrectionTime matches 0 run function core:deaths/resurrection
+
 #チャージャーチャージ
 execute unless entity @s[tag=Click] if score @s rightHold matches 1.. unless score @s shotDelay matches 1.. run function core:weapons/chargers/is_charger with entity @s
 execute unless entity @s[tag=Click] run scoreboard players set @s rightHold 0

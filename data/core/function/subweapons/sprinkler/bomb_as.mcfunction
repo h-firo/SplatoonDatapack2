@@ -14,3 +14,6 @@ $scoreboard players operation @s shotZ -= @p[level=$(num)] shotZ
 execute store result entity @s Motion[0] double 0.0008 run scoreboard players get @s shotX
 execute store result entity @s Motion[1] double 0.0005 run scoreboard players get @s shotY
 execute store result entity @s Motion[2] double 0.0008 run scoreboard players get @s shotZ
+
+#耐久値を設定
+scoreboard players set @s objDamage 120

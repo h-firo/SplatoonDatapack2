@@ -1,4 +1,6 @@
 #TODO 壊れる処理
+$execute as @e[tag=ink,distance=..3.5,tag=!objAttack] unless data entity @s {data:{team:$(team)}} run tag @s add objAttack
+$execute as @e[tag=ink,distance=..3.5,tag=objAttack] run data merge entity @s {data:{objNum:$(bombNum)}}
 
 #地面にくっつく
 execute if predicate core:is_onground unless score @s isSticking matches 1 run function core:subweapons/sprinkler/sticking with entity @s data
@@ -11,3 +13,6 @@ execute if block ~ ~-0.3 ~ #core:can_sticking run rotate @s ~7 ~
 scoreboard players add @s paintTimer 1
 execute store result score @s paintPos run random value 1..3
 execute if score @s paintTimer >= @s paintRate run function core:subweapons/sprinkler/paint with entity @s data
+
+#耐久値が0になったら壊れる
+execute unless score @s objDamage matches 1.. run kill @s

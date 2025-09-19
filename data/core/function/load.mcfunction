@@ -145,11 +145,13 @@ team modify noCollision collisionRule never
 bossbar add squidlamp {"text":"あああ"}
 bossbar set squidlamp players @a
 bossbar set squidlamp visible true
-bossbar set squidlamp name [{"text":"\uE500\uE900\uE500\uE900\uE500","color":"white","shadow_color":16777215},\
-                            {"text":"\uE908\uE501\uE501\uE501\uE501","color":"white","shadow_color":16777215},\
-                            {"text":"\uE901\uE502","color":"white","shadow_color":16777215},\
-                            {"text":"\uE501\uE501\uE501\uE501","color":"white","shadow_color":16777215},\
-                            {"text":"4:30","color":"white","shadow_color":16777215}]
+bossbar set squidlamp name [{"text":"\uEB00\uE505\uEA03\uE500\uEA03\uE505\uEA03\uE500","color":"white","shadow_color":16777215},\
+                            {"text":"\uEA03\uE50A\uEA03","color":"white","shadow_color":16777215},\
+                            {"text":"\uE501\uEA03\uE505\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215},\
+                            {"text":"q4:20","color":"white","shadow_color":16777215,"font":"num"}]
+#bossbar set squidlamp name [{"text":"\uE501\uEA03\uE501\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215},\
+                            {"text":"\uEA03\uE50A\uEA03","color":"white","shadow_color":16777215},\
+                            {"text":"\uE501\uEA03\uE501\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215}]
 #bossbar set squidlamp name {"text":"\uE501\uE501\uE501\uE501\uE500\uE501\uE501\uE501\uE501","color":"white","shadow_color":16777215}
 
 #初期化

@@ -16,6 +16,7 @@ $tag @e[tag=attackTarget$(num)] remove attackTarget$(num)
 
 #対物
 $execute if entity @s[tag=objAttack] run scoreboard players remove @n[nbt={data:{num:$(objNum)}}] objDamage $(objDamage)
+$execute if entity @s[tag=objAttack] run scoreboard players remove @n[nbt={data:{bombNum:$(objNum)}}] objDamage $(objDamage)
 execute if entity @s[tag=objAttack] run playsound block.vault.hit master @a ~ ~ ~ 0.6 1
 
 execute if entity @e[tag=objAttack] run kill @s

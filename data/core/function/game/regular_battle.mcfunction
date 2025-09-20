@@ -20,6 +20,13 @@ title @a title {"text":"\uE300",font:"ui","shadow_color":16777215}
 #チーム割り当て
 function core:game/set_team
 
+#イカランプ紐づけ
+data remove storage squidlamps Active
+scoreboard players set team1 linkLampNum 0
+scoreboard players set team2 linkLampNum 4
+tag @a remove alReadyLinkLamp
+function core:squidlamps/link_lamp
+
 #ステージごとに異なる場所に
 execute store result storage core: stage int 1 run scoreboard players get value stage
 function core:game/stage_view with storage core:

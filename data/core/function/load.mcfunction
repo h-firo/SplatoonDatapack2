@@ -23,6 +23,8 @@ scoreboard objectives add stage dummy
 scoreboard objectives add spanwerRotate dummy
 scoreboard objectives add damageType dummy
 scoreboard objectives add damageOwner dummy
+scoreboard objectives add linkLampNum dummy
+scoreboard objectives add setLampNum dummy
 
 #CoreTime
 scoreboard objectives add coreTime dummy
@@ -150,6 +152,9 @@ bossbar set squidlamp name [{"text":"\uEB00\uE505\uEA03\uE500\uEA03\uE505\uEA03\
                             {"text":"\uEA03\uE50A\uEA03","color":"white","shadow_color":16777215},\
                             {"text":"\uE501\uEA03\uE505\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215},\
                             {"text":"q4:20","color":"white","shadow_color":16777215,"font":"num"}]
+#bossbar set squidlamp name [{"text":"\uEB00\uE505\uEA03\uE500\uEA03\uE505\uEA03\uE500","color":"white","shadow_color":16777215},\
+                            {"text":"\uEA03\uE50A\uEA03","color":"white","shadow_color":16777215},\
+                            {"text":"\uE501\uEA03\uE505\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215}]
 #bossbar set squidlamp name [{"text":"\uE501\uEA03\uE501\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215},\
                             {"text":"\uEA03\uE50A\uEA03","color":"white","shadow_color":16777215},\
                             {"text":"\uE501\uEA03\uE501\uEA03\uE501\uEA03\uE501","color":"white","shadow_color":16777215}]

@@ -25,6 +25,10 @@ scoreboard objectives add damageType dummy
 scoreboard objectives add damageOwner dummy
 scoreboard objectives add linkLampNum dummy
 scoreboard objectives add setLampNum dummy
+scoreboard objectives add gameTime dummy
+scoreboard objectives add min dummy
+scoreboard objectives add sec dummy
+scoreboard objectives add spawnerTimer dummy
 
 #CoreTime
 scoreboard objectives add coreTime dummy
@@ -175,6 +179,7 @@ tag @a[tag=!player] add player
 
 #ストレージ
 data merge storage team_color: {0:"blue",1:"yellow",2:"orange",3:"pink",4:"lime"}
+#team1のyaw=180,team2のyaw=0で固定
 data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14,y:-6,z:-251,yaw:180},2:{x:19,y:-6,z:-251,yaw:180},3:{x:24,y:-6,z:-251,yaw:180}},\
                                       team2:{0:{x:20,y:-8,z:-131,yaw:0},1:{x:25,y:-8,z:-131,yaw:0},2:{x:30,y:-8,z:-131,yaw:0},3:{x:35,y:-8,z:-131,yaw:0}}}}
 

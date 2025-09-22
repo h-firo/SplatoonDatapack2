@@ -2,6 +2,8 @@
 data modify storage squidlamp_text texts set value []
 scoreboard players set num setLampNum 0
 execute store result storage squidlamps setNum int 1 run scoreboard players get num setLampNum
+execute store result storage squidlamps team1 int 1 run scoreboard players get team1 participationTeam
+execute store result storage squidlamps team2 int 1 run scoreboard players get team2 participationTeam
 function ui_hud:squidlamp/lamp_status with storage squidlamps
 
 #スペースとタイマー背景を追加
@@ -21,4 +23,4 @@ data modify storage concat: result set value []
 data modify storage concat: args set from storage squidlamp_text texts
 function concat:concat_all
 
-bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},{"text":"q4:20","color":"white","shadow_color":16777215,"font":"num"}]
+bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},{"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"value",objective:"min"},"shadow_color":16777215,"font":"num"},{"text":":","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"value",objective:"sec"},"shadow_color":16777215,"font":"num"}]

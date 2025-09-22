@@ -1,5 +1,8 @@
+#voidマーク
 $execute unless data storage squidlamps Active.$(setNum) run data modify storage squidlamp_text texts insert $(setNum) value "\uE50F"
-$execute if data storage squidlamps {Active:{$(setNum):"alive"}} run data modify storage squidlamp_text texts insert $(setNum) value "\uE500"
+#アクティブマーク
+$execute if data storage squidlamps {Active:{$(setNum):"alive"}} if score num setLampNum matches ..3 run data modify storage squidlamp_text texts insert $(setNum) value "\uE50$(team1)"
+$execute if data storage squidlamps {Active:{$(setNum):"alive"}} if score num setLampNum matches 4.. run data modify storage squidlamp_text texts insert $(setNum) value "\uE50$(team2)"
 $execute if data storage squidlamps {Active:{$(setNum):"death"}} run data modify storage squidlamp_text texts insert $(setNum) value "\uE505"
 scoreboard players add num setLampNum 1
 execute if score num setLampNum matches 8.. run return fail

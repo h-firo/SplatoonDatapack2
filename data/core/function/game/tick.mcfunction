@@ -7,9 +7,13 @@ execute if score time coreTime matches 121 run function core:game/player_set
 execute if score time coreTime matches 122 run function core:game/pos_save with storage core:
 execute if score time coreTime matches 130 as @a at @s run function core:game/set_avator/armorstand with entity @s
 execute if score time coreTime matches 182 run function core:game/spawner2_view with storage core:
+execute if score time coreTime matches 232 as @a at @s run function core:game/shoot/ready with entity @s
+execute if score time coreTime matches 233 as @a at @s run function core:game/shoot/tp with entity @s
+execute if score time coreTime matches 272 as @e[tag=spawnerRides] at @s run function core:game/shoot/rotate with entity @s data
+execute if score time coreTime matches 273..300 as @e[tag=spawnerRides] at @s run function core:game/shoot/shoot with entity @s
 
 #ゲーム終了
-execute if score time coreTime matches 200.. run scoreboard players set is isGame 0
+execute if score time coreTime matches 300.. run function core:game/end
 
 #モードが3のとき、目線先にパーティクル
 

@@ -1,8 +1,6 @@
-#ゲームモード
-gamemode adventure @a
-
 #スポナー位置に移動
-$say $(XpLevel)
+playsound item.armor.equip_iron master @s ~ ~ ~ 1 0.9
+scoreboard players set @s isShootReady 0
 $tp @s @n[type=armor_stand,tag=spawnerPos$(XpLevel)]
 rotate @s ~ ~
 

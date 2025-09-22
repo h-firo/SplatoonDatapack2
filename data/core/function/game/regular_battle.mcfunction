@@ -5,10 +5,12 @@ execute if score team1 participationTeam = team2 participationTeam store result 
 execute store result storage core: team1 int 1 run scoreboard players get team1 participationTeam
 execute store result storage core: team2 int 1 run scoreboard players get team2 participationTeam
 
-#coreTimeリセット
+#スコアセット
 scoreboard players set is isGame 1
 scoreboard players set time coreTime 0
+scoreboard players set @s isShootReady 0
 scoreboard players set mode coreTime 1
+scoreboard players set time gameTime 3600
 
 #プレイヤー番号付与
 function core:set_pnum

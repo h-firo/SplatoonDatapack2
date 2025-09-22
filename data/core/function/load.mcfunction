@@ -26,9 +26,7 @@ scoreboard objectives add damageOwner dummy
 scoreboard objectives add linkLampNum dummy
 scoreboard objectives add setLampNum dummy
 scoreboard objectives add gameTime dummy
-scoreboard objectives add min dummy
-scoreboard objectives add sec dummy
-scoreboard objectives add spawnerTimer dummy
+scoreboard objectives add isShootReady dummy
 
 #CoreTime
 scoreboard objectives add coreTime dummy
@@ -128,6 +126,8 @@ scoreboard players set 16 num 16
 scoreboard players set 2 num 2
 scoreboard players set 0 num 0
 scoreboard players set -1 num -1
+scoreboard players set 1200 num 1200
+scoreboard players set 20 num 20
 
 #flag
 scoreboard objectives add rightHold dummy

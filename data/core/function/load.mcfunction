@@ -87,6 +87,7 @@ scoreboard objectives add blastMode dummy
 
 #subweapon
 scoreboard objectives add explosionTimer dummy
+scoreboard objectives add objDamageDifference dummy
 scoreboard objectives add isSticking dummy
 scoreboard objectives add paintPos dummy
 scoreboard objectives add paintRate dummy

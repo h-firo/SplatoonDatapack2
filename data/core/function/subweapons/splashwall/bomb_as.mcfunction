@@ -1,3 +1,7 @@
+#耐久値
+scoreboard players set @s objDamage 800
+scoreboard players set @s objDamageDifference 800
+
 #アマスタの位置を保存
 execute store result score @s shotX run data get entity @s Pos[0] 1000
 execute store result score @s shotY run data get entity @s Pos[1] 1000

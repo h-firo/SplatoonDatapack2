@@ -11,7 +11,8 @@ execute if entity @s[tag=balloon] run return run function core:deaths/balloon
 
 #プレイヤー
 #復活時間設定
-scoreboard players set @s resurrectionTime 100
+execute if score @s drinkTimer matches 1.. run scoreboard players set @s resurrectionTime 20
+execute unless score @s drinkTimer matches 1.. run scoreboard players set @s resurrectionTime 100
 #リセット
 scoreboard players set @s drinkTimer 0
 scoreboard players set @s useSpecialWeapon 1

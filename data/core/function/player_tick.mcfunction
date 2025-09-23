@@ -11,7 +11,17 @@ $execute if score @s useSpecialWeapon matches 0.. run function core:specialweapo
 execute if score @s shotDelay matches 1.. run scoreboard players remove @s shotDelay 10
 execute unless score @s sprintDelay matches 0 run scoreboard players remove @s sprintDelay 1
 execute if score @s delay matches 0 run scoreboard players set @s accuracy 0
-$execute unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+#$execute if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+#スペシャル中に動けるやつらはpreDelayの処理をスペシャル時にも行う
+$execute if data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+#スペシャル中に動けないやつらはpreDelayの処理をスペシャル時以外に行う
+$execute unless data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute unless data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute unless data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute unless data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 
 #復活
 execute if score @s resurrectionTime matches 1.. run scoreboard players remove @s resurrectionTime 1
@@ -24,9 +34,8 @@ $execute if score @s isShootReady matches 1 as @n[tag=spawnerRide$(XpLevel)] at 
 #チャージャーチャージ
 execute unless entity @s[tag=Click] if score @s rightHold matches 1.. unless score @s shotDelay matches 1.. run function core:weapons/chargers/is_charger with entity @s
 execute unless entity @s[tag=Click] run scoreboard players set @s rightHold 0
-execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. unless score @s shotDelay matches 1.. run scoreboard players set @s charge 0
-execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. unless score @s shotDelay matches 1.. run scoreboard players set @s charged 0
-execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. unless score @s shotDelay matches 1.. run scoreboard players set @s chargeDisplay 0
+#execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. unless score @s shotDelay matches 1.. run function core:weapons/chargers/charge_reset
+execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. run function core:weapons/chargers/charge_reset
 
 #スペシャルゲージの更新
 function core:specialbar with entity @s

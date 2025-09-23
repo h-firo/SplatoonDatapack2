@@ -26,6 +26,7 @@ scoreboard players operation sec gameTime /= 20 num
 
 
 #ゲーム終了
+execute if score time gameTime matches ..0 run function core:game/judge/judge
 execute if score time gameTime matches ..0 run function core:game/end
 
 #モードが3のとき、目線先にパーティクル

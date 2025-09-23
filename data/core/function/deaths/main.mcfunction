@@ -1,4 +1,5 @@
 execute if score @s resurrectionTime matches 1.. run return fail
+scoreboard players set @s isShootReady 0
 
 #演出
 scoreboard players set @s health 0

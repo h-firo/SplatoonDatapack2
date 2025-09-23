@@ -2,6 +2,7 @@
 #Core
 #mode:{0:何もなし,1:全員強制スぺクテイター}
 scoreboard objectives add isGame dummy
+scoreboard objectives add isJudge dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add gameMode dummy
 scoreboard objectives add myTeamNum dummy
@@ -27,6 +28,9 @@ scoreboard objectives add linkLampNum dummy
 scoreboard objectives add setLampNum dummy
 scoreboard objectives add gameTime dummy
 scoreboard objectives add isShootReady dummy
+#勝敗判定用
+scoreboard objectives add blockCounts dummy
+scoreboard objectives add blockCountDisplay dummy
 
 #CoreTime
 scoreboard objectives add coreTime dummy
@@ -120,6 +124,8 @@ scoreboard players set @a preDelay 0
 scoreboard objectives add num dummy
 scoreboard players set 1600 num 1600
 scoreboard players set 100 num 100
+scoreboard players set 1000 num 1000
+scoreboard players set 500 num 500
 scoreboard players set 10 num 10
 scoreboard players set 48 num 48
 scoreboard players set 16 num 16
@@ -178,7 +184,9 @@ tag @a remove pNumAlreadySet
 tag @a[tag=!player] add player
 
 #ストレージ
+#色
 data merge storage team_color: {0:"blue",1:"yellow",2:"orange",3:"pink",4:"lime"}
+data merge storage text_color: {0:"blue",1:"gold",2:"#FF6E19",3:"light_purple",4:"green"}
 #team1のyaw=180,team2のyaw=0で固定
 data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14,y:-6,z:-251,yaw:180},2:{x:19,y:-6,z:-251,yaw:180},3:{x:24,y:-6,z:-251,yaw:180}},\
                                       team2:{0:{x:20,y:-8,z:-131,yaw:0},1:{x:25,y:-8,z:-131,yaw:0},2:{x:30,y:-8,z:-131,yaw:0},3:{x:35,y:-8,z:-131,yaw:0}}}}

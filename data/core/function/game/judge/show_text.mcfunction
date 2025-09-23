@@ -1,0 +1,1 @@
+$title @a title [{"text":"[",bold:true,color:gray},{"score":{name:"team1",objective:"blockCountDisplay"},"color":"$(text1)",bold:false},{"text":"　VS　",bold:true,color:gray},{"score":{name:"team2",objective:"blockCountDisplay"},"color":"$(text2)",bold:false},{"text":"]",bold:true,color:gray}]

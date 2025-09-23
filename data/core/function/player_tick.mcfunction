@@ -18,8 +18,8 @@ execute if score @s resurrectionTime matches 1.. run scoreboard players remove @
 execute if score @s resurrectionTime matches 0 run function core:deaths/resurrection
 
 #スポナー射出
-execute if predicate core:push_space as @n[tag=spawnerRides] at @s run function core:game/shoot/rotate with entity @s data
-execute if score @s isShootReady matches 1 as @n[tag=spawnerRides] at @s run function core:game/shoot/shoot with entity @s
+$execute if predicate core:push_space as @n[tag=spawnerRide$(XpLevel)] at @s run function core:game/shoot/rotate with entity @s data
+$execute if score @s isShootReady matches 1 as @n[tag=spawnerRide$(XpLevel)] at @s run function core:game/shoot/shoot with entity @s
 
 #チャージャーチャージ
 execute unless entity @s[tag=Click] if score @s rightHold matches 1.. unless score @s shotDelay matches 1.. run function core:weapons/chargers/is_charger with entity @s

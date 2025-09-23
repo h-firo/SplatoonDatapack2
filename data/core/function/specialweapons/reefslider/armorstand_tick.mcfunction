@@ -1,4 +1,5 @@
 execute unless block ^ ^ ^1 #air run return fail
+execute if entity @e[tag=bomb,nbt={data:{type:"splashwall"}},distance=..1] run return fail
 
 #移動
 tp @s ^ ^ ^1

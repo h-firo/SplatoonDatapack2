@@ -5,11 +5,11 @@ execute store result score @s shotZ run data get entity @s Pos[2] 1000
 
 #アマスタをsummon
 $execute positioned ~ ~1.6 ~ run \
-summon armor_stand ^-0.1 ^0.05 ^2.0 {Tags:["shot$(team)","trizooka","owner$(num)","sn$(shotNum)","1"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum)},attributes:[{id:"minecraft:gravity",base:0.14}]}
+summon armor_stand ^-0.1 ^0.05 ^2.0 {Tags:["shot$(team)","trizooka","owner$(num)","sn$(shotNum)","1","ink"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum)},attributes:[{id:"minecraft:gravity",base:0.14}]}
 $execute positioned ~ ~1.6 ~ run \
-summon armor_stand ^ ^-0.05 ^2.0 {Tags:["shot$(team)","trizooka","owner$(num)","sn$(shotNum)","2"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum)},attributes:[{id:"minecraft:gravity",base:0.14}]}
+summon armor_stand ^ ^-0.05 ^2.0 {Tags:["shot$(team)","trizooka","owner$(num)","sn$(shotNum)","2","ink"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum)},attributes:[{id:"minecraft:gravity",base:0.14}]}
 $execute positioned ~ ~1.6 ~ run \
-summon armor_stand ^0.1 ^0.05 ^2.0 {Tags:["shot$(team)","trizooka","owner$(num)","sn$(shotNum)","3"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum)},attributes:[{id:"minecraft:gravity",base:0.14}]}
+summon armor_stand ^0.1 ^0.05 ^2.0 {Tags:["shot$(team)","trizooka","owner$(num)","sn$(shotNum)","3","ink"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum)},attributes:[{id:"minecraft:gravity",base:0.14}]}
 $execute as @e[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] run data modify entity @s data.color set from storage team_color: colors.$(team)
 $execute as @e[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] at @s run function core:specialweapons/trizooka/shot_as with storage special_temp: $(num)
 $data merge entity @n[type=armor_stand,tag=owner$(num),tag=sn$(shotNum),tag=1] {data:{objNum:-1}}

@@ -1,7 +1,7 @@
 #tick処理
 execute as @a if entity @s[advancements={core:hold=false}] run attribute @s movement_speed modifier remove shot_move
 execute as @a at @s run function core:player_tick with entity @s
-execute as @e[type=armor_stand,tag=ink] at @s run function core:ink_tick with entity @s data
+execute as @e[type=armor_stand,tag=ink,tag=!trizooka,tag=!crabtank,tag=!crabtank_explshot] at @s run function core:ink_tick with entity @s data
 execute as @e[type=armor_stand,tag=trizooka] at @s run function core:ink_ticks/ink_tick_trizooka with entity @s data
 execute as @e[type=armor_stand,tag=crabtank] at @s run function core:ink_ticks/ink_tick_crabtank with entity @s data
 execute as @e[type=armor_stand,tag=crabtank_explshot] at @s run function core:ink_ticks/ink_tick_explshot with entity @s data

@@ -110,6 +110,7 @@ scoreboard objectives add waveParticle dummy
 scoreboard objectives add rsPrepareExplosion dummy
 scoreboard objectives add isAirRail dummy
 scoreboard objectives add havePassenger dummy
+scoreboard objectives add isInvincible dummy
 
 #Delay
 scoreboard objectives add delay dummy

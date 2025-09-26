@@ -1,4 +1,5 @@
-execute if score @s resurrectionTime matches 1.. run return fail
+execute if score @s resurrectionTime matches 1.. run return run scoreboard players set @s health 100
+execute if score @s isInvincible matches 1 run return run scoreboard players set @s health 100
 scoreboard players set @s isShootReady 0
 
 #演出

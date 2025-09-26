@@ -13,6 +13,7 @@ playsound entity.generic.explode master @a ~ ~ ~ 1 1.3
 $function core:specialweapons/reefslider/explosion/set with storage special_temp: $(owner)
 
 #終了
+$scoreboard players set @p[level=$(owner)] isInvincible 0
 kill @s
 kill @n[type=armor_stand,tag=sphereExplosion]
 

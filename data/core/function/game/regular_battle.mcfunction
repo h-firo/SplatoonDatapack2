@@ -11,7 +11,7 @@ scoreboard players set is isJudge 0
 scoreboard players set time coreTime 0
 scoreboard players set @s isShootReady 0
 scoreboard players set mode coreTime 1
-scoreboard players set time gameTime 1200
+scoreboard players set time gameTime 3600
 
 #ステージリセット
 function stage:reset/colorblock_clear

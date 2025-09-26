@@ -9,5 +9,4 @@ $summon item_display ~ ~ ~ {Tags:["spawnerRide$(XpLevel)","spawnerRides"],telepo
 #射出用エンティティにライド
 $ride @s mount @n[type=item_display,tag=spawnerRide$(XpLevel)]
 
-say a
 $execute as @n[tag=spawnerRide$(XpLevel)] at @s run tp @s @n[type=armor_stand,tag=spawnerPos$(XpLevel)]

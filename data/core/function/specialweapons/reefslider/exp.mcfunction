@@ -15,4 +15,10 @@ $function core:specialweapons/reefslider/explosion/set with storage special_temp
 #終了
 kill @s
 kill @n[type=armor_stand,tag=sphereExplosion]
+
+#後隙
+summon area_effect_cloud ~ ~ ~ \
+{custom_particle:{type:"splash"},Radius:0.5f,Duration:10,Age:3,ReapplicationDelay:10,WaitTime:0,RadiusOnUse:-5f,potion_contents:{potion:"minecraft:water",\
+custom_effects:[{id:"minecraft:slowness",amplifier:100,duration:10,show_icon:false,show_particles:false}]}}
+
 $scoreboard players set @p[level=$(owner)] useSpecialWeapon 2

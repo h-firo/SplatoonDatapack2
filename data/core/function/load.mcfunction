@@ -189,8 +189,8 @@ tag @a[tag=!player] add player
 data merge storage team_color: {0:"blue",1:"yellow",2:"orange",3:"pink",4:"lime"}
 data merge storage text_color: {0:"blue",1:"gold",2:"#FF6E19",3:"light_purple",4:"green"}
 #team1のyaw=180,team2のyaw=0で固定
-data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14,y:-6,z:-251,yaw:180},2:{x:19,y:-6,z:-251,yaw:180},3:{x:24,y:-6,z:-251,yaw:180}},\
-                                      team2:{0:{x:20,y:-8,z:-131,yaw:0},1:{x:25,y:-8,z:-131,yaw:0},2:{x:30,y:-8,z:-131,yaw:0},3:{x:35,y:-8,z:-131,yaw:0}}}}
+data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14,y:-6,z:-251,yaw:180},2:{x:19,y:-6,z:-251,yaw:180},3:{x:24,y:-6,z:-251,yaw:180},Zlimit:-224},\
+                                      team2:{0:{x:20,y:-8,z:-131,yaw:0},1:{x:25,y:-8,z:-131,yaw:0},2:{x:30,y:-8,z:-131,yaw:0},3:{x:35,y:-8,z:-131,yaw:0},Zlimit:-159}}}
 
 #[連射レート(フレーム/3×10),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,最大拡散(拡散/補正悪化量[発]),射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\
@@ -216,9 +216,9 @@ squiffer:{FireRate:46,Damage:140,Ink:100,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,
 snipewriter:{FireRate:46,Damage:68,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:1,CKRate:8,AirCharge:0}},\
 blasters:{\
 blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
-rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:7},\
+rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.0009,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:6},\
 clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3},\
-sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4}}}
+sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.002,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4}}}
 
 #対物性能
 data merge storage objectdamage: {\

@@ -18,7 +18,7 @@ function stage:reset/colorblock_clear
 execute if score value stage matches 0 run function stage:reset/eeltail_alley
 
 #プレイヤー番号付与
-function core:set_pnum
+#function core:set_pnum
 
 #ナワバリバトル表示
 title @a times 5 200 20

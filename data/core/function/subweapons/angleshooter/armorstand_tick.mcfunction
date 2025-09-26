@@ -1,4 +1,4 @@
-particle dust{color:[0.200,0.000,1.000],scale:1} ~ ~ ~ 0.1 0.1 0.1 0 1 force
+$particle dust{color:[$(r),$(g),$(b)],scale:1} ~ ~ ~ 0.1 0.1 0.1 0 1 force
 scoreboard players add @s explosionTimer 1
 #攻撃
 $execute if score @s explosionTimer matches ..5 as @e[distance=..1.5,tag=player,tag=!asAttack$(bombNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) as @a[level=$(owner)] at @s run playsound minecraft:entity.player.attack.crit master @s ~ ~ ~ 1

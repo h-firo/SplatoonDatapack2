@@ -8,6 +8,7 @@ $execute if score @s useSpecialWeapon matches 85 run tag @e[tag=killerwail$(num)
 $execute as @e[tag=killerwail$(num)_target] run tag @s add alreadyTarget$(num)
 $execute as @e[tag=killerwail$(num)_target] run tag @s remove killerwail$(num)_target
 
+#終了処理
 $execute if score @s useSpecialWeapon matches ..1 run kill @e[type=item_display,tag=killerwailDisplay$(num)]
 $execute if score @s useSpecialWeapon matches ..1 run tag @e[tag=player] remove killerwailTarget$(num)_1
 $execute if score @s useSpecialWeapon matches ..1 run tag @e[tag=player] remove killerwailTarget$(num)_2

@@ -31,6 +31,10 @@ $summon item_display ^0.5 ^1 ^ {Tags:["kd","killerwailDisplay$(num)","3"],data:{
                             transformation:{left_rotation:[0f,-1f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.4f,0f],scale:[0.8f,0.8f,0.8f]},\
                             item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_model_data":{strings:["megaphone"]}}}}
 
+$execute as @e[type=item_display,tag=killerwailDisplay$(num)] run data modify entity @s data.r set from storage dustcolor: $(team).r
+$execute as @e[type=item_display,tag=killerwailDisplay$(num)] run data modify entity @s data.g set from storage dustcolor: $(team).g
+$execute as @e[type=item_display,tag=killerwailDisplay$(num)] run data modify entity @s data.b set from storage dustcolor: $(team).b
+
 
 $scoreboard players set @e[type=item_display,tag=killerwailDisplay$(num)] killerwailTargetDelay 0
 $execute as @e[type=item_display,tag=killerwailDisplay$(num)] at @s rotated as @p[level=$(num)] run tp @s ~ ~ ~ ~ ~

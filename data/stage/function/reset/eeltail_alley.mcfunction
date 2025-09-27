@@ -1,3 +1,12 @@
-place template stage1_regular_1 4 -61 -243
-place template stage1_regular_2 4 -61 -195
-place template stage1_regular_3 6 -61 -148
+place template stage1_1 -46 -61 -282
+place template stage1_2 2 -61 -282
+place template stage1_3 50 -61 -282
+place template stage1_4 -46 -61 -234
+place template stage1_5 2 -61 -234
+place template stage1_6 50 -61 -234
+place template stage1_7 -10 -61 -186
+place template stage1_8 2 -61 -186
+place template stage1_9 50 -61 -186
+place template stage1_10 -17 -61 -138
+place template stage1_11 2 -61 -138
+place template stage1_12 50 -61 -138

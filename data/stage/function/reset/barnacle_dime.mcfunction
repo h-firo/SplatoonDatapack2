@@ -1,4 +1,12 @@
-place template stage2_regular_1 137 -61 -165
-place template stage2_regular_2 145 -61 -117
-
-fill 137 -61 -165 223 -60 -35 air replace #core:concreate
+place template stage2_1 94 -61 -196
+place template stage2_2 142 -61 -196
+place template stage2_3 190 -61 -196
+place template stage2_4 94 -61 -148
+place template stage2_5 142 -61 -148
+place template stage2_6 190 -61 -148
+place template stage2_7 94 -61 -100
+place template stage2_8 142 -61 -100
+place template stage2_9 190 -61 -100
+place template stage2_10 94 -61 -52
+place template stage2_11 142 -61 -52
+place template stage2_12 190 -61 -52

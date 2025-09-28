@@ -16,6 +16,7 @@ scoreboard players set time gameTime 3600
 #ステージリセット
 function stage:reset/colorblock_clear
 execute if score value stage matches 0 run function stage:reset/eeltail_alley
+execute if score value stage matches 1 run function stage:reset/barnacle_dime
 
 #プレイヤー番号付与
 #function core:set_pnum

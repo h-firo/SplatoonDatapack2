@@ -18,7 +18,18 @@
       "stripped_oak_wood",
       "birch_planks",
       "pale_oak_planks",
-      "stripped_pale_oak_wood"
+      "stripped_pale_oak_wood",
+      "smooth_stone",
+      "andesite",
+      "bricks",
+      "cobbled_deepslate",
+      "oak_log",
+      "packed_mud",
+      "rooted_dirt",
+      "diorite",
+      "polished_granite",
+      "smooth_sandstone",
+      "spruce_planks"
     ]
   }
   

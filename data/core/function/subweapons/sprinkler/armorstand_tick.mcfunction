@@ -28,7 +28,5 @@ execute if block ~ ~-0.3 ~ #core:can_sticking run rotate @s ~7 ~
 scoreboard players add @s paintTimer 1
 execute store result score @s paintPos run random value 1..3
 execute if score @s paintTimer >= @s paintRate run function core:subweapons/sprinkler/paint with entity @s data
-
 #耐久値関係
-execute unless score @s objDamage matches 1.. run say a
 execute unless score @s objDamage matches 1.. run kill @s

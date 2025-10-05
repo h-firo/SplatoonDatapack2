@@ -1,0 +1,7 @@
+#team1のカウントが10未満
+$execute if score team2 areaCount matches 100 run bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},\
+                                                                                            {"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":0","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"},\
+                                                                                            {"text":"\uEB10\uC00$(ruleCount1)\uEA10\uC100","color":"white","shadow_color":16777215,font:"count"}]
+$execute if score team2 areaCount matches ..99 run bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},\
+                                                                                            {"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":0","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"},\
+                                                                                            {"text":"\uEB10\uC00$(ruleCount1)\uEA10\uC0$(ruleCount2)","color":"white","shadow_color":16777215,font:"count"}]

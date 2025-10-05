@@ -1,0 +1,5 @@
+#secが10未満の時
+#両方ともカウントが10未満
+$execute if score team1 areaCount matches ..9 if score team2 areaCount matches ..9 run return run bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},\
+                                                                                            {"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":0","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"},\
+                                                                                            {"text":"\uEB10\uC00$(ruleCount1)\uEA10\uC00$(ruleCount2)","color":"white","shadow_color":16777215,font:"count"}]

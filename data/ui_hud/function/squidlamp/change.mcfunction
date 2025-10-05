@@ -23,5 +23,11 @@ data modify storage concat: result set value []
 data modify storage concat: args set from storage squidlamp_text texts
 function concat:concat_all
 
-execute if score sec gameTime >= 10 num run return run bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},{"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"}]
-bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},{"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":0","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"}]
+#ルールによって処理を変える
+#レギュラーマッチなら、イカランプのみ
+execute if score value gameRule matches 0 run return run function ui_hud:squidlamp/change_regular
+#ガチマッチなら、カウント表示
+execute if score value gameRule matches 1 store result storage squidlamps ruleCount1 int 1 run scoreboard players get team1 areaCount
+execute if score value gameRule matches 1 store result storage squidlamps ruleCount2 int 1 run scoreboard players get team2 areaCount
+execute if score value gameRule matches 1 if score sec gameTime >= 10 num run return run function ui_hud:squidlamp/change_count/sec_greater/out
+execute if score value gameRule matches 1 run function ui_hud:squidlamp/change_count/sec_less/out

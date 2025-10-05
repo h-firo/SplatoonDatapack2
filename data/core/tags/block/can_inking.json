@@ -21,7 +21,7 @@
       "stripped_pale_oak_wood",
       "smooth_stone",
       "andesite",
-      "bricks",
+      "nether_bricks",
       "cobbled_deepslate",
       "oak_log",
       "packed_mud",
@@ -29,7 +29,8 @@
       "diorite",
       "polished_granite",
       "smooth_sandstone",
-      "spruce_planks"
+      "spruce_planks",
+      "white_wool"
     ]
   }
   

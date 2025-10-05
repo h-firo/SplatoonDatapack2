@@ -1,0 +1,4 @@
+execute if score team1 areaCount matches 10.. if score team2 areaCount matches 10.. run function ui_hud:squidlamp/change_count/sec_greater/10_10_ with storage squidlamps
+execute if score team1 areaCount matches ..9 if score team2 areaCount matches 10.. run function ui_hud:squidlamp/change_count/sec_greater/_1010_ with storage squidlamps
+execute if score team1 areaCount matches 10.. if score team2 areaCount matches ..9 run function ui_hud:squidlamp/change_count/sec_greater/10__10 with storage squidlamps
+execute if score team1 areaCount matches ..9 if score team2 areaCount matches ..9 run function ui_hud:squidlamp/change_count/sec_greater/_10_10 with storage squidlamps

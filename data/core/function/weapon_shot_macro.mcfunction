@@ -1,3 +1,6 @@
+$execute if data storage player: {$(XpLevel):{specialWeapon:"crabtank"}} if score @s useSpecialWeapon matches 1.. run return fail
+$execute if data storage player: {$(XpLevel):{specialWeapon:"reefslider"}} if score @s useSpecialWeapon matches 1.. run return fail
+$execute if data storage player: {$(XpLevel):{specialWeapon:"trizooka"}} if score @s useSpecialWeapon matches 1.. run return fail
 execute if score @s preDelay matches 1.. run scoreboard players set @s rightHold 0
 execute if score @s preDelay matches 1.. run scoreboard players remove @s preDelay 1
 execute if score @s preDelay matches 1.. run return fail

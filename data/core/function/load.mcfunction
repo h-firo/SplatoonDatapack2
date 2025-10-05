@@ -5,6 +5,7 @@ scoreboard objectives add isGame dummy
 scoreboard objectives add isJudge dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add gameMode dummy
+scoreboard objectives add gameRule dummy
 scoreboard objectives add myTeamNum dummy
 scoreboard objectives add participationTeam dummy
 scoreboard objectives add isSuccess dummy
@@ -28,6 +29,13 @@ scoreboard objectives add linkLampNum dummy
 scoreboard objectives add setLampNum dummy
 scoreboard objectives add gameTime dummy
 scoreboard objectives add isShootReady dummy
+#ガチエリア
+scoreboard objectives add areaBlockCount dummy
+scoreboard objectives add areaOwner dummy
+scoreboard objectives add areaCount dummy
+scoreboard objectives add areaCountTemp dummy
+scoreboard objectives add areaLowestCount dummy
+scoreboard objectives add areaCountDownTimer dummy
 #勝敗判定用
 scoreboard objectives add blockCounts dummy
 scoreboard objectives add blockCountDisplay dummy
@@ -130,6 +138,7 @@ scoreboard players set 1000 num 1000
 scoreboard players set 500 num 500
 scoreboard players set 10 num 10
 scoreboard players set 48 num 48
+scoreboard players set 75 num 75
 scoreboard players set 16 num 16
 scoreboard players set 2 num 2
 scoreboard players set 0 num 0

@@ -1,0 +1,4 @@
+execute if score sec gameTime >= 10 num run return run bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},\
+                                                                                            {"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"}]
+bossbar set minecraft:squidlamp name [{storage:"concat:",nbt:"result","shadow_color":16777215},\
+                                    {"text":"q","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"min",objective:"gameTime"},"shadow_color":16777215,"font":"num"},{"text":":0","color":"white","shadow_color":16777215,"font":"num"},{"score":{name:"sec",objective:"gameTime"},"shadow_color":16777215,"font":"num"}]

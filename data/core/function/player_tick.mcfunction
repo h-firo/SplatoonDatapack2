@@ -1,5 +1,5 @@
 #ホットバーロック
-function core:inventory_lock/tick with entity @s
+execute unless score @s isJumpMenuOpen matches 1 run function core:inventory_lock/tick with entity @s
 
 #delay処理
 execute unless score @s delay matches 0 run scoreboard players remove @s delay 1
@@ -26,6 +26,9 @@ $execute unless data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} 
 #復活
 execute if score @s resurrectionTime matches 1.. run scoreboard players remove @s resurrectionTime 1
 execute if score @s resurrectionTime matches 0 run function core:deaths/resurrection
+
+#スーパージャンプ
+execute if score @s superJumpTime matches 0.. run function core:actions/superjump/tick with entity @s
 
 #スポナー射出
 $execute if predicate core:push_space as @n[tag=spawnerRide$(XpLevel)] at @s run function core:game/shoot/rotate with entity @s data

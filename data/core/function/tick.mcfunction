@@ -31,6 +31,7 @@ execute as @e[tag=player,type=!player] at @s if entity @s[tag=Marking] run funct
 #アイテムを捨てるキーで発動するやつら
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:"weapon"}}}}] at @s run function core:subweapons/tick with entity @s
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:"specialweapon"}}}}] at @s run function core:specialweapons/tick with entity @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:player_head"}}] at @s run function core:actions/superjump/set_jumppoint
 
 #UIとHUD
 function ui_hud:tick

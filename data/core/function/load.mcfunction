@@ -29,6 +29,11 @@ scoreboard objectives add linkLampNum dummy
 scoreboard objectives add setLampNum dummy
 scoreboard objectives add gameTime dummy
 scoreboard objectives add isShootReady dummy
+scoreboard objectives add jumpNum dummy
+scoreboard objectives add isJumpMenuOpen dummy
+#スーパージャンプ用
+scoreboard objectives add x dummy
+scoreboard objectives add z dummy
 #ガチエリア
 scoreboard objectives add areaBlockCount dummy
 scoreboard objectives add areaOwner dummy
@@ -67,6 +72,7 @@ scoreboard objectives add nowPaitnAreaMyTeamBlocks dummy
 scoreboard objectives add weaponCount dummy
 scoreboard objectives add rotate dummy
 scoreboard objectives add resurrectionTime dummy
+scoreboard objectives add superJumpTime dummy
 
 #Health
 scoreboard objectives add health dummy

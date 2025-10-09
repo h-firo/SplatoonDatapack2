@@ -1,0 +1,3 @@
+#ジャンプマーカー
+$execute at @n[tag=jumpTarget$(num)] run summon text_display ~ ~ ~ {Tags:["jumpMarker$(num)"],shadow:false,background:16777215,billboard:"none",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[4f,4f,4f]},text:{"font":"ui","text":"\uE70$(team)"}}
+$execute at @n[tag=jumpTarget$(num)] run summon text_display ~ ~ ~ {Tags:["jumpMarkerText$(num)"],billboard:"vertical",shadow:0b,text:{"selector":"@p[level=$(num)]"}}

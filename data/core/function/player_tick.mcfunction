@@ -32,9 +32,9 @@ execute if score @s resurrectionTime matches 0 run function core:deaths/resurrec
 execute if score @s superJumpTime matches 0.. run function core:actions/superjump/tick with entity @s
 
 #イカロール
-execute if predicate core:squidrolls/right if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 0
-execute if predicate core:squidrolls/left if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 1
-execute if predicate core:squidrolls/back if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 2
+#execute if predicate core:squidrolls/right if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 0
+#execute if predicate core:squidrolls/left if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 1
+#execute if predicate core:squidrolls/back if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 2
 $execute if score @s rollDirection matches 0..3 run function core:actions/squidroll/roll with storage player: $(XpLevel)
 $execute if score @s rollDelay matches 0.. run function core:actions/squidroll/tick with storage player: $(XpLevel)
 

@@ -4,9 +4,10 @@
 # 単位ベクトル値取得
 tp @s ^ ^ ^1 ~ ~
 data modify storage hb:motion Pos set from entity @s Pos
-execute store result score $x_ hb.Motion run data get storage hb:motion Pos[0] 2048
-execute store result score $y_ hb.Motion run data get storage hb:motion Pos[1] 2048
-execute store result score $z_ hb.Motion run data get storage hb:motion Pos[2] 2048
+execute store result score $x_ hb.Motion run data get storage hb:motion Pos[0] -2048
+scoreboard players set $y_ hb.Motion 1000
+#execute store result score $y_ hb.Motion run data get storage hb:motion Pos[1] 2048
+execute store result score $z_ hb.Motion run data get storage hb:motion Pos[2] -2048
 
 # xyzの値計算
 scoreboard players operation $x_ hb.Motion *= $strength hb.Motion

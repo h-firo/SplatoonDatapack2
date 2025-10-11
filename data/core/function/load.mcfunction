@@ -4,6 +4,7 @@
 scoreboard objectives add isGame dummy
 scoreboard objectives add isJudge dummy
 scoreboard objectives add mode dummy
+scoreboard objectives add music dummy
 scoreboard objectives add gameMode dummy
 scoreboard objectives add gameRule dummy
 scoreboard objectives add myTeamNum dummy

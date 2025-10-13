@@ -17,6 +17,7 @@ scoreboard players set @a tutorial.isStarted 0
 function tutorial:stage_reset
 
 #初期状態
+execute as @a run function command:join_team {team:4}
 effect give @a slowness infinite 100 true
 fill -207 -58 -210 -207 -56 -205 jungle_fence
 setblock -181 -55 -210 chest[facing=west]{Items:[{id:"diamond",components:{item_name:{"translate":"item.weapon.splattershot"},item_model:"splatter_shot"},count:1,Slot:13}],lock:{items:"string"}}

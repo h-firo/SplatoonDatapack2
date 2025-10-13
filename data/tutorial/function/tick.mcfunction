@@ -57,6 +57,11 @@ execute if score time tutorialTime matches 30 if score mode tutorialMode matches
 tellraw @a [{"text":"ウルトラショット","color":"red",bold:true},{"text":"は、","color":"white",bold:false},{"keybind":"key.use","color":"white",bold:true},{"text":"で超強力なインク弾を３発発射できる。","color":"white",bold:false},\
             {"text":"ウルトラショットでデコイを倒せ！","color":"aqua",bold:false}]
 
+execute if score time tutorialTime matches 30 if score mode tutorialMode matches 11 run \
+tellraw @a [{"text":"これでもう君は立派なイカだ！","color":"gold",bold:false},\
+            {"text":"10秒後にロビーへ戻る...","color":"aqua",bold:false}]
+execute if score time tutorialTime matches 30 if score is tutorial.isStarted matches 1 if score mode tutorialMode matches 11 run return run function tutorial:end
+
 execute if score time tutorialTime matches 30 run scoreboard players set is tutorial.isStarted 1
 execute if score time tutorialTime matches 30 run scoreboard players set time tutorialTime -170
 
@@ -71,4 +76,4 @@ execute if score mode tutorialMode matches 6..7 if score is tutorial.isStarted m
 execute if score mode tutorialMode matches 8 if score is tutorial.isStarted matches 1 run function tutorial:mode_tick/8
 execute if score mode tutorialMode matches 9 if score is tutorial.isStarted matches 1 run function tutorial:mode_tick/9
 execute if score mode tutorialMode matches 10 if score is tutorial.isStarted matches 1 run function tutorial:mode_tick/6
-execute if score mode tutorialMode matches 11 if score is tutorial.isStarted matches 1 run function tutorial:end
+#execute if score mode tutorialMode matches 11 if score is tutorial.isStarted matches 1 run function tutorial:end

@@ -3,6 +3,7 @@ execute unless score @s isJumpMenuOpen matches 1 run function core:inventory_loc
 
 #delay処理
 execute unless score @s delay matches 0 run scoreboard players remove @s delay 1
+execute unless score @s rollDelay matches -1 run scoreboard players add @s rollDelay 1
 execute if score @s drinkTimer matches 340 run function core:actions/drink
 execute if score @s drinkTimer matches 1.. run particle trial_spawner_detection ~ ~ ~ 0.5 0.5 0.5 0 1 force
 execute if score @s drinkTimer matches 1 run function core:actions/drink_remove
@@ -29,6 +30,13 @@ execute if score @s resurrectionTime matches 0 run function core:deaths/resurrec
 
 #スーパージャンプ
 execute if score @s superJumpTime matches 0.. run function core:actions/superjump/tick with entity @s
+
+#イカロール
+#execute if predicate core:squidrolls/right if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 0
+#execute if predicate core:squidrolls/left if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 1
+#execute if predicate core:squidrolls/back if predicate core:is_onground unless score @s rollDelay matches 0.. run scoreboard players set @s rollDirection 2
+$execute if score @s rollDirection matches 0..3 run function core:actions/squidroll/roll with storage player: $(XpLevel)
+$execute if score @s rollDelay matches 0.. run function core:actions/squidroll/tick with storage player: $(XpLevel)
 
 #スポナー射出
 $execute if predicate core:push_space as @n[tag=spawnerRide$(XpLevel)] at @s run function core:game/shoot/rotate with entity @s data

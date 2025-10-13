@@ -1,3 +1,6 @@
+#プレイヤーモーション
+function p_motion:system/load
+
 #スコアボード
 #Core
 #mode:{0:何もなし,1:全員強制スぺクテイター}
@@ -7,6 +10,9 @@ scoreboard objectives add mode dummy
 scoreboard objectives add music dummy
 scoreboard objectives add gameMode dummy
 scoreboard objectives add gameRule dummy
+scoreboard objectives add rollDirection dummy
+scoreboard objectives add rollDelay dummy
+scoreboard objectives add rollMarkerSummon dummy
 scoreboard objectives add myTeamNum dummy
 scoreboard objectives add participationTeam dummy
 scoreboard objectives add isSuccess dummy

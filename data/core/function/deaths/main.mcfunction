@@ -9,6 +9,7 @@ playsound item.bucket.empty master @a ~ ~ ~ 1 1.5
 
 #バルーンの時
 execute if entity @s[tag=balloon] run return run function core:deaths/balloon
+execute if entity @s[tag=TutorialTarget] run return run kill @s
 
 #プレイヤー
 #復活時間設定

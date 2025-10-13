@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "wallclimbed": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "minecraft:badlands"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tutorial:action/wallclimbed"
+  }
+}

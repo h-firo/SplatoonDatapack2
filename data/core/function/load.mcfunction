@@ -168,6 +168,19 @@ scoreboard objectives add isSquid dummy
 scoreboard objectives add isInAir dummy
 scoreboard objectives add isDamageSet dummy
 
+#Tutorial
+scoreboard objectives add tutorial.canSquid dummy
+scoreboard objectives add tutorial.moveSquid dummy
+scoreboard objectives add tutorial.moveInk dummy
+scoreboard objectives add tutorial.inkShot dummy
+scoreboard objectives add tutorial.wallclimbed dummy
+scoreboard objectives add tutorial.specialPoint dummy
+scoreboard objectives add tutorial.specialActive dummy
+scoreboard objectives add tutorial.isStarted dummy
+scoreboard objectives add tutorialMode dummy
+scoreboard objectives add tutorialTime dummy
+
+
 #Lobby
 scoreboard objectives add spawnTime dummy
 

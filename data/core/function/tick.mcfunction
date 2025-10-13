@@ -7,6 +7,7 @@ execute as @e[type=armor_stand,tag=crabtank] at @s run function core:ink_ticks/i
 execute as @e[type=armor_stand,tag=crabtank_explshot] at @s run function core:ink_ticks/ink_tick_explshot with entity @s data
 execute as @e[type=armor_stand,tag=attackDetection] at @s run function core:ink_ticks/ink_tick_detection with entity @s data
 execute as @e[tag=player,scores={health=..0}] at @s run function core:deaths/main
+execute if score mode tutorialMode matches 0.. run function tutorial:tick
 
 #コアタイム
 execute if score is isGame matches 1 run function core:game/tick

@@ -38,6 +38,7 @@ scoreboard objectives add gameTime dummy
 scoreboard objectives add isShootReady dummy
 scoreboard objectives add jumpNum dummy
 scoreboard objectives add isJumpMenuOpen dummy
+scoreboard objectives add isChangeMusic dummy
 #スーパージャンプ用
 scoreboard objectives add x dummy
 scoreboard objectives add z dummy
@@ -310,5 +311,5 @@ blaster:"blaster",rangeblaster:"range_blaster",clashblaster:"clashblaster",sblas
 #エフェクト
 effect give @a saturation infinite 0 true
 
-tellraw @a[tag=operator] {"text":"リロードしました[1.21.6]"}
+tellraw @a[tag=operator] {"text":"リロードしました[1.21.10]"}
 tellraw @a[tag=operator] {"text":"ゲームを開始する際は、pNumを付与してください"}

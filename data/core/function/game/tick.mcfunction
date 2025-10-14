@@ -28,6 +28,9 @@ scoreboard players operation sec gameTime = time gameTime
 scoreboard players operation sec gameTime -= minus gameTime
 scoreboard players operation sec gameTime /= 20 num
 
+#レギュラーマッチ時、残り1分になったら音楽を変える
+execute if score value gameRule matches 0 if score time gameTime matches ..1200 unless score is isChangeMusic matches 1 run function core:game/music_change_end
+
 
 #ゲーム終了
 execute if score time gameTime matches ..0 if score value gameRule matches 0 run function core:game/judge/judge

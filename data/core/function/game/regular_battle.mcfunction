@@ -8,11 +8,16 @@ execute store result storage core: team2 int 1 run scoreboard players get team2 
 #スコアセット
 scoreboard players set is isGame 1
 scoreboard players set is isJudge 0
+scoreboard players set is isChangeMusic 0
 scoreboard players set time coreTime 0
 scoreboard players set @s isShootReady 0
 scoreboard players set mode coreTime 1
 scoreboard players set time gameTime 3600
 scoreboard players set value gameRule 0
+
+#多分チャンクが読み込まれていないと正常に動作してくれないのでその修正
+execute if score value stage matches 1 run tp @a 149 -33 -109
+execute if score value stage matches 2 run tp @a -15 -46 80
 
 #ステージリセット
 function stage:reset/colorblock_clear

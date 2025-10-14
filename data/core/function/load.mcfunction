@@ -81,6 +81,8 @@ scoreboard objectives add weaponCount dummy
 scoreboard objectives add rotate dummy
 scoreboard objectives add resurrectionTime dummy
 scoreboard objectives add superJumpTime dummy
+#viewer:{-1:通常,0:ステージ俯瞰カメラ,1:チーム1視点,2:チーム2視点,3:スポナー,4:スーパージャンプ}
+scoreboard objectives add viewer dummy
 
 #Health
 scoreboard objectives add health dummy
@@ -218,6 +220,7 @@ scoreboard players set num bombNum 0
 scoreboard players set @a drinkTimer 0
 scoreboard players set @a ink 999
 scoreboard players set @a specialPoint 0
+scoreboard players set @a[tag=operator] viewer -1
 tag @a remove pNumAlreadySet
 tag @a[tag=!player] add player
 

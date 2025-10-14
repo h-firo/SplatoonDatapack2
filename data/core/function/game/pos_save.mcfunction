@@ -2,5 +2,6 @@
 execute as @a at @s run function core:game/player_set/set_armorstand with entity @s
 
 #スぺクテイト
+scoreboard players set @a viewer 1
 gamemode spectator @a
 $execute as @a at @s run spectate @n[tag=spawnerView$(stage)_1] @s

@@ -1,0 +1,1 @@
+$execute store result storage player: $(XpLevel).stage int 1 run scoreboard players get value stage

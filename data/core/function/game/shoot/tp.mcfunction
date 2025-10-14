@@ -7,6 +7,7 @@ rotate @s ~180 ~
 $summon item_display ~ ~ ~ {Tags:["spawnerRide$(XpLevel)","spawnerRides"],teleport_duration:1,data:{owner:$(XpLevel)}}
 
 #射出用エンティティにライド
+scoreboard players set @s viewer 3
 $ride @s mount @n[type=item_display,tag=spawnerRide$(XpLevel)]
 
 $execute as @n[tag=spawnerRide$(XpLevel)] at @s run tp @s @n[type=armor_stand,tag=spawnerPos$(XpLevel)]

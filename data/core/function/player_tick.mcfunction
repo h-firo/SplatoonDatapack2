@@ -24,6 +24,9 @@ $execute unless data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}}
 $execute unless data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute unless data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 
+#プレイヤー固定
+$function core:player_fixation with storage player: $(XpLevel)
+
 #復活
 execute if score @s resurrectionTime matches 1.. run scoreboard players remove @s resurrectionTime 1
 execute if score @s resurrectionTime matches 0 run function core:deaths/resurrection

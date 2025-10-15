@@ -8,5 +8,5 @@ rotate @s ~ ~
 #$summon item_display ~ ~ ~ {Tags:["spawnerRide$(XpLevel)","spawnerRides"],teleport_duration:1,data:{owner:$(XpLevel)}}
 
 #ライド
-kill @e[tag=playerAvator]
+effect give @e[type=mannequin,tag=playerAvator] invisibility infinite 1 true
 #$ride @s mount @n[type=item_display,tag=spawnerRide$(XpLevel)]

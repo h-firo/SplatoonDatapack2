@@ -1,1 +1,1 @@
-$execute as @e[type=armor_stand,tag=spawnerPos$(XpLevel)] at @s run function core:game/set_avator/set_avator with entity @p[level=$(XpLevel)]
+$execute as @p[level=$(XpLevel)] at @e[type=armor_stand,tag=spawnerPos$(XpLevel)] run function core:game/set_avator/set_avator with entity @s

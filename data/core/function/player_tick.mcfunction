@@ -92,6 +92,10 @@ $execute if score @s chargeKeepTime matches 0 run function core:weapons/chargers
 #チャージキープ時間が過ぎていて、かつsneakしていないときはチャージキープできる状態にする
 execute unless score @s chargeKeepTime matches 1.. if predicate core:else_sneaking run scoreboard players set @s chargeKeepTime -1
 
+#バケツの弾処理
+execute if score @s slosherTime matches 0.. run scoreboard players add @s slosherTime 1
+$execute if score @s slosherTime matches 0.. run function core:weapons/sloshers/shot with storage player: $(XpLevel)
+
 #ローラーの塗り
 $execute if score @s rightHold matches 10.. if predicate core:is_moving if score @s ink matches 1.. run function core:weapons/rollers/rolling with storage shot_temp: $(XpLevel)
 

@@ -17,3 +17,8 @@ diamond[item_model="splat_charger",item_name={translate:"item.weapon.type.charge
 item replace entity @s inventory.21 with \
 diamond[item_model="blaster",item_name={translate:"item.weapon.type.blasters",bold:true},lore=[{color:"gray",translate:"item.weapon.type.blasters.lore"}],\
         custom_data={item:"button",type:"type_select",content:"blasters"}]
+
+#スロッシャー
+item replace entity @s inventory.22 with \
+diamond[item_model="slosher",item_name={translate:"item.weapon.type.slosher",bold:true},lore=[{color:"gray",translate:"item.weapon.type.slosher.lore"}],\
+        custom_data={item:"button",type:"type_select",content:"sloshers"}]

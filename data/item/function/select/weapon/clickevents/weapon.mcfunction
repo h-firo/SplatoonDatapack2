@@ -19,4 +19,8 @@ execute if items entity @s player.cursor *[custom_data~{content:"blaster"}] run 
 execute if items entity @s player.cursor *[custom_data~{content:"rangeblaster"}] run function command:set_weapon {category:blasters,weapon:rangeblaster}
 execute if items entity @s player.cursor *[custom_data~{content:"clashblaster"}] run function command:set_weapon {category:blasters,weapon:clashblaster}
 execute if items entity @s player.cursor *[custom_data~{content:"sblast92"}] run function command:set_weapon {category:blasters,weapon:sblast92}
+
+execute if items entity @s player.cursor *[custom_data~{content:"slosher"}] run function command:set_weapon {category:sloshers,weapon:slosher}
+execute if items entity @s player.cursor *[custom_data~{content:"trislosher"}] run function command:set_weapon {category:sloshers,weapon:trislosher}
+execute if items entity @s player.cursor *[custom_data~{content:"explosher"}] run function command:set_weapon {category:sloshers,weapon:explosher}
 clear @s

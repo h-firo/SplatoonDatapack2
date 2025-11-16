@@ -8,4 +8,5 @@ execute if block ~ ~ ~-0.5 #core:can_sticking run function core:ink_ticks/wallpa
 execute if entity @s[tag=general] run return run function core:ink_ticks/ink_tick_general with entity @s data
 execute if entity @s[tag=charger] run return run function core:ink_ticks/ink_tick_charger with entity @s data
 execute if entity @s[tag=blasters] run return run function core:ink_ticks/ink_tick_blasters with entity @s data
+execute if entity @s[tag=sloshers] run return run function core:ink_ticks/ink_tick_sloshers with entity @s data
 function core:ink_ticks/ink_tick_general with entity @s data

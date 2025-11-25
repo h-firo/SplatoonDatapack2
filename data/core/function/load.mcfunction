@@ -137,6 +137,7 @@ scoreboard objectives add rsPrepareExplosion dummy
 scoreboard objectives add isAirRail dummy
 scoreboard objectives add havePassenger dummy
 scoreboard objectives add isInvincible dummy
+scoreboard objectives add inkstrikeGuideCount dummy
 
 #Delay
 scoreboard objectives add delay dummy
@@ -269,7 +270,7 @@ sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.00
 sloshers:{\
 slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
 trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
-explosher:{FireRate:183,Damage:55,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}}}
+explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0014,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}}}
 
 #対物性能
 data merge storage objectdamage: {\

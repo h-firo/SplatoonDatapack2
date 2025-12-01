@@ -20,6 +20,7 @@ $execute if data storage player: {$(pNum):{specialWeapon:"crabtank"}} run scoreb
 $execute if data storage player: {$(pNum):{specialWeapon:"killerwail51"}} run scoreboard players set @s maxSpecialUseCount 1
 $execute if data storage player: {$(pNum):{specialWeapon:"bigbubbler"}} run scoreboard players set @s maxSpecialUseCount 1
 $execute if data storage player: {$(pNum):{specialWeapon:"reefslider"}} run scoreboard players set @s maxSpecialUseCount 1
+$execute if data storage player: {$(pNum):{specialWeapon:"tripleinkstrike"}} run scoreboard players set @s maxSpecialUseCount 1
 
 #プレイヤー情報の反映
 $data modify storage shot_temp: $(pNum).team set from storage player: $(pNum).team

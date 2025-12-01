@@ -42,4 +42,4 @@ playsound entity.player.attack.weak master @a ~ ~ ~ 1 0.5
 execute if score @s chargeTo100 matches ..99 run return fail
 playsound item.shield.block master @a ~ ~ ~ 0.5 0.7
 playsound item.shield.block master @a ~ ~ ~ 0.5 0.6
-playsound item.shield.block master @a ~ ~ ~ 0.5 0.5
+playsound item.shield.block master @a ~ ~ ~ 0.5 0.7

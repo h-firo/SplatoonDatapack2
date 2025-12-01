@@ -15,8 +15,13 @@ $execute if data storage player: {$(XpLevel):{specialWeapon:crabtank}} store res
 scoreboard players add num shotNum 1
 $execute store result storage special_temp: $(XpLevel).shotNum int 1 run scoreboard players get num shotNum
 
+#ウルトラショット
 $execute if data storage player: {$(XpLevel):{specialWeapon:trizooka}} if score @s shotDelay matches ..0 run \
 function core:specialweapons/trizooka/shot with storage special_temp: $(XpLevel)
 
+#カニタンク
 $execute if data storage player: {$(XpLevel):{specialWeapon:crabtank}} if score @s shotDelay matches ..0 run \
 function core:specialweapons/crabtank/shot with storage special_temp: $(XpLevel)
+
+#トリプルトルネード
+$execute if data storage player: {$(XpLevel):{specialWeapon:tripleinkstrike}} if score @s shotDelay matches ..0 run scoreboard players add @s inkstrikeGuidePower 1

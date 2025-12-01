@@ -17,7 +17,7 @@ $execute if data storage player: {$(num):{specialWeapon:wavebreaker}} run functi
 $execute if data storage player: {$(num):{specialWeapon:reefslider}} run function core:specialweapons/reefslider/tick with storage player: $(num)
 
 #トリプルトルネード
-$execute if data storage player: {$(num):{specialWeapon:tripleinkstrike}} run function core:specialweapons/tripleinkstrike/tick with storage entity @s
+$execute if data storage player: {$(num):{specialWeapon:tripleinkstrike}} run function core:specialweapons/tripleinkstrike/tick with storage player: $(num)
 
 #共通
 scoreboard players remove @s useSpecialWeapon 1

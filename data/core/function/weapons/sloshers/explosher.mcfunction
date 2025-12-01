@@ -9,7 +9,9 @@ summon armor_stand ^ ^ ^2.0 {Tags:["shot$(team)","ink","owner$(num)","explosher"
 $execute as @n[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] run data modify entity @s data.color set from storage team_color: colors.$(team)
 $execute as @e[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] at @s run rotate @s facing entity @p[level=$(num)]
 $execute as @n[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] at @s run function core:weapons/sloshers/shot_as with storage shot_temp: $(num)
-playsound block.stone.place master @a ~ ~ ~ 0.8 1.5
+playsound item.bucket.empty_lava master @a ~ ~ ~ 1 1.5
+playsound item.bucket.empty master @a ~ ~ ~ 0.6 0.6
+playsound item.shield.block master @a ~ ~ ~ 0.5 0.5
 scoreboard players set @s delay 9
 $scoreboard players remove @s ink $(Ink)
 $scoreboard players set @s shotDelay $(FireRate)

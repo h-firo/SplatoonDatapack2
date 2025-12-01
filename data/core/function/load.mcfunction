@@ -138,6 +138,10 @@ scoreboard objectives add isAirRail dummy
 scoreboard objectives add havePassenger dummy
 scoreboard objectives add isInvincible dummy
 scoreboard objectives add inkstrikeGuideCount dummy
+scoreboard objectives add inkstrikeGuidePower dummy
+scoreboard objectives add _inkstrikeAdjuster dummy
+scoreboard objectives add inkstrikeTimer dummy
+scoreboard objectives add isStrike dummy
 
 #Delay
 scoreboard objectives add delay dummy
@@ -155,6 +159,7 @@ scoreboard players set 1600 num 1600
 scoreboard players set 100 num 100
 scoreboard players set 1000 num 1000
 scoreboard players set 500 num 500
+scoreboard players set 20 num 20
 scoreboard players set 10 num 10
 scoreboard players set 48 num 48
 scoreboard players set 75 num 75
@@ -270,7 +275,7 @@ sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.00
 sloshers:{\
 slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
 trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
-explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0014,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}}}
+explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}}}
 
 #対物性能
 data merge storage objectdamage: {\
@@ -309,9 +314,9 @@ rangeblaster:{subWeapon:"suctionbomb",specialWeapon:"wavebreaker",specialPoint:2
 clashblaster:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:180},\
 sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}},\
 sloshers:{\
-slosher:{subWeapon:"splatbomb",specialWeapon:"bigbubbler",specialPoint:200},\
+slosher:{subWeapon:"splatbomb",specialWeapon:"tripleinkstrike",specialPoint:50},\
 trislosher:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:200},\
-explosher:{subWeapon:"splashwall",specialWeapon:"reefslider",specialPoint:200}}}
+explosher:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:200}}}
 
 #モデル
 data merge storage models {\

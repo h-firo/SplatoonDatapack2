@@ -31,6 +31,9 @@ $function core:player_fixation with storage player: $(XpLevel)
 execute if score @s resurrectionTime matches 1.. run scoreboard players remove @s resurrectionTime 1
 execute if score @s resurrectionTime matches 0 run function core:deaths/resurrection
 
+#ポイズンミスト
+$function core:toxicmist_effect with storage player: $(XpLevel)
+
 #スーパージャンプ
 execute if score @s superJumpTime matches 0.. run function core:actions/superjump/tick with entity @s
 

@@ -77,6 +77,7 @@ scoreboard objectives add maxSpecialUseCount dummy
 scoreboard objectives add markingTimer dummy
 scoreboard objectives add nowPaintAreaBlocks dummy
 scoreboard objectives add nowPaitnAreaMyTeamBlocks dummy
+scoreboard objectives add isMistEffect dummy
 scoreboard objectives add weaponCount dummy
 scoreboard objectives add rotate dummy
 scoreboard objectives add resurrectionTime dummy
@@ -315,7 +316,7 @@ clashblaster:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:180},\
 sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}},\
 sloshers:{\
 slosher:{subWeapon:"splatbomb",specialWeapon:"tripleinkstrike",specialPoint:50},\
-trislosher:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:200},\
+trislosher:{subWeapon:"toxicmist",specialWeapon:"tripleinkstrike",specialPoint:200},\
 explosher:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:200}}}
 
 #モデル

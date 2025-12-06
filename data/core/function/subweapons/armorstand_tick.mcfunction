@@ -4,3 +4,4 @@ execute if data entity @s {data:{type:"angleshooter_marker"}} run function core:
 execute if data entity @s {data:{type:"splashwall"}} run function core:subweapons/splashwall/armorstand_tick with entity @s data
 execute if data entity @s {data:{type:"sprinkler"}} run function core:subweapons/sprinkler/armorstand_tick_new with entity @s data
 execute if data entity @s {data:{type:"inkmine"}} run function core:subweapons/inkmine/armorstand_tick with entity @s data
+execute if data entity @s {data:{type:"inkmist"}} run function core:subweapons/toxicmist/armorstand_tick with entity @s data

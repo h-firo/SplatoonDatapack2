@@ -3,7 +3,7 @@ clear @s
 #バケットスロッシャー
 item replace entity @s inventory.0 with \
 bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splashbomb"]}}},\
-                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["bigbubbler"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["tripleinkstrike"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\
@@ -15,11 +15,11 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
 
 #ヒッセン
 item replace entity @s inventory.1 with \
-bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splashbomb"]}}},\
-                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["wavebreaker"]}}},\
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["toxicmist"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["tripleinkstrike"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["short"]}}},\
-                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
                         {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["small"]}}}],\

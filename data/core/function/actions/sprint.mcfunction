@@ -23,13 +23,13 @@ $execute if predicate core:is_sprint run function core:actions/squidform with st
 
 #イカ移動演出
 $execute if score @s isSprint matches 1 if predicate core:is_moving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 1 force
-execute if score @s isSprint matches 1 run scoreboard players add @s health 2
 
 #体力回復
+execute if score @s isSprint matches 1 unless score @s isMistEffect matches 1 run scoreboard players add @s health 2
 execute if score @s isSprint matches 1 if score @s health matches 100.. run scoreboard players set @s health 100
 
 #インク回復
-execute if score @s isSprint matches 1 run scoreboard players add @s ink 15
+execute if score @s isSprint matches 1 unless score @s isMistEffect matches 1 run scoreboard players add @s ink 15
 execute if score @s ink matches 999.. run scoreboard players set @s ink 999
 
 #効果

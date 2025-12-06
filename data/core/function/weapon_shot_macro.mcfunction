@@ -33,3 +33,9 @@ function core:weapons/blasters/shot_macro with entity @s
 
 $execute if data storage player: {$(XpLevel):{category:sloshers}} if score @s shotDelay matches ..0 if score @s ink matches 1.. run \
 function core:weapons/sloshers/shot_macro with entity @s
+
+$execute if data storage player: {$(XpLevel):{category:splatlings}} if score @s shotDelay matches ..0 if score @s ink matches 1.. unless score @s charged matches 1 run \
+function core:weapons/splatlings/charge with storage shot_temp: $(XpLevel)
+
+$execute if data storage player: {$(XpLevel):{category:splatlings}} if score @s shotDelay matches ..0 if score @s ink matches ..1 run \
+function core:weapons/splatlings/charge_reset

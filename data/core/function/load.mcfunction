@@ -78,6 +78,7 @@ scoreboard objectives add markingTimer dummy
 scoreboard objectives add nowPaintAreaBlocks dummy
 scoreboard objectives add nowPaitnAreaMyTeamBlocks dummy
 scoreboard objectives add isMistEffect dummy
+scoreboard objectives add splatlingsDurationTime dummy
 scoreboard objectives add weaponCount dummy
 scoreboard objectives add rotate dummy
 scoreboard objectives add resurrectionTime dummy
@@ -250,7 +251,7 @@ data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\
 (チャージャー:チャージ時間,チャージキープ時間,チャージキープレート,射程増加割合,空中チャージ減衰),\
 (ブラスター:爆風範囲,爆風ダメージ,弾持続時間)\
-(スピナー:チャージ時間,チャージキープ時間,チャージキープレート,射程増加割合,空中チャージ減衰,最大チャージレート)
+(スピナー:チャージ時間,チャージキープ時間,チャージキープレート,最大射撃継続時間,空中チャージ減衰,チャージ後ダメージ)
 data merge storage weapons: {\
 shooter:{\
 splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
@@ -274,9 +275,13 @@ rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed
 clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3},\
 sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.002,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4}},\
 sloshers:{\
-slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
-trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
-explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}}}
+slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
+trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
+explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}},\
+splatlings:{\
+minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0013,Gravity:0.7,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:2,ChargeTime:9,CKTime:0,CKRate:0,Duration:28,AirCharge:1,ChargeDamage:32},\
+heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
+hydrasplatling:{FireRate:10,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:0.15,DamageAT:0,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:87,AirCharge:1,ChargeDamage:40}}}
 
 #対物性能
 data merge storage objectdamage: {\
@@ -285,6 +290,7 @@ roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300},\
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125},\
 sloshers:{slosher:140,trislosher:124,explosher:110},\
+splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
 }
 
@@ -317,7 +323,11 @@ sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}},\
 sloshers:{\
 slosher:{subWeapon:"splatbomb",specialWeapon:"tripleinkstrike",specialPoint:50},\
 trislosher:{subWeapon:"toxicmist",specialWeapon:"tripleinkstrike",specialPoint:200},\
-explosher:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:200}}}
+explosher:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:200}},\
+splatlings:{\
+minisplatling:{subWeapon:"toxicmist",specialWeapon:"bigbubbler",specialPoint:220},\
+heavysplatling:{subWeapon:"sprinkler",specialWeapon:"wavebreaker",specialPoint:200},\
+hydrasplatling:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint:200}}}
 
 #モデル
 data merge storage models {\

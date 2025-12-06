@@ -54,6 +54,10 @@ execute unless entity @s[tag=Click] run scoreboard players set @s rightHold 0
 #execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. unless score @s shotDelay matches 1.. run function core:weapons/chargers/charge_reset
 execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. run function core:weapons/chargers/charge_reset
 
+#スピナー射撃
+execute if score @s splatlingsDurationTime matches 1.. if items entity @s weapon.mainhand *[custom_data={item:"weapon"}] run function core:weapons/splatlings/shot_macro with entity @s
+execute if score @s splatlingsDurationTime matches 1.. unless items entity @s weapon.mainhand *[custom_data={item:"weapon"}] run scoreboard players set @s splatlingsDurationTime 0
+
 #スペシャルゲージの更新
 function core:specialbar with entity @s
 

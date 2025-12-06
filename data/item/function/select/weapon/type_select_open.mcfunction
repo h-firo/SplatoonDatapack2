@@ -22,3 +22,8 @@ diamond[item_model="blaster",item_name={translate:"item.weapon.type.blasters",bo
 item replace entity @s inventory.22 with \
 diamond[item_model="slosher",item_name={translate:"item.weapon.type.slosher",bold:true},lore=[{color:"gray",translate:"item.weapon.type.slosher.lore"}],\
         custom_data={item:"button",type:"type_select",content:"sloshers"}]
+
+#スピナー
+item replace entity @s inventory.23 with \
+diamond[item_model="heavysplatling",item_name={translate:"item.weapon.type.splatlings",bold:true},lore=[{color:"gray",translate:"item.weapon.type.splatlings.lore"}],\
+        custom_data={item:"button",type:"type_select",content:"splatlings"}]

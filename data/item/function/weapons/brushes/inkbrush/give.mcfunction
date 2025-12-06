@@ -1,0 +1,2 @@
+item replace entity @s hotbar.0 with emerald[consumable={consume_seconds:100,animation:"block",sound:"entity.tropical_fish.ambient",has_consume_particles:false},custom_data={item:"weapon"},\
+                item_model="inkbrush",item_name={translate:item.weapon.inkbrush},custom_model_data={strings:["0"]}] 1

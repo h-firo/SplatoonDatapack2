@@ -1,4 +1,3 @@
-#TODO 壊れる処理
 $execute as @e[tag=ink,distance=..3.5,tag=!objAttack] unless data entity @s {data:{team:$(team)}} run tag @s add objAttack
 $execute as @e[tag=ink,distance=..3.5,tag=objAttack] run data merge entity @s {data:{objNum:$(bombNum)}}
 

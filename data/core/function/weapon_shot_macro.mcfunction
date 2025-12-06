@@ -39,3 +39,6 @@ function core:weapons/splatlings/charge with storage shot_temp: $(XpLevel)
 
 $execute if data storage player: {$(XpLevel):{category:splatlings}} if score @s shotDelay matches ..0 if score @s ink matches ..1 run \
 function core:weapons/splatlings/charge_reset
+
+$execute if data storage player: {$(XpLevel):{category:brushes}} if score @s shotDelay matches ..0 if score @s ink matches 1.. if score @s rightHold matches 0 run \
+function core:weapons/brushes/shot_macro with entity @s

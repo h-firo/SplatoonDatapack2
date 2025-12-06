@@ -251,7 +251,8 @@ data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\
 (チャージャー:チャージ時間,チャージキープ時間,チャージキープレート,射程増加割合,空中チャージ減衰),\
 (ブラスター:爆風範囲,爆風ダメージ,弾持続時間)\
-(スピナー:チャージ時間,チャージキープ時間,チャージキープレート,最大射撃継続時間,空中チャージ減衰,チャージ後ダメージ)
+(スピナー:チャージ時間,チャージキープ時間,チャージキープレート,最大射撃継続時間,空中チャージ減衰,チャージ後ダメージ),\
+(フデ:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ)
 data merge storage weapons: {\
 shooter:{\
 splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
@@ -279,9 +280,12 @@ slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,
 trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
 explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}},\
 splatlings:{\
-minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0013,Gravity:0.7,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:2,ChargeTime:9,CKTime:0,CKRate:0,Duration:28,AirCharge:1,ChargeDamage:32},\
-heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
-hydrasplatling:{FireRate:10,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:0.15,DamageAT:0,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:87,AirCharge:1,ChargeDamage:40}}}
+minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0013,Gravity:0.7,SSpeed:2,HSpeed:0.47,DamageAT:1,PreGap:2,ChargeTime:9,CKTime:0,CKRate:0,Duration:28,AirCharge:1,ChargeDamage:32},\
+heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:0.2,DamageAT:1,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
+hydrasplatling:{FireRate:10,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:0.15,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:87,AirCharge:1,ChargeDamage:40}},\
+brushes:{\
+inkbrush:{FireRate:0,Damage:30,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:1.0,RollingDamage:20},\
+octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.8,RollingDamage:25}}}
 
 #対物性能
 data merge storage objectdamage: {\
@@ -291,6 +295,7 @@ charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125},\
 sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
+brushes:{inkbrush:60,octobrush:80},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
 }
 
@@ -327,7 +332,10 @@ explosher:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:200}
 splatlings:{\
 minisplatling:{subWeapon:"toxicmist",specialWeapon:"bigbubbler",specialPoint:220},\
 heavysplatling:{subWeapon:"sprinkler",specialWeapon:"wavebreaker",specialPoint:200},\
-hydrasplatling:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint:200}}}
+hydrasplatling:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint:200}},\
+brushes:{\
+inkbrush:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:200},\
+octobrush:{subWeapon:"suctionbomb",specialWeapon:"reefslider",specialPoint:200}}}
 
 #モデル
 data merge storage models {\

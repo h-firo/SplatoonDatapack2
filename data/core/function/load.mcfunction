@@ -39,6 +39,7 @@ scoreboard objectives add isShootReady dummy
 scoreboard objectives add jumpNum dummy
 scoreboard objectives add isJumpMenuOpen dummy
 scoreboard objectives add isChangeMusic dummy
+scoreboard objectives add rareWeaponSummonTime dummy
 #スーパージャンプ用
 scoreboard objectives add x dummy
 scoreboard objectives add z dummy
@@ -80,6 +81,8 @@ scoreboard objectives add nowPaitnAreaMyTeamBlocks dummy
 scoreboard objectives add isMistEffect dummy
 scoreboard objectives add splatlingsDurationTime dummy
 scoreboard objectives add weaponCount dummy
+scoreboard objectives add partsCount dummy
+scoreboard objectives add partsCount_ dummy
 scoreboard objectives add rotate dummy
 scoreboard objectives add resurrectionTime dummy
 scoreboard objectives add superJumpTime dummy
@@ -274,7 +277,8 @@ blasters:{\
 blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
 rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.0009,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:6},\
 clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:42,BlastDamage:30,BlastDuration:3},\
-sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.002,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4}},\
+sblast92:{FireRate:180,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.002,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
+grizzcoblaster:{FireRate:30,Damage:50,Ink:90,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:3,BlastRadius:40,BlastDamage:35,BlastDuration:3}},\
 sloshers:{\
 slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
 trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
@@ -284,7 +288,7 @@ minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.
 heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:0.2,DamageAT:1,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
 hydrasplatling:{FireRate:10,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:0.15,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:87,AirCharge:1,ChargeDamage:40}},\
 brushes:{\
-inkbrush:{FireRate:0,Damage:30,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:1.0,RollingDamage:20},\
+inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:1.0,RollingDamage:20},\
 octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.8,RollingDamage:25}}}
 
 #対物性能
@@ -292,7 +296,7 @@ data merge storage objectdamage: {\
 shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24,nzap85:30},\
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300},\
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116},\
-blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125},\
+blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80},\
 sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
 brushes:{inkbrush:60,octobrush:80},\

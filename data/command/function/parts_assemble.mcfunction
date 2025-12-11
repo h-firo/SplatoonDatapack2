@@ -1,0 +1,3 @@
+#ブラスター
+$execute if data storage player: {$(XpLevel):{Parts:{grizzcoblaster:{parts1:true,parts2:true,parts3:true}}}} run tellraw @a [{"selector":"@s",bold:true,color:"aqua"},{"text":"が",bold:false,color:"red"},{"translate":"item.rareweapon.grizzcoblaster",bold:true,color:"gold"},{"text":"を完成させた！",bold:false,color:"red"}]
+$execute if data storage player: {$(XpLevel):{Parts:{grizzcoblaster:{parts1:true,parts2:true,parts3:true}}}} run function command:set_rareweapon {category:"blasters",weapon:"grizzcoblaster"}

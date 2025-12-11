@@ -1,6 +1,9 @@
 #ホットバーロック
 execute unless score @s isJumpMenuOpen matches 1 run function core:inventory_lock/tick with entity @s
 
+#クマサンブキのパーツ
+execute if entity @e[type=item,tag=Parts,distance=..4,scores={rareWeaponSummonTime=30..}] run function core:pickup_parts with entity @s
+
 #delay処理
 execute unless score @s delay matches 0 run scoreboard players remove @s delay 1
 execute unless score @s rollDelay matches -1 run scoreboard players add @s rollDelay 1

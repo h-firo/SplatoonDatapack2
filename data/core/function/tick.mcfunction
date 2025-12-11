@@ -12,6 +12,9 @@ execute as @e[type=armor_stand,tag=guides,scores={inkstrikeTimer=1..}] at @s run
 execute as @e[tag=player,scores={health=..0}] at @s run function core:deaths/main
 execute if score mode tutorialMode matches 0.. run function tutorial:tick
 
+#クマサンブキタイマー
+execute as @e[type=item,tag=Parts] unless score @s rareWeaponSummonTime matches 30.. run scoreboard players add @s rareWeaponSummonTime 1
+
 #コアタイム
 execute if score is isGame matches 1 run function core:game/tick
 execute if score is isJudge matches 1 run function core:game/judge/tick

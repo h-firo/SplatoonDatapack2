@@ -272,7 +272,8 @@ charger:{\
 eliter4k:{FireRate:46,Damage:180,Ink:250,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.008,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:2,ChargeTime:30,CKTime:25,CKRate:8,AirCharge:2},\
 splatcharger:{FireRate:46,Damage:160,Ink:180,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.006,Gravity:0,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:20,CKTime:25,CKRate:8,AirCharge:3},\
 squiffer:{FireRate:46,Damage:140,Ink:100,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:13,CKTime:25,CKRate:8,AirCharge:0},\
-snipewriter:{FireRate:46,Damage:68,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:1,CKRate:8,AirCharge:0}},\
+snipewriter:{FireRate:46,Damage:68,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:1,CKRate:8,AirCharge:0},\
+grizzcocharger:{FireRate:30,Damage:130,Ink:200,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:0,ChargeTime:3,CKTime:0,CKRate:8,AirCharge:3}},\
 blasters:{\
 blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:35,BlastDamage:70,BlastDuration:4},\
 rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.0009,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:40,BlastDamage:70,BlastDuration:6},\
@@ -295,7 +296,7 @@ octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,
 data merge storage objectdamage: {\
 shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24,nzap85:30},\
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300},\
-charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116},\
+charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,grizzcocharger:200},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80},\
 sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\

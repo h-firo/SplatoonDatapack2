@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hold_rolling": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "components": {
+                "minecraft:custom_data": {
+                  "item": "weapon",
+                  "rolling": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:weapon_shot"
+  }
+}

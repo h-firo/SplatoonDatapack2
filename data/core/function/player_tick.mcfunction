@@ -71,11 +71,11 @@ $execute if score @s rightClick matches 1 if items entity @s weapon.mainhand car
 
 #射撃中に移動速度が遅くなることの抑制
 attribute @s movement_speed modifier remove shot_move
-$execute unless score @s useSpecialWeapon matches 0.. if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] if score @s rightHold matches 3.. run function core:shot_move with storage shot_temp: $(XpLevel)
-$execute if data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] if score @s rightHold matches 3.. run function core:shot_move with storage shot_temp: $(XpLevel)
-$execute if data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] if score @s rightHold matches 3.. run function core:shot_move with storage shot_temp: $(XpLevel)
-$execute if data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] if score @s rightHold matches 3.. run function core:shot_move with storage shot_temp: $(XpLevel)
-$execute if data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] if score @s rightHold matches 3.. run function core:shot_move with storage shot_temp: $(XpLevel)
+$execute unless score @s useSpecialWeapon matches 0.. if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
 execute if score @s ink matches ..0 run attribute @s movement_speed modifier remove shot_move
 
 #チャージキープ

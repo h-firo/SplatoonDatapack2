@@ -1,2 +1,2 @@
-item replace entity @s hotbar.0 with emerald[consumable={consume_seconds:100,animation:"block",sound:"entity.tropical_fish.ambient",has_consume_particles:false},custom_data={item:"weapon"},\
-                item_model="octobrush",item_name={translate:item.weapon.octobrush},custom_model_data={strings:["0"]}] 1
+item replace entity @s hotbar.0 with emerald[consumable={consume_seconds:100,animation:"block",sound:"entity.tropical_fish.ambient",has_consume_particles:false},custom_data={item:"weapon",rolling:true},\
+                item_model="octobrush",item_name={translate:item.weapon.octobrush},custom_model_data={strings:["0"]},use_effects={speed_multiplier:1.0}] 1

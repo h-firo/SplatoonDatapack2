@@ -264,10 +264,10 @@ ftgal:{FireRate:30,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gra
 aerospray:{FireRate:10,Damage:24,Ink:5,Blur:300,AirBlur:5,MaxBlur:300,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.44,DamageAT:1,PreGap:2},\
 nzap85:{FireRate:16,Damage:30,Ink:8,Blur:1,AirBlur:1,MaxBlur:206,Speed:0.0013,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:1}},\
 roller:{\
-splatroller:{FireRate:140,Damage:120,Ink:85,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:2,MinRange:0,MaxRange:1,RollingSpeed:0.6,RollingDamage:125,FireRate2:145,VSpeed:0.001},\
-carbonroller:{FireRate:100,Damage:107,Ink:39,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:1,DamageAT:2,PreGap:1,MinRange:0,MaxRange:1,RollingSpeed:0.7,RollingDamage:70,FireRate2:140,VSpeed:0.001},\
-dynamoroller:{FireRate:40,Damage:180,Ink:180,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:1,DamageAT:15,PreGap:19,MinRange:-1,MaxRange:1,RollingSpeed:0.4,RollingDamage:125,FireRate2:42,VSpeed:0.0015},\
-wideroller:{FireRate:130,Damage:70,Ink:90,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.08,SSpeed:2,HSpeed:1,DamageAT:3,PreGap:2,MinRange:-2,MaxRange:2,RollingSpeed:0.7,RollingDamage:70,FireRate2:150,VSpeed:0.0013}},\
+splatroller:{FireRate:140,Damage:120,Ink:85,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:-0.052,DamageAT:2,PreGap:2,MinRange:0,MaxRange:1,RollingSpeed:0.1,RollingDamage:125,FireRate2:145,VSpeed:0.001},\
+carbonroller:{FireRate:100,Damage:107,Ink:39,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:-0.052,DamageAT:2,PreGap:1,MinRange:0,MaxRange:1,RollingSpeed:0.13,RollingDamage:70,FireRate2:140,VSpeed:0.001},\
+dynamoroller:{FireRate:40,Damage:180,Ink:180,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:-0.076,DamageAT:15,PreGap:19,MinRange:-1,MaxRange:1,RollingSpeed:0.02,RollingDamage:125,FireRate2:42,VSpeed:0.0015},\
+wideroller:{FireRate:130,Damage:70,Ink:90,Blur:1,AirBlur:3,Speed:0.001,Gravity:0.08,SSpeed:2,HSpeed:-0.028,DamageAT:3,PreGap:2,MinRange:-2,MaxRange:2,RollingSpeed:0.11,RollingDamage:70,FireRate2:150,VSpeed:0.0013}},\
 charger:{\
 eliter4k:{FireRate:46,Damage:180,Ink:250,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.008,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:2,ChargeTime:30,CKTime:25,CKRate:8,AirCharge:2},\
 splatcharger:{FireRate:46,Damage:160,Ink:180,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.006,Gravity:0,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:20,CKTime:25,CKRate:8,AirCharge:3},\
@@ -289,8 +289,8 @@ minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.
 heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:0.2,DamageAT:1,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
 hydrasplatling:{FireRate:10,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:0.15,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:87,AirCharge:1,ChargeDamage:40}},\
 brushes:{\
-inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:1.0,RollingDamage:20},\
-octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:1,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.8,RollingDamage:25}}}
+inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20},\
+octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25}}}
 
 #対物性能
 data merge storage objectdamage: {\
@@ -358,5 +358,5 @@ slosher:"slosher",trislosher:"trislosher",explosher:"explosher"}}
 #エフェクト
 effect give @a saturation infinite 0 true
 
-tellraw @a[tag=operator] {"text":"リロードしました[1.21.10]"}
+tellraw @a[tag=operator] {"text":"リロードしました[1.21.11]"}
 tellraw @a[tag=operator] {"text":"ゲームを開始する際は、pNumを付与してください"}

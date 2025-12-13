@@ -1,4 +1,5 @@
 #スポーン
+scoreboard players set @s isSayDeathMessage 0
 tag @s remove death
 tag @s add player
 item replace entity @s armor.head with leather_helmet

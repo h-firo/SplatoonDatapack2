@@ -8,5 +8,5 @@ $particle block{block_state:"minecraft:$(color)_concrete"} ~ ~ ~ 0.3 0.3 0.3 0 2
 $fill ~-1 ~-3 ~-1 ~1 ~2 ~1 $(color)_concrete replace #core:can_inking
 
 #ダメージ
-$function core:damage {distance:$(radius),num:$(shotNum),team:$(team),damage:$(blastDamage),objDamage:$(objDamage),volume:1,objNum:$(objNum),owner:$(owner)}
+$function core:damage {distance:$(radius),num:$(shotNum),team:$(team),damage:$(blastDamage),objDamage:$(objDamage),volume:1,objNum:$(objNum),owner:$(owner),type:"main"}
 kill @s

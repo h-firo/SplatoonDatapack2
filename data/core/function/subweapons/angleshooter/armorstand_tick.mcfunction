@@ -2,7 +2,7 @@ $particle dust{color:[$(r),$(g),$(b)],scale:1} ~ ~ ~ 0.1 0.1 0.1 0 1 force
 scoreboard players add @s explosionTimer 1
 #攻撃
 $execute if score @s explosionTimer matches ..5 as @e[distance=..1.5,tag=player,tag=!asAttack$(bombNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) as @a[level=$(owner)] at @s run playsound minecraft:entity.player.attack.crit master @s ~ ~ ~ 1
-$execute if score @s explosionTimer matches ..5 as @e[distance=..1.5,tag=player,tag=!asAttack$(bombNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run scoreboard players remove @s health 40
+$execute if score @s explosionTimer matches ..5 as @e[distance=..1.5,tag=player,tag=!asAttack$(bombNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:40,type:"angleshooter",killer:$(owner)}
 $execute if score @s explosionTimer matches ..5 as @e[distance=..1.5,tag=player,tag=!asAttack$(bombNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run tag @s add asAttack$(bombNum)
 
 #マーキング

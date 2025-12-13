@@ -4,7 +4,8 @@
 $execute as @e[distance=..$(distance),tag=player,tag=!attack$(num)] unless score @s team matches $(team) run tag @s add attackTarget$(num)
 
 #ダメージ
-$execute as @e[tag=attackTarget$(num)] unless score @s isInvincible matches 1 run scoreboard players remove @s health $(damage)
+#$execute as @e[tag=attackTarget$(num)] unless score @s isInvincible matches 1 run scoreboard players remove @s health $(damage)
+$execute as @e[tag=attackTarget$(num)] unless score @s isInvincible matches 1 run function core:damages/remove_health {value:$(damage),type:$(type),killer:$(owner),num:1}
 
 #効果音
 #無敵？

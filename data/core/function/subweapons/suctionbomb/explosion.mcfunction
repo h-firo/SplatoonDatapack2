@@ -13,8 +13,8 @@ $fill ~-3 ~-1 ~-3 ~3 ~2 ~3 $(color)_concrete replace #core:can_inking
 $scoreboard players add @a[level=$(owner)] specialPoint 30
 
 #攻撃
-$execute as @e[distance=..3,tag=player,tag=!bomb$(bNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run scoreboard players remove @s health 180
-$execute as @e[distance=..3.8,tag=player,tag=!bomb$(bNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run scoreboard players remove @s health 30
+$execute as @e[distance=..3,tag=player,tag=!bomb$(bNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:180,type:"suctionbomb",killer:$(owner)}
+$execute as @e[distance=..3.8,tag=player,tag=!bomb$(bNum)] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:30,type:"suctionbomb",killer:$(owner)}
 $execute as @e[distance=..3.8,tag=player,tag=!bomb$(bNum)] at @s unless entity @s[level=$(owner)] unless score @s team matches $(team) run playsound entity.player.hurt master @a ~ ~ ~ 1
 #$execute if entity @e[distance=..1.7,tag=player,tag=!attack$(shotNum)] unless entity @e[distance=..1.7,tag=player,tag=!attack$(shotNum),level=$(owner)] kill @s
 $execute as @e[distance=..3.8,tag=player] unless entity @s[level=$(owner)] unless score @s team matches 0 run tag @s add bomb$(bNum)

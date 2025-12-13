@@ -11,8 +11,8 @@ $execute if data entity @s {OnGround:true} run fill ~-2 ~-2 ~-2 ~2 ~4 ~2 $(color
 execute unless data entity @s data.objNum run data merge entity @s {data:{objNum:-1}}
 
 #新ダメージ処理
-$function core:damage {distance:15,num:$(shotNum),team:$(team),damage:50,objDamage:120,volume:1,objNum:$(objNum),owner:$(owner)}
-$function core:damage {distance:25,num:$(shotNum),team:$(team),damage:30,objDamage:50,volume:1,objNum:$(objNum),owner:$(owner)}
+$function core:damage {distance:15,num:$(shotNum),team:$(team),damage:50,objDamage:120,volume:1,objNum:$(objNum),owner:$(owner),type:"crabtank_exp"}
+$function core:damage {distance:25,num:$(shotNum),team:$(team),damage:30,objDamage:50,volume:1,objNum:$(objNum),owner:$(owner),type:"crabtank_exp"}
 
 #削除処理
 execute if block ~1 ~ ~ #core:can_sticking run kill @s

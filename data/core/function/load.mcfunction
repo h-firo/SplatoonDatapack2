@@ -303,7 +303,9 @@ brushes:{\
 inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20},\
 octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25}},\
 dualies:{\
-splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.6,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10}}}
+splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:2,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.6,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10},\
+dappledualies:{FireRate:16,Damage:36,Ink:6,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.0006,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:3,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:50,RollCooldown:4,StopTime:9,MaxRolls:2,StopRollTime:3},\
+dualiesquelchers:{FireRate:20,Damage:28,Ink:12,Blur:5,AirBlur:10,MaxBlur:300,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:3,RollSpeed:2,HRollSpeed:-0.03,RollFireRate:20,RollDamageAT:1,RollInk:80,RollCooldown:5,StopTime:11,MaxRolls:2,StopRollTime:10}}}
 
 #対物性能
 data merge storage objectdamage: {\
@@ -314,7 +316,7 @@ blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblast
 sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
 brushes:{inkbrush:60,octobrush:80},\
-dualies:{splatdualies:30},\
+dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
 }
 
@@ -356,8 +358,9 @@ brushes:{\
 inkbrush:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:200},\
 octobrush:{subWeapon:"suctionbomb",specialWeapon:"reefslider",specialPoint:200}},\
 dualies:{\
-splatdualies:{subWeapon:"curingbomb",specialWeapon:"triplesplashdown",specialPoint:190}}}
-
+splatdualies:{subWeapon:"curingbomb",specialWeapon:"triplesplashdown",specialPoint:190},\
+dappledualies:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:190},\
+dualiesquelchers:{subWeapon:"splatbomb",specialWeapon:"wavebreaker",specialPoint:190}}}
 #モデル
 data merge storage models {\
 shooter:{\

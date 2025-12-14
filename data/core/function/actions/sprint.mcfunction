@@ -13,6 +13,8 @@ $execute if score @s isSprint matches 0 run kill @e[type=item_display,tag=squid$
 #武器透明化
 execute if score @s isSprint matches 1 if score @s chargeKeepTime matches -1 if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run item modify entity @s weapon.mainhand {function:"set_custom_model_data",strings:{values:["1"],mode:"replace_section"}}
 execute if score @s isSprint matches 0 if score @s chargeKeepTime matches -1 if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run item modify entity @s weapon.mainhand {function:"set_custom_model_data",strings:{values:["0"],mode:"replace_section"}}
+execute if score @s isSprint matches 1 if score @s chargeKeepTime matches -1 if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run item modify entity @s weapon.offhand {function:"set_custom_model_data",strings:{values:["1"],mode:"replace_section"}}
+execute if score @s isSprint matches 0 if score @s chargeKeepTime matches -1 if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run item modify entity @s weapon.offhand {function:"set_custom_model_data",strings:{values:["0"],mode:"replace_section"}}
 
 #下が自分のチームのブロックでなければ早くならない
 $execute unless block ~ ~-1 ~ $(color)_concrete run scoreboard players set @s isSprint 0

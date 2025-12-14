@@ -22,9 +22,11 @@ $execute if data storage player: {$(pNum):{specialWeapon:"bigbubbler"}} run scor
 $execute if data storage player: {$(pNum):{specialWeapon:"reefslider"}} run scoreboard players set @s maxSpecialUseCount 1
 $execute if data storage player: {$(pNum):{specialWeapon:"tripleinkstrike"}} run scoreboard players set @s maxSpecialUseCount 1
 
-#プレイヤー情報の反映
+#プレイヤーが所属しているteamと、プレイヤーが持っている武器を、shot関数にマクロとして渡す
+$data modify storage shot_temp: $(pNum) set from storage player: $(pNum).weapon
 $data modify storage shot_temp: $(pNum).team set from storage player: $(pNum).team
 $data modify storage shot_temp: $(pNum).color set from storage player: $(pNum).color
 $data modify storage shot_temp: $(pNum).num set from storage player: $(pNum).num
+$data modify storage shot_temp: $(pNum).category set from storage player: $(pNum).category
 scoreboard players set @s preDelay 0
 $tellraw @s[tag=operator] {"text":"$(pNum)の武器が$(category).$(weapon)に変更されました"}

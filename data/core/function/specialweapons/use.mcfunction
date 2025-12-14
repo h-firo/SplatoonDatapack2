@@ -10,3 +10,4 @@ $execute if data storage player: {$(num):{specialWeapon:inkvac}} run function co
 $execute if data storage player: {$(num):{specialWeapon:wavebreaker}} run function core:specialweapons/wavebreaker/start with storage player: $(num)
 $execute if data storage player: {$(num):{specialWeapon:reefslider}} run function core:specialweapons/reefslider/start with entity @s
 $execute if data storage player: {$(num):{specialWeapon:tripleinkstrike}} run function core:specialweapons/tripleinkstrike/start with entity @s
+$execute if data storage player: {$(num):{specialWeapon:triplesplashdown}} run function core:specialweapons/triplesplashdown/start with entity @s

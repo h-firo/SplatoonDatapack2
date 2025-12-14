@@ -19,6 +19,9 @@ $execute if data storage player: {$(num):{specialWeapon:reefslider}} run functio
 #トリプルトルネード
 $execute if data storage player: {$(num):{specialWeapon:tripleinkstrike}} run function core:specialweapons/tripleinkstrike/tick with storage player: $(num)
 
+#ウルトラチャクチ
+$execute if data storage player: {$(num):{specialWeapon:triplesplashdown}} run function core:specialweapons/triplesplashdown/tick with storage player: $(num)
+
 #共通
 scoreboard players remove @s useSpecialWeapon 1
 execute if score @s useSpecialWeapon matches 1.. if score @s specialUseCount >= @s maxSpecialUseCount run scoreboard players set @s useSpecialWeapon 0

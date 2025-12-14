@@ -1,6 +1,8 @@
 #tick処理
 execute as @a if entity @s[advancements={core:hold=false}] run attribute @s movement_speed modifier remove shot_move
+#プレイヤー
 execute as @a at @s run function core:player_tick with entity @s
+#アマスタ
 execute as @e[type=armor_stand,tag=ink,tag=!trizooka,tag=!crabtank,tag=!crabtank_explshot,tag=!attackDetection] at @s run function core:ink_tick with entity @s data
 execute as @e[type=armor_stand,tag=trizooka] at @s run function core:ink_ticks/ink_tick_trizooka with entity @s data
 execute as @e[type=armor_stand,tag=crabtank] at @s run function core:ink_ticks/ink_tick_crabtank with entity @s data
@@ -9,6 +11,9 @@ execute as @e[type=armor_stand,tag=attackDetection] at @s run function core:ink_
 execute as @e[type=armor_stand,tag=inkstrikes] at @s run function core:specialweapons/tripleinkstrike/inkstrike_tick with entity @s data
 execute as @e[type=armor_stand,tag=guides] unless score @s inkstrikeTimer matches 1.. at @s run function core:specialweapons/tripleinkstrike/guide_tick with entity @s data
 execute as @e[type=armor_stand,tag=guides,scores={inkstrikeTimer=1..}] at @s run function core:specialweapons/tripleinkstrike/strikepoint_tick with entity @s data
+#item_display
+execute as @e[type=item_display,tag=fists] at @s run function core:specialweapons/triplesplashdown/fist_tick with entity @s data
+#その他
 execute as @e[tag=player,scores={health=..0}] at @s run function core:deaths/main
 execute if score mode tutorialMode matches 0.. run function tutorial:tick
 

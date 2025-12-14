@@ -148,6 +148,7 @@ scoreboard objectives add inkstrikeGuidePower dummy
 scoreboard objectives add _inkstrikeAdjuster dummy
 scoreboard objectives add inkstrikeTimer dummy
 scoreboard objectives add isStrike dummy
+scoreboard objectives add fistTimer dummy
 
 #Delay
 scoreboard objectives add delay dummy
@@ -334,7 +335,7 @@ sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}},\
 sloshers:{\
 slosher:{subWeapon:"splatbomb",specialWeapon:"tripleinkstrike",specialPoint:50},\
 trislosher:{subWeapon:"toxicmist",specialWeapon:"tripleinkstrike",specialPoint:200},\
-explosher:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:200}},\
+explosher:{subWeapon:"angleshooter",specialWeapon:"triplesplashdown",specialPoint:200}},\
 splatlings:{\
 minisplatling:{subWeapon:"toxicmist",specialWeapon:"bigbubbler",specialPoint:220},\
 heavysplatling:{subWeapon:"sprinkler",specialWeapon:"wavebreaker",specialPoint:200},\

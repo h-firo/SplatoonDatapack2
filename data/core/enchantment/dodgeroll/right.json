@@ -28,7 +28,7 @@
         "effect": {
           "type": "minecraft:apply_impulse",
           "direction": [
-            1,
+            -1,
             0,
             0
           ],

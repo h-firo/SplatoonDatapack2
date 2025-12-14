@@ -28,9 +28,9 @@
         "effect": {
           "type": "minecraft:apply_impulse",
           "direction": [
-            1,
             0,
-            0
+            0,
+            -1
           ],
           "coordinate_scale": [
             1,

@@ -1,5 +1,6 @@
 #スライドをキャンセルして、射撃モードへ
 scoreboard players set @s dodgerollTime -1
+scoreboard players set @s preDelay 0
 attribute @s gravity base reset
 $scoreboard players set @s dodgeRollShotTimer $(StopTime)
 $attribute @s movement_speed modifier add dodgeroll $(HRollSpeed) add_value

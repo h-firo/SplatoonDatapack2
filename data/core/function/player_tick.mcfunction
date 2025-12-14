@@ -64,12 +64,12 @@ execute if score @s splatlingsDurationTime matches 1.. if items entity @s weapon
 execute if score @s splatlingsDurationTime matches 1.. unless items entity @s weapon.mainhand *[custom_data={item:"weapon"}] run scoreboard players set @s splatlingsDurationTime 0
 
 #マニューバースライド
-$execute if data storage player: {$(XpLevel):{category:"dualies"}} if entity @s[tag=Click] if predicate core:push_space unless score @s dodgerollCooldown matches 1.. run function core:weapons/dualies/isdodgeroll with entity @s
+$execute if data storage player: {$(XpLevel):{category:"dualies"}} if entity @s[tag=Click] if predicate core:push_space unless score @s dodgerollCooldown matches 1.. run function core:weapons/dualies/isdodgeroll with storage shot_temp: $(XpLevel)
 $execute if score @s isDodgeRoll matches 1 run function core:weapons/dualies/dodgeroll with storage shot_temp: $(XpLevel)
 execute if score @s dodgerollTime matches 1.. run scoreboard players remove @s dodgerollTime 1
 execute if score @s dodgerollCooldown matches 1.. run scoreboard players remove @s dodgerollCooldown 1
 execute if score @s dodgeRollShotTimer matches 1.. run scoreboard players remove @s dodgeRollShotTimer 1
-execute if score @s isDodgeRollShot matches 1 unless score @s dodgeRollShotTimer matches 1.. run function core:weapons/dualies/isshotcancel
+execute if score @s isDodgeRollShot matches 1 unless score @s dodgeRollShotTimer matches 1.. run function core:weapons/dualies/isshotcancel with entity @s
 $execute if score @s dodgerollTime matches 0 run function core:weapons/dualies/dodgeroll_cancel with storage shot_temp: $(XpLevel)
 
 #スペシャルゲージの更新

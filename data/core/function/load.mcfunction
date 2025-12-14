@@ -266,7 +266,7 @@ data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 (ブラスター:爆風範囲,爆風ダメージ,弾持続時間)\
 (スピナー:チャージ時間,チャージキープ時間,チャージキープレート,最大射撃継続時間,空中チャージ減衰,チャージ後ダメージ),\
 (フデ:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ),\
-(マニューバー:スライド時間,スライド速度,スライド後移動速度,スライド後連射レート,スライド後減衰,スライドインク消費量,スライドクールダウン,移動禁止時間,最大スライド数)
+(マニューバー:スライド時間,スライド速度,スライド後移動速度,スライド後連射レート,スライド後減衰,スライドインク消費量,スライドクールダウン,移動禁止時間,最大スライド数,連続スライドクールダウン)
 data merge storage weapons: {\
 shooter:{\
 splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
@@ -303,7 +303,7 @@ brushes:{\
 inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20},\
 octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25}},\
 dualies:{\
-splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.6,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2}}}
+splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.6,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10}}}
 
 #対物性能
 data merge storage objectdamage: {\

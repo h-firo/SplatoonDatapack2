@@ -372,7 +372,13 @@ eliter4k:"e_liter_4k",splatcharger:"splat_charger",squiffer:"squiffer",snipewrit
 blasters:{\
 blaster:"blaster",rangeblaster:"range_blaster",clashblaster:"clashblaster",sblast92:"sblast92"},\
 sloshers:{\
-slosher:"slosher",trislosher:"trislosher",explosher:"explosher"}}
+slosher:"slosher",trislosher:"trislosher",explosher:"explosher"},\
+splatlings:{\
+minisplatling:"minisplatling",heavysplatling:"heavysplatling",hydrasplatling:"hydrasplatling"},\
+brushes:{\
+inkbrush:"inkbrush",octobrush:"octobrush"},\
+dualies:{\
+splatdualies:"splatdualies",dappledualies:"dappledualies",dualiesquelchers:"dualiesquelchers"}}
 
 #エフェクト
 effect give @a saturation infinite 0 true

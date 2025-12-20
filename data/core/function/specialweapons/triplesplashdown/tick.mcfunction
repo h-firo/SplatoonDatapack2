@@ -1,3 +1,5 @@
+$ride @s mount @n[type=item_display,tag=splashdownEntity$(num)]
+
 #無敵
 execute if score @s useSpecialWeapon matches 33 run scoreboard players set @s isInvincible 1
 

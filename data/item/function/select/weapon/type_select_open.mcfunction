@@ -34,6 +34,6 @@ diamond[item_model="inkbrush",item_name={translate:"item.weapon.type.brushes",bo
         custom_data={item:"button",type:"type_select",content:"brushes"}]
 
 #マニューバー
-item replace entity @s inventory.24 with \
+item replace entity @s inventory.25 with \
 diamond[item_model="splatdualies",item_name={translate:"item.weapon.type.dualies",bold:true},lore=[{color:"gray",translate:"item.weapon.type.dualies.lore"}],\
         custom_data={item:"button",type:"type_select",content:"dualies"}]

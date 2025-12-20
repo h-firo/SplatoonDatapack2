@@ -1,5 +1,7 @@
+clear @s *[custom_data={item:"offhand"}]
 scoreboard players set @s isJumpMenuOpen 1
 clear @s
+item replace entity @s weapon.offhand with iron_nugget[custom_data={item:"CloseJumpMenu"},tooltip_display={hide_tooltip:true},item_model="none"]
 
 #リセット
 scoreboard players set @s jumpNum 0

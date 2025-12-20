@@ -2,6 +2,7 @@ scoreboard players set @s isDodgeRoll 0
 
 #ホットバーロック
 execute unless score @s isJumpMenuOpen matches 1 run function core:inventory_lock/tick with entity @s
+execute if score @s isJumpMenuOpen matches 1 if items entity @s weapon.mainhand *[custom_data={item:"CloseJumpMenu"}] run function item:jump_menu/close with entity @s
 
 #クマサンブキのパーツ
 execute if entity @e[type=item,tag=Parts,distance=..4,scores={rareWeaponSummonTime=30..}] run function core:pickup_parts with entity @s

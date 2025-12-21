@@ -64,8 +64,8 @@ execute unless entity @s[tag=Click] run scoreboard players set @s rightHold 0
 execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.. run function core:weapons/chargers/charge_reset
 
 #スピナー射撃
-execute if score @s splatlingsDurationTime matches 1.. if items entity @s weapon.mainhand *[custom_data={item:"weapon"}] run function core:weapons/splatlings/shot_macro with entity @s
-execute if score @s splatlingsDurationTime matches 1.. unless items entity @s weapon.mainhand *[custom_data={item:"weapon"}] run scoreboard players set @s splatlingsDurationTime 0
+execute if score @s splatlingsDurationTime matches 1.. if items entity @s weapon.mainhand *[custom_data~{item:"weapon"}] run function core:weapons/splatlings/shot_macro with entity @s
+execute if score @s splatlingsDurationTime matches 1.. unless items entity @s weapon.mainhand *[custom_data~{item:"weapon"}] run scoreboard players set @s splatlingsDurationTime 0
 
 #マニューバースライド
 $execute if data storage player: {$(XpLevel):{category:"dualies"}} if entity @s[tag=Click] if predicate core:push_space unless score @s dodgerollCooldown matches 1.. run function core:weapons/dualies/isdodgeroll with storage shot_temp: $(XpLevel)
@@ -87,6 +87,7 @@ $execute if score @s rightClick matches 1 if items entity @s weapon.mainhand car
 #射撃中に移動速度が遅くなることの抑制
 attribute @s movement_speed modifier remove shot_move
 $execute unless score @s useSpecialWeapon matches 0.. if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
+execute unless score @s useSpecialWeapon matches 0.. if items entity @s weapon.mainhand emerald[custom_data~{chargekeep:true}] run function core:shot_move with entity @s
 $execute if data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
@@ -100,7 +101,7 @@ execute if score @s chargeKeepTime matches 1.. run attribute @s movement_speed m
 execute if score @s chargeKeepTime matches 1.. run summon area_effect_cloud ~ ~ ~ \
 {custom_particle:{type:"splash"},Radius:1f,Duration:10,Age:3,ReapplicationDelay:10,WaitTime:0,RadiusOnUse:-5f,potion_contents:{potion:"minecraft:water",\
 custom_effects:[{id:"minecraft:invisibility",amplifier:1,duration:3,show_icon:false,show_particles:false}]}}
-execute if score @s chargeKeepTime matches 1.. if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run \
+execute if score @s chargeKeepTime matches 1.. if items entity @s weapon.mainhand emerald[custom_data~{item:"weapon"}] run \
 item modify entity @s weapon.mainhand {function:"set_custom_model_data",strings:{values:["1"],mode:"replace_section"}}
 #パーティクル
 execute if score @s chargeKeepTime matches 15.. run particle dust{color:[1,1,1],scale:1} ~ ~0.5 ~ 0 0 0 0 1 force @a
@@ -110,7 +111,7 @@ execute if score @s chargeKeepTime matches 1..8 run particle dust{color:[1,0,0],
 execute if score @s chargeKeepTime matches 1.. if predicate core:else_sneaking run scoreboard players set @s chargeKeepTime -1
 #チャージキープ時間が過ぎているときは速度と透明化をリセット
 execute unless score @s chargeKeepTime matches 1.. run attribute @s movement_speed modifier remove chargekeep
-execute unless score @s chargeKeepTime matches 1.. if items entity @s weapon.mainhand emerald[custom_data={item:"weapon"}] run \
+execute unless score @s chargeKeepTime matches 1.. if items entity @s weapon.mainhand emerald[custom_data~{item:"weapon"}] run \
 item modify entity @s weapon.mainhand {function:"set_custom_model_data",strings:{values:["0"],mode:"replace_section"}}
 #チャージキープ終了時チャージを0にする
 $execute if score @s chargeKeepTime matches 0 run function core:weapons/chargers/charge_reset with storage shot_temp: $(XpLevel)

@@ -2,8 +2,8 @@
 execute if items entity @s weapon.mainhand *[custom_data={item:"offhand"}] run return run function item:jump_menu/open with entity @s
 
 #メインウェポン
-$execute unless items entity @s hotbar.0 *[custom_data={item:"weapon"}] run function core:inventory_lock/mainweapon with storage shot_temp: $(XpLevel)
-execute store result score @s weaponCount run clear @s *[custom_data={item:"weapon"}] 0
+$execute unless items entity @s hotbar.0 *[custom_data~{item:"weapon"}] run function core:inventory_lock/mainweapon with storage shot_temp: $(XpLevel)
+execute store result score @s weaponCount run clear @s *[custom_data~{item:"weapon"}] 0
 $execute if score @s weaponCount matches 2.. run function core:inventory_lock/mainweapon with storage shot_temp: $(XpLevel)
 
 #スペシャル使用用アイテム

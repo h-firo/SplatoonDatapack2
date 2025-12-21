@@ -1,8 +1,8 @@
 #当たり判定
-$execute positioned ^ ^ ^1 if entity @e[tag=ink,distance=..1,tag=!shot$(team)] run playsound block.vault.hit master @a ~ ~ ~ 0.6 1
-$execute positioned ^ ^ ^1 if entity @e[tag=ink,distance=..1,tag=!shot$(team)] run scoreboard players add @s damage 1
+$execute positioned ^ ^ ^1.7 if entity @e[tag=ink,distance=..1.7,tag=!shot$(team)] run playsound block.vault.hit master @a ~ ~ ~ 0.6 1
+$execute positioned ^ ^ ^1.7 if entity @e[tag=ink,distance=..1.7,tag=!shot$(team)] run scoreboard players add @s damage 1
 execute if score @s damage matches 500.. run scoreboard players set @s useSpecialWeapon 0
-$execute positioned ^ ^ ^1 as @e[tag=ink,distance=..1,tag=!shot$(team)] run kill @s
+$execute positioned ^ ^ ^1.7 as @e[tag=ink,distance=..1.7,tag=!shot$(team)] run kill @s
 
 #キューブ化
 execute if predicate core:is_sprint unless score @s isCube matches 1 run function core:specialweapons/crabtank/cube with entity @s

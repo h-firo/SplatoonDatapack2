@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hold_chargekeep": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "components": {
+                "minecraft:custom_data": {
+                  "item": "weapon",
+                  "chargekeep": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:weapon_shot"
+  }
+}

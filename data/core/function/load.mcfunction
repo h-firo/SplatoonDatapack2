@@ -329,10 +329,10 @@ shooter:{\
 splattershot:{subWeapon:"suctionbomb",specialWeapon:"trizooka",specialPoint:210},\
 splattershot_pro:{subWeapon:"angleshooter",specialWeapon:"crabtank",specialPoint:180},\
 ftgal:{subWeapon:"splashwall",specialWeapon:"killerwail51",specialPoint:200},\
-aerospray:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:190},\
+aerospray:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:180},\
 nzap85:{subWeapon:"suctionbomb",specialWeapon:"tacticooler",specialPoint:200}},\
 roller:{\
-splatroller:{subWeapon:"curingbomb",specialWeapon:"bigbubbler",specialPoint:180},\
+splatroller:{subWeapon:"curingbomb",specialWeapon:"bigbubbler",specialPoint:220},\
 carbonroller:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:190},\
 dynamoroller:{subWeapon:"sprinkler",specialWeapon:"tacticooler",specialPoint:190},\
 wideroller:{subWeapon:"splashwall",specialWeapon:"crabtank",specialPoint:190}},\

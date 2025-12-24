@@ -4,6 +4,7 @@ execute store result score @s shotY run data get entity @s Pos[1] 1000
 execute store result score @s shotZ run data get entity @s Pos[2] 1000
 
 #アマスタをsummon
+$say $(Gravity)
 $execute positioned ~ ~1.6 ~ run \
 summon armor_stand ^ ^ ^2.0 {Tags:["shot$(team)","ink","owner$(num)","sn$(shotNum)"],Invisible:true,Silent:true,data:{team:$(team),owner:$(num),damage:$(Damage),shotNum:$(shotNum),damageAT:$(DamageAT),objDamage:$(obj)},attributes:[{id:"minecraft:gravity",base:$(Gravity)},{id:"minecraft:scale",base:0.1}]}
 $execute positioned ~ ~1.6 ~ run \

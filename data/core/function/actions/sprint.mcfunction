@@ -37,4 +37,4 @@ execute if score @s ink matches 999.. run scoreboard players set @s ink 999
 #効果
 execute if score @s isSprint matches 1 run summon area_effect_cloud ~ ~ ~ \
 {custom_particle:{type:"splash"},Radius:1f,Duration:10,Age:3,ReapplicationDelay:10,WaitTime:0,RadiusOnUse:-5f,potion_contents:{potion:"minecraft:water",\
-custom_effects:[{id:"minecraft:speed",amplifier:3,duration:3,show_icon:false,show_particles:false}]}}
+custom_effects:[{id:"minecraft:speed",amplifier:4,duration:3,show_icon:false,show_particles:false}]}}

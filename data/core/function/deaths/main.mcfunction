@@ -17,6 +17,7 @@ execute if score @s drinkTimer matches 1.. run scoreboard players set @s resurre
 execute unless score @s drinkTimer matches 1.. run scoreboard players set @s resurrectionTime 100
 #リセット
 scoreboard players set @s drinkTimer 0
+scoreboard players set @s splatlingsDurationTime 0
 scoreboard players set @s useSpecialWeapon 1
 function core:weapons/chargers/charge_reset
 #スペクテイターに

@@ -1,5 +1,4 @@
 #プレイヤーモーション
-function p_motion:system/load
 
 #スコアボード
 #Core
@@ -87,6 +86,7 @@ scoreboard objectives add rotate dummy
 scoreboard objectives add resurrectionTime dummy
 scoreboard objectives add superJumpTime dummy
 scoreboard objectives add isSayDeathMessage dummy
+scoreboard objectives add lastHit dummy
 #viewer:{-1:通常,0:ステージ俯瞰カメラ,1:チーム1視点,2:チーム2視点,3:スポナー,4:スーパージャンプ}
 scoreboard objectives add viewer dummy
 
@@ -206,7 +206,6 @@ scoreboard objectives add tutorial.isStarted dummy
 scoreboard objectives add tutorialMode dummy
 scoreboard objectives add tutorialTime dummy
 
-
 #Lobby
 scoreboard objectives add spawnTime dummy
 
@@ -235,9 +234,7 @@ bossbar set squidlamp name [{"text":"\uEB00\uE505\uEA03\uE500\uEA03\uE505\uEA03\
 
 #初期化
 #タグ消去
-function core:game/reset/shotnum
 scoreboard players set num pNum 0
-scoreboard players set num shotNum 0
 scoreboard players set num objNum 0
 scoreboard players set num bombNum 0
 scoreboard players set @a drinkTimer 0
@@ -270,7 +267,7 @@ data merge storage playerspawner: {0:{team1:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 data merge storage weapons: {\
 shooter:{\
 splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2},\
-splattershot_pro:{FireRate:26,Damage:45,Ink:20,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2},\
+splattershot_pro:{FireRate:26,Damage:45,Ink:24,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2},\
 ftgal:{FireRate:30,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2},\
 aerospray:{FireRate:10,Damage:24,Ink:5,Blur:300,AirBlur:5,MaxBlur:300,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.44,DamageAT:1,PreGap:2},\
 nzap85:{FireRate:16,Damage:30,Ink:8,Blur:1,AirBlur:1,MaxBlur:206,Speed:0.0013,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:1}},\

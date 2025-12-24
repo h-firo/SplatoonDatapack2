@@ -13,6 +13,7 @@ scoreboard players set @s isShootReady 0
 scoreboard players set mode coreTime 1
 scoreboard players set time gameTime 6000
 scoreboard players set value gameRule 1
+scoreboard players set @a ink 999
 
 #ステージリセット
 function stage:reset/colorblock_clear

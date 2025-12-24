@@ -23,6 +23,7 @@ fill -207 -58 -210 -207 -56 -205 jungle_fence
 setblock -181 -55 -210 chest[facing=west]{Items:[{id:"diamond",components:{item_name:{"translate":"item.weapon.splattershot"},item_model:"splatter_shot"},count:1,Slot:13}],lock:{items:"string"}}
 
 #チュートリアル場所へテレポート
+setworldspawn -210 -59 -207
 spreadplayers -211 -207 0 2.5 false @a
 
 #テキスト表示

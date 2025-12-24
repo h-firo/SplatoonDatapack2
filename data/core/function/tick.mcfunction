@@ -1,3 +1,6 @@
+#attackNumの消去
+#execute if score num resetNum < num shotNum run function core:game/reset/shotnum_loop with storage core:
+
 #tick処理
 execute as @a if entity @s[advancements={core:hold=false}] run attribute @s movement_speed modifier remove shot_move
 #プレイヤー

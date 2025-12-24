@@ -15,7 +15,7 @@ execute unless score @s delay matches 0 run scoreboard players remove @s delay 1
 execute unless score @s rollDelay matches -1 run scoreboard players add @s rollDelay 1
 execute if score @s drinkTimer matches 340 run function core:actions/drink
 execute if score @s drinkTimer matches 1.. run particle trial_spawner_detection ~ ~ ~ 0.5 0.5 0.5 0 1 force
-execute if score @s drinkTimer matches 1 run function core:actions/drink_remove
+execute if score @s drinkTimer matches ..1 run function core:actions/drink_remove
 execute unless score @s drinkTimer matches 0 run scoreboard players remove @s drinkTimer 1
 $execute if score @s useSpecialWeapon matches 0.. run function core:specialweapons/use_tick with storage player: $(XpLevel)
 execute if score @s shotDelay matches 1.. run scoreboard players remove @s shotDelay 10

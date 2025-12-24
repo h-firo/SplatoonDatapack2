@@ -9,4 +9,4 @@ scoreboard players add num shotNum 1
 $execute store result storage special_temp: $(num).shotNum int 1 run scoreboard players get num shotNum
 
 #ダメージ処理
-$function core:specialweapons/triplesplashdown/explosion_damage with storage special_temp: $(num)
+$function core:specialweapons/triplesplashdown/explosion_damage with storage shot_temp: $(num)

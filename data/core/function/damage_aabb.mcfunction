@@ -7,4 +7,3 @@ $execute store result storage damage_ $(owner).shift double 0.1 run scoreboard p
 
 #その他の値をストレージに保存
 $data merge storage damage_ {$(owner):{damage:$(damage),objDamage:$(objDamage),objNum:$(objNum),num:$(num),team:$(team),volume:$(volume),owner:$(owner)}}
-$function core:damages/aabb with storage damage_ $(owner)

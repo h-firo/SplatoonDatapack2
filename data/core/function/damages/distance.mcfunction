@@ -1,7 +1,7 @@
 #ここですべての攻撃を管理
 
 #条件に一致するエンティティをタグ付け
-$execute as @e[distance=..$(distance),tag=player,tag=!attack$(num)] unless score @s team matches $(team) run tag @s add attackTarget$(num)
+$execute as @e[distance=..$(distance),tag=player] unless score @s lastHit matches $(num) unless score @s team matches $(team) run tag @s add attackTarget$(num)
 
 #ダメージ
 #$execute as @e[tag=attackTarget$(num)] unless score @s isInvincible matches 1 run scoreboard players remove @s health $(damage)
@@ -16,7 +16,7 @@ $execute at @e[tag=attackTarget$(num)] as @a unless entity @s[level=$(owner)] ru
 $execute if entity @e[tag=attackTarget$(num)] as @a[level=$(owner)] at @s run playsound entity.player.hurt master @s ~ ~ ~ $(volume)
 
 #タグ
-$tag @e[tag=attackTarget$(num)] add attack$(num)
+$scoreboard players set @e[tag=attackTarget$(num)] lastHit $(num)
 $tag @e[tag=attackTarget$(num)] remove attackTarget$(num)
 
 #対物

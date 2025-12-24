@@ -87,6 +87,7 @@ scoreboard objectives add resurrectionTime dummy
 scoreboard objectives add superJumpTime dummy
 scoreboard objectives add isSayDeathMessage dummy
 scoreboard objectives add lastHit dummy
+scoreboard objectives add isInkEnough dummy
 #viewer:{-1:通常,0:ステージ俯瞰カメラ,1:チーム1視点,2:チーム2視点,3:スポナー,4:スーパージャンプ}
 scoreboard objectives add viewer dummy
 

@@ -236,6 +236,7 @@ bossbar set squidlamp name [{"text":"\uEB00\uE505\uEA03\uE500\uEA03\uE505\uEA03\
 #タグ消去
 scoreboard players set num pNum 0
 scoreboard players set num objNum 0
+scoreboard players set num shotNum 0
 scoreboard players set num bombNum 0
 scoreboard players set @a drinkTimer 0
 scoreboard players set @a ink 999

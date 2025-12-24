@@ -16,5 +16,7 @@ function core:ink_damages/ink_damage_blasters with entity @s data
 scoreboard players add @s chargerLiveTime 1
 $execute if score @s chargerLiveTime matches $(duration).. run function core:weapons/blasters/blast with entity @s data
 
+$execute if entity @e[tag=player,scores={lastHit=$(shotNum)}] run kill @s
+
 
 execute if data entity @s {OnGround:true} run kill @s

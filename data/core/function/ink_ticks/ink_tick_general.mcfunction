@@ -23,5 +23,8 @@ $execute if data entity @s {OnGround:true} run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 $(color
 #攻撃
 function core:ink_damages/ink_damage_general with entity @s data
 
+#貫通しないようにする
+$execute if entity @e[tag=player,scores={lastHit=$(shotNum)}] unless data entity @s {data:{isPenetrate:true}} run kill @s
+
 execute if data entity @s {OnGround:true} run scoreboard players reset @s damage
 execute if data entity @s {OnGround:true} run kill @s

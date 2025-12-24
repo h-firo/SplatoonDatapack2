@@ -10,4 +10,6 @@ execute if entity @s[tag=charger] run return run function core:ink_ticks/ink_tic
 execute if entity @s[tag=blasters] run return run function core:ink_ticks/ink_tick_blasters with entity @s data
 execute if entity @s[tag=sloshers] run return run function core:ink_ticks/ink_tick_sloshers with entity @s data
 execute if entity @s[tag=explosher] run return run function core:ink_ticks/ink_tick_explosher with entity @s data
+execute if entity @s[tag=dynamoroller] run return run function core:ink_ticks/ws/dynamoroller with entity @s data
+execute if entity @s[tag=vs] run return run function core:ink_ticks/ws/verticalshot with entity @s data
 function core:ink_ticks/ink_tick_general with entity @s data

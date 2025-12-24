@@ -12,15 +12,19 @@ execute store result entity @s data.atDamage int 1 run scoreboard players get @s
 execute unless data entity @s data.objNum run data merge entity @s {data:{objNum:-1}}
 
 #スペシャルポイント処理
-$function core:actions/add_specialpoint {fx:-0.3,fy:-5,fz:-0.3,tx:0.3,ty:0,tz:0.3,color:"$(color)",owner:$(owner)}
+$function core:actions/add_specialpoint {fx:-0.1,fy:-5,fz:-0.1,tx:0.1,ty:0,tz:0.1,color:"$(color)",owner:$(owner)}
 
 #塗り
-$fill ~-0.3 ~-5 ~-0.3 ~0.3 ~ ~0.3 $(color)_concrete replace #core:can_inking
-$particle block{block_state:"minecraft:$(color)_concrete"} ~ ~ ~ 0.3 0.1 0.3 0 10 force
-$execute if data entity @s {OnGround:true} run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 $(color)_concrete replace #core:can_inking
+$fill ~-0.1 ~-5 ~-0.1 ~0.1 ~ ~0.1 $(color)_concrete replace #core:can_inking
+$particle block{block_state:"minecraft:$(color)_concrete"} ~ ~ ~ 0.5 0.5 0.5 0 10 force
+$execute if data entity @s {OnGround:true} run function core:actions/add_specialpoint {fx:-1,fy:-1,fz:-1,tx:1,ty:2,tz:1,color:"$(color)",owner:$(owner)}
+$execute if data entity @s {OnGround:true} run fill ~-0.5 ~-0.5 ~-0.5 ~0.5 ~2 ~0.5 $(color)_concrete replace #core:can_inking
 
 #攻撃
 function core:ink_damages/ink_damage_general with entity @s data
+
+#貫通しないようにする
+$execute if entity @e[tag=player,scores={lastHit=$(shotNum)}] unless data entity @s {data:{isPenetrate:true}} run kill @s
 
 execute if data entity @s {OnGround:true} run scoreboard players reset @s damage
 execute if data entity @s {OnGround:true} run kill @s

@@ -42,7 +42,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
 #ワイドローラー
 item replace entity @s inventory.3 with \
 bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splashwall"]}}},\
-                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["inkvac"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["crabtank"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick_hold_plus"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
                         {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\

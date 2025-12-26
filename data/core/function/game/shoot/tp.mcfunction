@@ -11,5 +11,5 @@ scoreboard players set @s viewer 3
 $ride @s mount @n[type=item_display,tag=spawnerRide$(XpLevel)]
 
 $execute as @n[tag=spawnerRide$(XpLevel)] at @s run tp @s @n[type=armor_stand,tag=spawnerPos$(XpLevel)]
-execute if score @s team = team1 participationTeam run rotate @s 0 0
-execute if score @s team = team2 participationTeam run rotate @s 180 0
+execute if score @s team = team1 participationTeam run rotate @s 180 0
+execute if score @s team = team2 participationTeam run rotate @s 0 0

@@ -3,7 +3,7 @@ $execute if block ~ ~ ~0.1 #core:can_sticking if entity @a[level=$(num),distance
 $execute if block ~ ~ ~0.1 #core:can_sticking if entity @a[level=$(num),distance=..25] run return fail
 
 #マーカー用アマスタをsummon
-$summon armor_stand ~ ~ ~ {Tags:["marker$(bombNum)","bomb","owner$(num)"],Invisible:true,Silent:true,data:{team:$(team),owner:$(num),bombNum:$(bombNum),type:"angleshooter_marker",color:$(color)},NoGravity:true}
+$summon armor_stand ^ ^ ^1 {Tags:["marker$(bombNum)","bomb","owner$(num)"],Invisible:false,Silent:true,data:{team:$(team),owner:$(num),bombNum:$(bombNum),type:"angleshooter_marker",color:$(color)},NoGravity:true}
 $data modify entity @n[type=armor_stand,tag=marker$(bombNum)] data.r set from storage dustcolor: $(team).r
 $data modify entity @n[type=armor_stand,tag=marker$(bombNum)] data.g set from storage dustcolor: $(team).g
 $data modify entity @n[type=armor_stand,tag=marker$(bombNum)] data.b set from storage dustcolor: $(team).b

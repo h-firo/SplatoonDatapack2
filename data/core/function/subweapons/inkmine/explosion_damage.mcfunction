@@ -1,0 +1,2 @@
+$function core:damage {distance:20,num:$(shotNum),team:$(team),damage:45,objDamage:90,volume:0.8,owner:$(owner),objNum:-1,type:"inkmine"}
+$function core:damage {distance:27,num:$(shotNum),team:$(team),damage:35,objDamage:70,volume:0.8,owner:$(owner),objNum:-1,type:"inkmine"}

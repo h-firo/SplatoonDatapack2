@@ -7,5 +7,6 @@ execute positioned ~ ~1.5 ~ run function core:subweapons/splashbomb/particle wit
 execute positioned ~ ~2 ~ run function core:subweapons/splashbomb/particle with entity @s data
 
 #ダメージ処理
-$function core:damage {distance:20,num:$(shotNum),team:$(team),damage:220,objDamage:1320,volume:1,owner:$(owner),objNum:$(objNum),type:"trizooka"}
-$function core:damage {distance:25,num:$(shotNum),team:$(team),damage:53,objDamage:318,volume:1,owner:$(owner),objNum:$(objNum),type:"trizooka"}
+$function core:damage {distance:15,num:$(shotNum),team:$(team),damage:220,objDamage:1320,volume:1,owner:$(owner),objNum:$(objNum),type:"trizooka"}
+$function core:damage {distance:20,num:$(shotNum),team:$(team),damage:53,objDamage:318,volume:1,owner:$(owner),objNum:$(objNum),type:"trizooka"}
+$function core:damage {distance:25,num:$(shotNum),team:$(team),damage:35,objDamage:318,volume:1,owner:$(owner),objNum:$(objNum),type:"trizooka"}

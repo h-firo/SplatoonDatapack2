@@ -84,9 +84,10 @@ $function core:damage_effect with storage opponent_color $(XpLevel)
 #スペシャル発動
 $execute if score @s rightClick matches 1 if items entity @s weapon.mainhand carrot_on_a_stick[custom_data={item:"specialUse"}] run function core:specialweapons/use with storage player: $(XpLevel)
 
-#射撃中に移動速度が遅くなることの抑制
+#射撃中の移動速度処理
 attribute @s movement_speed modifier remove shot_move
 $execute unless score @s useSpecialWeapon matches 0.. if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
+$execute if score @s splatlingsDurationTime matches 1.. run function core:weapons/splatlings/shot_move with storage shot_temp: $(XpLevel)
 execute unless score @s useSpecialWeapon matches 0.. if items entity @s weapon.mainhand emerald[custom_data~{chargekeep:true}] run function core:shot_move with entity @s
 $execute if data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} if items entity @s weapon.mainhand emerald[custom_data~{rolling:true}] run function core:weapons/shot_move with storage shot_temp: $(XpLevel)
@@ -122,8 +123,9 @@ execute unless score @s chargeKeepTime matches 1.. if predicate core:else_sneaki
 execute if score @s slosherTime matches 0.. run scoreboard players add @s slosherTime 1
 $execute if score @s slosherTime matches 0.. run function core:weapons/sloshers/shot with storage player: $(XpLevel)
 
-#ローラーの塗り
+#ローラーの塗り進み
 $execute if score @s rightHold matches 10.. if predicate core:is_moving if score @s ink matches 1.. run function core:weapons/rollers/rolling with storage shot_temp: $(XpLevel)
+execute if score @s rollDamageCoolDown matches 1.. run scoreboard players remove @s rollDamageCoolDown 1
 
 #Sブラモード
 execute if items entity @s weapon.mainhand emerald[item_model=sblast92] run function core:weapons/blasters/sblast/modechange

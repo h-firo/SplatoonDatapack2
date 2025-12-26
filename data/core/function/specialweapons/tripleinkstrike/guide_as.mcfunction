@@ -13,15 +13,17 @@ $scoreboard players operation @s shotZ -= @p[level=$(owner)] shotZ
 #投げる力によって距離を少しだけ変化
 scoreboard players operation @s _inkstrikeAdjuster = @s shotX
 $scoreboard players operation @s _inkstrikeAdjuster *= @p[level=$(owner)] inkstrikeGuidePower
-scoreboard players operation @s _inkstrikeAdjuster /= 20 num
+scoreboard players operation @s _inkstrikeAdjuster /= 10 num
 scoreboard players operation @s shotX += @s _inkstrikeAdjuster
+
 scoreboard players operation @s _inkstrikeAdjuster = @s shotY
 $scoreboard players operation @s _inkstrikeAdjuster *= @p[level=$(owner)] inkstrikeGuidePower
-scoreboard players operation @s _inkstrikeAdjuster /= 20 num
+scoreboard players operation @s _inkstrikeAdjuster /= 10 num
 scoreboard players operation @s shotY += @s _inkstrikeAdjuster
+
 scoreboard players operation @s _inkstrikeAdjuster = @s shotZ
 $scoreboard players operation @s _inkstrikeAdjuster *= @p[level=$(owner)] inkstrikeGuidePower
-scoreboard players operation @s _inkstrikeAdjuster /= 20 num
+scoreboard players operation @s _inkstrikeAdjuster /= 10 num
 scoreboard players operation @s shotZ += @s _inkstrikeAdjuster
 
 #Motionの値に計算結果を代入

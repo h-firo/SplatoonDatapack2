@@ -24,7 +24,7 @@ $execute if predicate core:is_sneaking run function core:actions/squidform with 
 $execute if predicate core:is_sprint run function core:actions/squidform with storage player: $(num)
 
 #イカ移動演出
-$execute if score @s isSprint matches 1 if predicate core:is_moving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 1 force
+$execute if score @s isSprint matches 1 if predicate core:is_squidmoving run particle block{block_state:{Name:"$(color)_concrete"}} ~ ~ ~ 0 0 0 0 1 force
 
 #体力回復
 execute if score @s isSprint matches 1 unless score @s isMistEffect matches 1 run scoreboard players add @s health 2

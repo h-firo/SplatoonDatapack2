@@ -195,6 +195,7 @@ scoreboard objectives add isSprint dummy
 scoreboard objectives add isSquid dummy
 scoreboard objectives add isInAir dummy
 scoreboard objectives add isDamageSet dummy
+scoreboard objectives add isJoin dummy
 
 #Tutorial
 scoreboard objectives add tutorial.canSquid dummy

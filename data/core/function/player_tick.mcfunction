@@ -1,3 +1,6 @@
+#最初の処理
+execute unless score @s isJoin matches 1 run function core:join
+
 scoreboard players set @s isDodgeRoll 0
 
 #ホットバーロック
@@ -153,5 +156,3 @@ $execute store result storage player: $(XpLevel).ink int 1 run scoreboard player
 
 #イカ移動の処理
 $function core:actions/sprint with storage player: $(XpLevel)
-
-$tag @e[tag=player] remove killerwail$(XpLevel)

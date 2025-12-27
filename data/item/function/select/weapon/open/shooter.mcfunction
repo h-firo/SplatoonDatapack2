@@ -49,7 +49,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
                         {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["low"]}}},\
-                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],custom_data={item:"button",type:"weapon",content:"aerospray"},\
                         item_name={translate:"item.weapon.aerospray",bold:true},item_model="aerospray",\
                         lore=[{"color":"gray","translate":"item.weapon.aerospray.lore1"},{"color":"gray","translate":"item.weapon.aerospray.lore2"}]]
@@ -66,3 +66,42 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["small"]}}}],custom_data={item:"button",type:"weapon",content:"nzap85"},\
                         item_name={translate:"item.weapon.nzap85",bold:true},item_model="nzap85",\
                         lore=[{"color":"gray","translate":"item.weapon.nzap85.lore1"},{"color":"gray","translate":"item.weapon.nzap85.lore2"}]]
+
+#ボールドマーカー
+item replace entity @s inventory.5 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["curingbomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["trizooka"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["short"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],custom_data={item:"button",type:"weapon",content:"splooshomatic"},\
+                        item_name={translate:"item.weapon.splooshomatic",bold:true},item_model="splooshomatic",\
+                        lore=[{"color":"gray","translate":"item.weapon.splooshomatic.lore1"},{"color":"gray","translate":"item.weapon.splooshomatic.lore2"}]]
+
+#シャープマーカー
+item replace entity @s inventory.6 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splatbomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["crabtank"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["not"]}}}],custom_data={item:"button",type:"weapon",content:"splashomatic"},\
+                        item_name={translate:"item.weapon.splashomatic",bold:true},item_model="splashomatic",\
+                        lore=[{"color":"gray","translate":"item.weapon.splashomatic.lore1"},{"color":"gray","translate":"item.weapon.splashomatic.lore2"}]]
+
+#96ガロン
+item replace entity @s inventory.7 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["angleshooter"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["tacticooler"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["strongest"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],custom_data={item:"button",type:"weapon",content:"nsgal"},\
+                        item_name={translate:"item.weapon.96gal",bold:true},item_model="96gal",\
+                        lore=[{"color":"gray","translate":"item.weapon.96gal.lore1"},{"color":"gray","translate":"item.weapon.96gal.lore2"}]]

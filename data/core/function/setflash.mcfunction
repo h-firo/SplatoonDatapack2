@@ -1,0 +1,1 @@
+$particle flash{color:[$(r),$(g),$(b),0.0f]} ~ ~ ~ 0 0 0 0 1 normal @a

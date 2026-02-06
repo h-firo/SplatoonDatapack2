@@ -10,8 +10,8 @@ $scoreboard players add @a[level=$(owner)] specialPoint 22
 
 
 #攻撃
-$execute as @e[distance=..2.0,tag=player] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:18,type:"splashbomb",killer:$(owner)}
-$execute as @e[distance=..2.5,tag=player] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:13,type:"splashbomb",killer:$(owner)}
+$execute as @e[distance=..2.0,tag=player] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:18,type:"burstbomb",killer:$(owner)}
+$execute as @e[distance=..2.5,tag=player] unless entity @s[level=$(owner)] unless score @s team matches $(team) run function core:damages/remove_health {value:13,type:"burstbomb",killer:$(owner)}
 $execute as @e[distance=..2.5,tag=player] at @s unless entity @s[level=$(owner)] unless score @s team matches $(team) run playsound entity.player.hurt master @a ~ ~ ~ 1
 #$execute if entity @e[distance=..1.7,tag=player,tag=!attack$(shotNum)] unless entity @e[distance=..1.7,tag=player,tag=!attack$(shotNum),level=$(owner)] kill @s
 

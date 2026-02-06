@@ -1,9 +1,9 @@
 #ここですべての攻撃を管理
 
 #条件に一致するエンティティをタグ付け
-$data merge storage shot_ {distance:$(distance),team:$(team),num:$(num)}
-execute store result storage shot_ distance2 float 2.0 run data get storage shot_ distance
-function core:damages/aabb with storage shot_
+$data merge storage shot_ {$(owner):{distance:$(distance),team:$(team),num:$(num)}}
+$execute store result storage shot_ $(owner).distance2 float 2.0 run data get storage shot_ $(owner).distance
+$function core:damages/aabb with storage shot_ $(owner)
 #$execute as @e[distance=..$(distance),tag=player] unless score @s lastHit matches $(num) unless score @s team matches $(team) run tag @s add attackTarget$(num)
 
 #ダメージ

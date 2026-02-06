@@ -105,3 +105,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],custom_data={item:"button",type:"weapon",content:"nsgal"},\
                         item_name={translate:"item.weapon.96gal",bold:true},item_model="96gal",\
                         lore=[{"color":"gray","translate":"item.weapon.96gal.lore1"},{"color":"gray","translate":"item.weapon.96gal.lore2"}]]
+
+#わかばシューター
+item replace entity @s inventory.8 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splashbomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["bigbubbler"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],custom_data={item:"button",type:"weapon",content:"splattershotjr"},\
+                        item_name={translate:"item.weapon.splattershotjr",bold:true},item_model="splattershotjr",\
+                        lore=[{"color":"gray","translate":"item.weapon.splattershotjr.lore1"},{"color":"gray","translate":"item.weapon.splattershotjr.lore2"}]]

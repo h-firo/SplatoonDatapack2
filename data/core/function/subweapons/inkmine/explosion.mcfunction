@@ -1,5 +1,5 @@
 #パーティクル
-particle explosion ~ ~ ~ 0 0 0 0 1 force @a
+$function core:subweapons/particle/set {radius:2,color:$(color)}
 
 #音
 playsound entity.generic.explode master @a ~ ~ ~ 1 1.5

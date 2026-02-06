@@ -2,11 +2,7 @@
 playsound item.bucket.empty_axolotl master @a ~ ~ ~ 1
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 0.2 1.5
 particle explosion ~ ~ ~ 0 0 0 0 1
-function core:subweapons/suctionbomb/particle with entity @s data
-execute positioned ~ ~0.5 ~ run function core:subweapons/suctionbomb/particle with entity @s data
-execute positioned ~ ~1 ~ run function core:subweapons/suctionbomb/particle with entity @s data
-execute positioned ~ ~1.5 ~ run function core:subweapons/suctionbomb/particle with entity @s data
-execute positioned ~ ~2 ~ run function core:subweapons/suctionbomb/particle with entity @s data
+$function core:subweapons/particle/set {radius:3,color:$(color)}
 
 #塗り
 $fill ~-3 ~-1 ~-3 ~3 ~2 ~3 $(color)_concrete replace #core:can_inking

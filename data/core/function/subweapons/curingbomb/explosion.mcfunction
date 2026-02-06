@@ -1,12 +1,7 @@
 #演出
 playsound item.bucket.empty_axolotl master @a ~ ~ ~ 1
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 0.2 1.5
-particle explosion ~ ~ ~ 0 0 0 0 1
-function core:subweapons/curingbomb/particle with entity @s data
-execute positioned ~ ~0.5 ~ run function core:subweapons/curingbomb/particle with entity @s data
-execute positioned ~ ~1 ~ run function core:subweapons/curingbomb/particle with entity @s data
-execute positioned ~ ~1.5 ~ run function core:subweapons/curingbomb/particle with entity @s data
-execute positioned ~ ~2 ~ run function core:subweapons/curingbomb/particle with entity @s data
+$function core:subweapons/particle/set {radius:1,color:$(color)}
 
 #塗り
 $fill ~-1.2 ~-1 ~-1.2 ~1.2 ~2 ~1.2 $(color)_concrete replace #core:can_inking

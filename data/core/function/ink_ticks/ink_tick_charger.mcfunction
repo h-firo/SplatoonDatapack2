@@ -16,6 +16,9 @@ $execute if data entity @s {OnGround:true} run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 $(color
 #攻撃
 function core:ink_damages/ink_damage_charger with entity @s data
 
+#条件によっては貫通しないようにする
+$execute if entity @e[tag=player,scores={lastHit=$(shotNum)}] unless data entity @s {data:{isPenetrate:true}} run kill @s
+
 scoreboard players add @s chargerLiveTime 1
 execute if score @s chargerLiveTime matches 5.. run kill @s
 

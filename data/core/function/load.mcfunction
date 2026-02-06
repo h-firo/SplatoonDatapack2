@@ -294,6 +294,7 @@ eliter4k:{FireRate:46,Damage:180,Ink:250,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.008,
 splatcharger:{FireRate:46,Damage:160,Ink:180,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.006,Gravity:0,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:20,CKTime:25,CKRate:8,AirCharge:3},\
 squiffer:{FireRate:46,Damage:140,Ink:100,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:13,CKTime:25,CKRate:8,AirCharge:0},\
 snipewriter:{FireRate:46,Damage:68,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:1,CKRate:8,AirCharge:0},\
+bamboozler:{FireRate:46,Damage:85,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:6,CKTime:1,CKRate:8,AirCharge:0},\
 grizzcocharger:{FireRate:30,Damage:130,Ink:200,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:0,ChargeTime:3,CKTime:0,CKRate:8,AirCharge:3}},\
 blasters:{\
 blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:17,BlastDamage:70,BlastDuration:4},\
@@ -321,7 +322,7 @@ dualiesquelchers:{FireRate:20,Damage:28,Ink:12,Blur:5,AirBlur:10,MaxBlur:300,Spe
 data merge storage objectdamage: {\
 shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24,nzap85:30,splooshomatic:38,splashomatic:28,nsgal:62,splattershotjr:28},\
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300,flingzaroller:270},\
-charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,grizzcocharger:200},\
+charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,bamboozler:170,grizzcocharger:200},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80},\
 sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\

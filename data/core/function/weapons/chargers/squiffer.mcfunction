@@ -30,6 +30,7 @@ $execute as @e[type=armor_stand,tag=owner$(num)] run scoreboard players operatio
 $execute as @e[type=armor_stand,tag=owner$(num)] store result entity @s data.damage int 1 run scoreboard players get @s damage 
 $execute as @e[type=armor_stand,tag=owner$(num)] at @s run function core:weapons/chargers/shot_as with entity @s data
 $execute as @e[type=armor_stand,tag=owner$(num),nbt={data:{shotNum:$(shotNum)}}] at @s run rotate @s facing entity @p[level=$(num)]
+$execute if score @s chargeTo100 matches 100.. as @e[type=armor_stand,tag=owner$(num)] run data merge entity @s {data:{isPenetrate:true}}
 scoreboard players set @s delay 9
 $scoreboard players set @s removeInk $(Ink)
 scoreboard players operation @s removeInk *= @s chargeTo100

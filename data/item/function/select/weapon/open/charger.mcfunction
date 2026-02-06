@@ -51,3 +51,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["not"]}}}],\
                         item_name={translate:"item.weapon.snipewriter",bold:true},item_model="snipewriter",custom_data={item:"button",type:"weapon",content:"snipewriter"},\
                         lore=[{"color":"gray","translate":"item.weapon.snipewriter.lore1"},{"color":"gray","translate":"item.weapon.snipewriter.lore2"}]]
+
+#14式竹筒銃・甲
+item replace entity @s inventory.4 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["sprinkler"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["killerwail51"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick_hold"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["not"]}}}],\
+                        item_name={translate:"item.weapon.bamboozler",bold:true},item_model="bamboozler",custom_data={item:"button",type:"weapon",content:"bamboozler"},\
+                        lore=[{"color":"gray","translate":"item.weapon.bamboozler.lore1"},{"color":"gray","translate":"item.weapon.bamboozler.lore2"}]]

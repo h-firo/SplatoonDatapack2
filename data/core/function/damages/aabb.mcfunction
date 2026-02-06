@@ -1,0 +1,2 @@
+$execute positioned ~-$(distance) ~-$(distance) ~-$(distance) as @e[tag=player,dx=$(distance2),dy=$(distance2),dz=$(distance2)] unless score @s lastHit matches $(num) \
+unless score @s team matches $(team) run tag @s add attackTarget$(num)

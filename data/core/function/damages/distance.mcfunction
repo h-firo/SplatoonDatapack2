@@ -1,7 +1,10 @@
 #ここですべての攻撃を管理
 
 #条件に一致するエンティティをタグ付け
-$execute as @e[distance=..$(distance),tag=player] unless score @s lastHit matches $(num) unless score @s team matches $(team) run tag @s add attackTarget$(num)
+$data merge storage shot_ {distance:$(distance),team:$(team),num:$(num)}
+execute store result storage shot_ distance2 float 2.0 run data get storage shot_ distance
+function core:damages/aabb with storage shot_
+#$execute as @e[distance=..$(distance),tag=player] unless score @s lastHit matches $(num) unless score @s team matches $(team) run tag @s add attackTarget$(num)
 
 #ダメージ
 #$execute as @e[tag=attackTarget$(num)] unless score @s isInvincible matches 1 run scoreboard players remove @s health $(damage)

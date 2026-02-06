@@ -7,7 +7,7 @@ execute store result score @s shotZ run data get entity @s Pos[2] 1000
 $execute positioned ~ ~1.6 ~ run \
 summon armor_stand ^ ^ ^2.0 {Tags:["shot$(team)","ink","owner$(num)","blasters","sn$(shotNum)"],Invisible:true,Silent:true,Small:true,\
                             data:{team:$(team),owner:$(num),damage:$(Damage),shotNum:$(shotNum),damageAT:$(DamageAT),objDamage:$(obj),\
-                                radius:25,blastDamage:70,duration:3,speed:0.002},\
+                                radius:10,blastDamage:70,duration:3,speed:0.002},\
                                 attributes:[{id:"minecraft:gravity",base:0},{id:"minecraft:scale",base:0.1}]}
 $execute positioned ~ ~1.6 ~ run \
 summon armor_stand ^ ^ ^2.0 {Tags:["shot$(team)","ink","owner$(num)","attackDetection","sn$(shotNum)"],Invisible:true,Silent:true,Small:true,\

@@ -7,7 +7,7 @@ execute store result score @s shotZ run data get entity @s Pos[2] 1000
 $execute positioned ~ ~1.6 ~ run \
 summon armor_stand ^ ^ ^2.0 {Tags:["shot$(team)","ink","owner$(num)","blasters","sn$(shotNum)"],Invisible:true,Silent:true,Small:true,\
                             data:{team:$(team),owner:$(num),damage:$(Damage),shotNum:$(shotNum),damageAT:$(DamageAT),objDamage:$(obj),\
-                                radius:42,blastDamage:80,duration:2},\
+                                radius:24,blastDamage:80,duration:2},\
                                 attributes:[{id:"minecraft:gravity",base:0},{id:"minecraft:scale",base:0.1}]}
 $execute as @n[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] run data modify entity @s data.color set from storage team_color: colors.$(team)
 $execute as @e[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] at @s run rotate @s facing entity @p[level=$(num)]

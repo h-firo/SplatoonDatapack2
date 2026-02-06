@@ -22,7 +22,7 @@ execute if score @s drinkTimer matches ..1 run function core:actions/drink_remov
 execute unless score @s drinkTimer matches 0 run scoreboard players remove @s drinkTimer 1
 $execute if score @s useSpecialWeapon matches 0.. run function core:specialweapons/use_tick with storage player: $(XpLevel)
 execute if score @s shotDelay matches 1.. run scoreboard players remove @s shotDelay 10
-#scoreboard players operation @s accFP += #fireUnit num
+execute if score @s accFP < @s rateFP run scoreboard players operation @s accFP += #fireUnit num
 execute unless score @s sprintDelay matches 0 run scoreboard players remove @s sprintDelay 1
 execute if score @s delay matches 0 run scoreboard players set @s accuracy 0
 #$execute if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)

@@ -20,7 +20,7 @@ execute if score @s isInkEnough matches -1 run return fail
 #scoreboard players add num shotNum 1
 #$execute store result storage shot_temp: $(XpLevel).shotNum int 1 run scoreboard players get num shotNum
 
-$execute if data storage player: {$(XpLevel):{category:shooter}} if score @s shotDelay matches ..0 run \
+$execute if data storage player: {$(XpLevel):{category:shooter}} if score @s accFP >= @s rateFP run \
 function core:weapons/shooters/shot_macro with entity @s
 
 $execute if data storage player: {$(XpLevel):{category:roller}} if score @s shotDelay matches ..0 if score @s rightHold matches 0 run \

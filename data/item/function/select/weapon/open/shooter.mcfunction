@@ -82,7 +82,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
 
 #シャープマーカー
 item replace entity @s inventory.6 with \
-bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splatbomb"]}}},\
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["burstbomb"]}}},\
                         {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["crabtank"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\

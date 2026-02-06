@@ -264,7 +264,7 @@ data merge storage playerspawner: {0:{team2:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
                                     2:{team1:{0:{x:-26,y:-33,z:136,yaw:180},1:{x:-21,y:-33,z:136,yaw:180},2:{x:-16,y:-33,z:136,yaw:180},3:{x:-11,y:-33,z:136,yaw:180},Zlimit:-88},\
                                       team2:{0:{x:14,y:-35,z:31,yaw:0},1:{x:9,y:-35,z:31,yaw:0},2:{x:4,y:-35,z:31,yaw:0},3:{x:-1,y:-35,z:31,yaw:0},Zlimit:-145}}}
 
-#[連射レート(フレーム/3×10),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,最大拡散(拡散/補正悪化量[発]),射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
+#[連射レート(フレーム/3×16),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,最大拡散(拡散/補正悪化量[発]),射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\
 (チャージャー:チャージ時間,チャージキープ時間,チャージキープレート,射程増加割合,空中チャージ減衰),\
 (ブラスター:爆風範囲,爆風ダメージ,弾持続時間)\
@@ -273,14 +273,14 @@ data merge storage playerspawner: {0:{team2:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 (マニューバー:スライド時間,スライド速度,スライド後移動速度,スライド後連射レート,スライド後減衰,スライドインク消費量,スライドクールダウン,移動禁止時間,最大スライド数,連続スライドクールダウン)
 data merge storage weapons: {\
 shooter:{\
-splattershot:{FireRate:20,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,LateGap:3},\
-splattershot_pro:{FireRate:26,Damage:45,Ink:24,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2,LateGap:3},\
-ftgal:{FireRate:30,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,LateGap:2},\
-aerospray:{FireRate:10,Damage:24,Ink:10,Blur:1000,AirBlur:5,MaxBlur:1000,Speed:0.0007,Gravity:1,SSpeed:2,HSpeed:0.44,DamageAT:3,PreGap:2,LateGap:2},\
-nzap85:{FireRate:16,Damage:30,Ink:8,Blur:1,AirBlur:1,MaxBlur:206,Speed:0.0013,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:1,LateGap:2},\
-splooshomatic:{FireRate:10,Damage:38,Ink:8,Blur:100,AirBlur:100,MaxBlur:100,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:4,PreGap:1,LateGap:2},\
-splashomatic:{FireRate:15,Damage:28,Ink:8,Blur:0,AirBlur:0,MaxBlur:0,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.47,DamageAT:1,PreGap:1,LateGap:2},\
-nsgal:{FireRate:40,Damage:62,Ink:23,Blur:8,AirBlur:10,MaxBlur:310,Speed:0.0013,Gravity:0.5,SSpeed:2,HSpeed:0.47,DamageAT:1,PreGap:3,LateGap:2}},\
+splattershot:{FireRate:32,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,LateGap:3},\
+splattershot_pro:{FireRate:42,Damage:45,Ink:24,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2,LateGap:3},\
+ftgal:{FireRate:48,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,LateGap:2},\
+aerospray:{FireRate:21,Damage:24,Ink:10,Blur:1000,AirBlur:5,MaxBlur:1000,Speed:0.0007,Gravity:1,SSpeed:2,HSpeed:0.44,DamageAT:3,PreGap:2,LateGap:2},\
+nzap85:{FireRate:26,Damage:30,Ink:8,Blur:1,AirBlur:1,MaxBlur:206,Speed:0.0013,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:1,PreGap:1,LateGap:2},\
+splooshomatic:{FireRate:26,Damage:38,Ink:8,Blur:100,AirBlur:100,MaxBlur:100,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:4,PreGap:1,LateGap:2},\
+splashomatic:{FireRate:26,Damage:28,Ink:8,Blur:0,AirBlur:0,MaxBlur:0,Speed:0.0008,Gravity:0.5,SSpeed:2,HSpeed:0.47,DamageAT:0,PreGap:1,LateGap:2},\
+nsgal:{FireRate:64,Damage:62,Ink:23,Blur:8,AirBlur:10,MaxBlur:310,Speed:0.0013,Gravity:0.5,SSpeed:2,HSpeed:0.47,DamageAT:1,PreGap:3,LateGap:2}},\
 roller:{\
 splatroller:{FireRate:140,Damage:120,Ink:85,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.00065,Gravity:0.1,SSpeed:2,HSpeed:-0.052,DamageAT:2,PreGap:7,MinRange:0,MaxRange:1,RollingSpeed:0.1,RollingDamage:125,FireRate2:145,VSpeed:0.0013,DamageCoolDown:5},\
 carbonroller:{FireRate:100,Damage:107,Ink:39,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0007,Gravity:0.3,SSpeed:2,HSpeed:-0.052,DamageAT:1,PreGap:3,MinRange:0,MaxRange:1,RollingSpeed:0.13,RollingDamage:70,FireRate2:130,VSpeed:0.0011,DamageCoolDown:20},\

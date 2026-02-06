@@ -12,7 +12,8 @@ $execute as @n[type=armor_stand,tag=owner$(num),tag=sn$(shotNum)] at @s run func
 playsound block.stone.place master @a ~ ~ ~ 0.8 1.5
 scoreboard players set @s delay 9
 $scoreboard players remove @s ink $(Ink)
-$scoreboard players set @s shotDelay $(FireRate)
+$scoreboard players set @s rateFP $(FireRate)
+scoreboard players operation @s accFP -= @s rateFP
 $scoreboard players add @s accuracy $(Blur)
 $execute if score @s accuracy matches $(MaxBlur).. run scoreboard players set @s accuracy $(MaxBlur)
 

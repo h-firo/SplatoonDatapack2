@@ -6,6 +6,8 @@ scoreboard players set @s specialPoint 0
 scoreboard players set @s slosherTime -1
 scoreboard players set @s delay 0
 scoreboard players set @s shotDelay 0
+scoreboard players set @s accFP 0
+scoreboard players set @s rateFP 0
 scoreboard players set @s sprintDelay 0
 scoreboard players set @s preDelay 0
 scoreboard players set @s health 100

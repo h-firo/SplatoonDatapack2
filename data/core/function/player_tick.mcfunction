@@ -61,6 +61,9 @@ execute if score @s superJumpTime matches 0.. run function core:actions/superjum
 $execute if predicate core:push_space as @n[tag=spawnerRide$(XpLevel)] at @s run function core:game/shoot/rotate with entity @s data
 $execute if score @s isShootReady matches 1 as @n[tag=spawnerRide$(XpLevel)] at @s run function core:game/shoot/shoot with entity @s
 
+#ローラー横振り・縦振り判定
+$execute if data storage player: {$(XpLevel):{category:"roller"}} if score @s rightHold matches 0 run function core:weapons/rollers/judge_verticalshot with storage player: $(XpLevel)
+
 #チャージャーチャージ
 execute unless entity @s[tag=Click] if score @s rightHold matches 1.. unless score @s shotDelay matches 1.. run function core:weapons/chargers/is_charger with entity @s
 execute unless entity @s[tag=Click] run scoreboard players set @s rightHold 0

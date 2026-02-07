@@ -137,6 +137,11 @@ scoreboard objectives add isSticking dummy
 scoreboard objectives add paintPos dummy
 scoreboard objectives add paintRate dummy
 scoreboard objectives add paintTimer dummy
+scoreboard objectives add fizzy dummy
+scoreboard objectives add fizzyCharge dummy
+scoreboard objectives add fizzyCount dummy
+scoreboard objectives add playFizzySound dummy
+scoreboard objectives add maxFizzyCount dummy
 
 #SpecialWeapon
 scoreboard objectives add shotFireRate dummy
@@ -294,7 +299,7 @@ eliter4k:{FireRate:46,Damage:180,Ink:250,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.008,
 splatcharger:{FireRate:46,Damage:160,Ink:180,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.006,Gravity:0,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,ChargeTime:20,CKTime:25,CKRate:8,AirCharge:3},\
 squiffer:{FireRate:46,Damage:140,Ink:100,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:13,CKTime:25,CKRate:8,AirCharge:0},\
 snipewriter:{FireRate:46,Damage:68,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:24,CKTime:1,CKRate:8,AirCharge:0},\
-bamboozler:{FireRate:46,Damage:85,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:6,CKTime:1,CKRate:8,AirCharge:0},\
+bamboozler:{FireRate:46,Damage:85,Ink:70,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.002,Gravity:0,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2,ChargeTime:6,CKTime:1,CKRate:8,AirCharge:0},\
 grizzcocharger:{FireRate:30,Damage:130,Ink:200,Blur:0,AirBlur:1,MaxBlur:1,Speed:0.004,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:0,ChargeTime:3,CKTime:0,CKRate:8,AirCharge:3}},\
 blasters:{\
 blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:17,BlastDamage:70,BlastDuration:4},\
@@ -356,7 +361,8 @@ charger:{\
 eliter4k:{subWeapon:"inkmine",specialWeapon:"wavebreaker",specialPoint:210},\
 splatcharger:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:220},\
 squiffer:{subWeapon:"splashwall",specialWeapon:"bigbubbler",specialPoint:210},\
-snipewriter:{subWeapon:"sprinkler",specialWeapon:"tacticooler",specialPoint:220}},\
+snipewriter:{subWeapon:"sprinkler",specialWeapon:"tacticooler",specialPoint:220},\
+bamboozler:{subWeapon:"fizzybomb",specialWeapon:"killerwail51",specialPoint:200}},\
 blasters:{\
 blaster:{subWeapon:"inkmine",specialWeapon:"bigbubbler",specialPoint:180},\
 rangeblaster:{subWeapon:"suctionbomb",specialWeapon:"wavebreaker",specialPoint:210},\

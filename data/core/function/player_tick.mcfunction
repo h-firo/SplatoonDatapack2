@@ -47,6 +47,9 @@ execute if score @s resurrectionTime matches 0 run function core:deaths/resurrec
 #ポイズンミスト
 $function core:toxicmist_effect with storage player: $(XpLevel)
 
+#タンサンチャージ
+$execute if data storage player: {$(XpLevel):{subWeapon:"fizzybomb"}} run function core:subweapons/fizzybomb/fizzycharge
+
 #スーパージャンプ
 execute if score @s superJumpTime matches 0.. run function core:actions/superjump/tick with entity @s
 

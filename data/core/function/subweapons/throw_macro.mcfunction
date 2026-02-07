@@ -7,4 +7,5 @@ $execute if data storage player: {$(num):{subWeapon:"sprinkler"}} run function c
 $execute if data storage player: {$(num):{subWeapon:"inkmine"}} run function core:subweapons/inkmine/throw with entity @s
 $execute if data storage player: {$(num):{subWeapon:"toxicmist"}} run function core:subweapons/toxicmist/throw with entity @s
 $execute if data storage player: {$(num):{subWeapon:"burstbomb"}} run function core:subweapons/burstbomb/throw with entity @s
+$execute if data storage player: {$(num):{subWeapon:"fizzybomb"}} run function core:subweapons/fizzybomb/throw with entity @s
 $function item:weapons/$(category)/$(name)/give

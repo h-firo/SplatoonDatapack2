@@ -167,6 +167,8 @@ scoreboard objectives add _inkstrikeAdjuster dummy
 scoreboard objectives add inkstrikeTimer dummy
 scoreboard objectives add isStrike dummy
 scoreboard objectives add fistTimer dummy
+scoreboard objectives add damageLoopCount dummy
+scoreboard objectives add screenPaintDelay dummy
 
 #Delay
 scoreboard objectives add delay dummy
@@ -356,7 +358,7 @@ splatroller:{subWeapon:"curingbomb",specialWeapon:"bigbubbler",specialPoint:220}
 carbonroller:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:190},\
 dynamoroller:{subWeapon:"sprinkler",specialWeapon:"tacticooler",specialPoint:190},\
 wideroller:{subWeapon:"splashwall",specialWeapon:"crabtank",specialPoint:190},\
-flingzaroller:{subWeapon:"suctionbomb",specialWeapon:"wavebreaker",specialPoint:200}},\
+flingzaroller:{subWeapon:"suctionbomb",specialWeapon:"splattercolorscreen",specialPoint:200}},\
 charger:{\
 eliter4k:{subWeapon:"inkmine",specialWeapon:"wavebreaker",specialPoint:210},\
 splatcharger:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:220},\

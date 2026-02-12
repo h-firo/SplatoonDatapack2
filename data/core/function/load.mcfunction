@@ -357,7 +357,7 @@ roller:{\
 splatroller:{subWeapon:"curingbomb",specialWeapon:"bigbubbler",specialPoint:220},\
 carbonroller:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:190},\
 dynamoroller:{subWeapon:"sprinkler",specialWeapon:"tacticooler",specialPoint:190},\
-wideroller:{subWeapon:"splashwall",specialWeapon:"crabtank",specialPoint:190},\
+wideroller:{subWeapon:"suctionbomb",specialWeapon:"crabtank",specialPoint:190},\
 flingzaroller:{subWeapon:"suctionbomb",specialWeapon:"splattercolorscreen",specialPoint:200}},\
 charger:{\
 eliter4k:{subWeapon:"inkmine",specialWeapon:"wavebreaker",specialPoint:210},\

@@ -70,7 +70,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
 #ボールドマーカー
 item replace entity @s inventory.5 with \
 bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["curingbomb"]}}},\
-                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["trizooka"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["ultrastamp"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["short"]}}},\
                         {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\

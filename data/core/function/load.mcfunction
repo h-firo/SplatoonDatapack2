@@ -169,6 +169,9 @@ scoreboard objectives add isStrike dummy
 scoreboard objectives add fistTimer dummy
 scoreboard objectives add damageLoopCount dummy
 scoreboard objectives add screenPaintDelay dummy
+scoreboard objectives add stampMoveDelay dummy
+scoreboard objectives add stampPreDelay dummy
+scoreboard objectives add isStampThrow dummy
 
 #Delay
 scoreboard objectives add delay dummy
@@ -349,7 +352,7 @@ splattershot_pro:{subWeapon:"angleshooter",specialWeapon:"crabtank",specialPoint
 ftgal:{subWeapon:"splashwall",specialWeapon:"killerwail51",specialPoint:200},\
 aerospray:{subWeapon:"angleshooter",specialWeapon:"reefslider",specialPoint:180},\
 nzap85:{subWeapon:"suctionbomb",specialWeapon:"tacticooler",specialPoint:200},\
-splooshomatic:{subWeapon:"curingbomb",specialWeapon:"trizooka",specialPoint:200},\
+splooshomatic:{subWeapon:"curingbomb",specialWeapon:"ultrastamp",specialPoint:200},\
 splashomatic:{subWeapon:"burstbomb",specialWeapon:"crabtank",specialPoint:200},\
 nsgal:{subWeapon:"angleshooter",specialWeapon:"tacticooler",specialPoint:200},\
 splattershotjr:{subWeapon:"splatbomb",specialWeapon:"bigbubbler",specialPoint:200}},\

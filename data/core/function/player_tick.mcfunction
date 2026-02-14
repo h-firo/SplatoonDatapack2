@@ -149,6 +149,9 @@ $function core:air_blur with storage shot_temp: $(XpLevel)
 #マーキング
 execute if entity @s[tag=Marking] run function core:marker/marking with entity @s
 
+#投げられたハンコのtick
+$execute as @e[type=armor_stand,tag=ThrownStamp$(XpLevel)] at @s run function core:specialweapons/ultrastamp/thrownstamp_tick with entity @s data
+
 #マーキング矢印
 $function core:marker/search with storage player: $(XpLevel)
 

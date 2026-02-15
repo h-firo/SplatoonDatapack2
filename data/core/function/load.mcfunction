@@ -317,6 +317,8 @@ blaster:{FireRate:160,Damage:125,Ink:100,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.00
 rangeblaster:{FireRate:200,Damage:125,Ink:110,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.0009,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:17,BlastDamage:70,BlastDuration:6},\
 clashblaster:{FireRate:60,Damage:60,Ink:40,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.28,DamageAT:0,PreGap:3,BlastRadius:24,BlastDamage:30,BlastDuration:3},\
 sblast92:{FireRate:170,Damage:125,Ink:95,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.002,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:15,BlastDamage:70,BlastDuration:4},\
+rapidblaster:{FireRate:110,Damage:85,Ink:70,Blur:1,AirBlur:100,MaxBlur:300,Speed:0.0009,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:3,BlastRadius:17,BlastDamage:35,BlastDuration:6},\
+rapidblasterpro:{FireRate:130,Damage:85,Ink:91,Blur:1,AirBlur:100,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:4,BlastRadius:17,BlastDamage:35,BlastDuration:7},\
 grizzcoblaster:{FireRate:30,Damage:50,Ink:90,Blur:1,AirBlur:1,MaxBlur:300,Speed:0.001,Gravity:0,SSpeed:2,HSpeed:0.1,DamageAT:0,PreGap:3,BlastRadius:22,BlastDamage:35,BlastDuration:3}},\
 sloshers:{\
 slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
@@ -341,7 +343,7 @@ data merge storage objectdamage: {\
 shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24,nzap85:30,splooshomatic:38,splashomatic:28,nsgal:62,splattershotjr:28},\
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300,flingzaroller:270},\
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,bamboozler:170,grizzcocharger:200},\
-blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80},\
+blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80,rapidblaster:144,rapidblasterpro:170},\
 sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
 brushes:{inkbrush:60,octobrush:80},\
@@ -381,7 +383,9 @@ blasters:{\
 blaster:{subWeapon:"inkmine",specialWeapon:"bigbubbler",specialPoint:180},\
 rangeblaster:{subWeapon:"suctionbomb",specialWeapon:"wavebreaker",specialPoint:210},\
 clashblaster:{subWeapon:"splatbomb",specialWeapon:"trizooka",specialPoint:180},\
-sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180}},\
+sblast92:{subWeapon:"sprinkler",specialWeapon:"reefslider",specialPoint:180},\
+rapidblaster:{subWeapon:"inkmine",specialWeapon:"tripleinkstrike",specialPoint:180},\
+rapidblasterpro:{subWeapon:"angleshooter",specialWeapon:"killerwail51",specialPoint:180}},\
 sloshers:{\
 slosher:{subWeapon:"splatbomb",specialWeapon:"tripleinkstrike",specialPoint:50},\
 trislosher:{subWeapon:"toxicmist",specialWeapon:"tripleinkstrike",specialPoint:200},\

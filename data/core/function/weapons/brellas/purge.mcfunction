@@ -1,5 +1,7 @@
 #インクを減らす
 $scoreboard players remove @s ink $(PurgeInk)
+playsound item.armor.equip_gold master @a ~ ~ ~ 2 1
+playsound item.bucket.empty_axolotl master @a ~ ~ ~ 1 2
 
 #パージ用アマスタ
 $summon armor_stand ~ ~ ~ {Tags:["purge$(num)"],Invisible:true,Invulnerable:true,\

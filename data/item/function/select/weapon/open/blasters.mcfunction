@@ -51,3 +51,29 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
                         item_name={translate:"item.weapon.sblast92",bold:true},item_model="sblast92",custom_data={item:"button",type:"weapon",content:"sblast92"},\
                         lore=[{"color":"gray","translate":"item.weapon.sblast92.lore1"},{"color":"gray","translate":"item.weapon.sblast92.lore2"}]]
+
+#ラピッドブラスター
+item replace entity @s inventory.4 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["inkmine"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["tripleinkstrike"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],\
+                        item_name={translate:"item.weapon.rapidblaster",bold:true},item_model="rapidblaster",custom_data={item:"button",type:"weapon",content:"rapidblaster"},\
+                        lore=[{"color":"gray","translate":"item.weapon.rapidblaster.lore1"},{"color":"gray","translate":"item.weapon.rapidblaster.lore2"}]]
+
+#Rブラスターエリート
+item replace entity @s inventory.5 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["angleshooter"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["killerwail51"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],\
+                        item_name={translate:"item.weapon.rapidblasterpro",bold:true},item_model="rapidblasterpro",custom_data={item:"button",type:"weapon",content:"rapidblasterpro"},\
+                        lore=[{"color":"gray","translate":"item.weapon.rapidblasterpro.lore1"},{"color":"gray","translate":"item.weapon.rapidblasterpro.lore2"}]]

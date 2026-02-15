@@ -51,3 +51,9 @@ function core:weapons/brushes/shot_macro with entity @s
 
 $execute if data storage player: {$(XpLevel):{category:dualies}} if score @s shotDelay matches ..0 run \
 function core:weapons/dualies/shot_macro with entity @s
+
+$execute if data storage player: {$(XpLevel):{category:brellas}} if score @s shotDelay matches ..0 if score @s rightHold matches 0 run \
+function core:weapons/brellas/shot_macro with storage shot_temp: $(XpLevel)
+
+$execute if data storage player: {$(XpLevel):{category:brellas}} if score @s rightHold matches 1.. run \
+function core:weapons/brellas/guard_tick with storage shot_temp: $(XpLevel)

@@ -40,4 +40,6 @@ execute if items entity @s player.cursor *[custom_data~{content:"octobrush"}] ru
 execute if items entity @s player.cursor *[custom_data~{content:"splatdualies"}] run function command:set_weapon {category:dualies,weapon:splatdualies}
 execute if items entity @s player.cursor *[custom_data~{content:"dappledualies"}] run function command:set_weapon {category:dualies,weapon:dappledualies}
 execute if items entity @s player.cursor *[custom_data~{content:"dualiesquelchers"}] run function command:set_weapon {category:dualies,weapon:dualiesquelchers}
+
+execute if items entity @s player.cursor *[custom_data~{content:"splatbrella"}] run function command:set_weapon {category:brellas,weapon:splatbrella}
 clear @s

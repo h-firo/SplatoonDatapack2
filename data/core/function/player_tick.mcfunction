@@ -86,6 +86,9 @@ execute if score @s dodgeRollShotTimer matches 1.. run scoreboard players remove
 execute if score @s isDodgeRollShot matches 1 unless score @s dodgeRollShotTimer matches 1.. run function core:weapons/dualies/isshotcancel with entity @s
 $execute if score @s dodgerollTime matches 0 run function core:weapons/dualies/dodgeroll_cancel with storage shot_temp: $(XpLevel)
 
+#カサ系統
+$execute if data storage player: {$(XpLevel):{category:"brellas"}} run function core:weapons/brellas/tick with entity @s
+
 #スペシャルゲージの更新
 function core:specialbar with entity @s
 

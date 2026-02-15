@@ -1,0 +1,2 @@
+$execute positioned ~ ~1.6 ~ run \
+summon armor_stand ^$(dx) ^$(dy) ^$(dz) {Tags:["shot$(team)","ink","owner$(num)","general","sn$(shotNum)","msn$(sNum)"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),damage:$(Damage),shotNum:$(shotNum),damageAT:$(DamageAT),objDamage:$(obj)},attributes:[{id:"minecraft:gravity",base:$(Gravity)},{id:"minecraft:scale",base:0.1}]}

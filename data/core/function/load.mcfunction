@@ -129,6 +129,11 @@ scoreboard objectives add dodgerollCooldown dummy
 scoreboard objectives add dodgerollTime dummy
 scoreboard objectives add isDodgeRollShot dummy
 scoreboard objectives add dodgeRollShotTimer dummy
+scoreboard objectives add isGuard dummy
+scoreboard objectives add shieldHealth dummy
+scoreboard objectives add cannotGuard dummy
+scoreboard objectives add guardCoolDown dummy
+scoreboard objectives add purgeSurvivalTime dummy
 
 #subweapon
 scoreboard objectives add explosionTimer dummy
@@ -281,7 +286,8 @@ data merge storage playerspawner: {0:{team2:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 (ブラスター:爆風範囲,爆風ダメージ,弾持続時間)\
 (スピナー:チャージ時間,チャージキープ時間,チャージキープレート,最大射撃継続時間,空中チャージ減衰,チャージ後ダメージ),\
 (フデ:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ),\
-(マニューバー:スライド時間,スライド速度,スライド後移動速度,スライド後連射レート,スライド後減衰,スライドインク消費量,スライドクールダウン,移動禁止時間,最大スライド数,連続スライドクールダウン)
+(マニューバー:スライド時間,スライド速度,スライド後移動速度,スライド後連射レート,スライド後減衰,スライドインク消費量,スライドクールダウン,移動禁止時間,最大スライド数,連続スライドクールダウン)\
+(シェルター:展開時間,パージ時間,カサ復活時間,カサインク消費量,カサ耐久力,パージ継続時間,パージインク消費量)
 data merge storage weapons: {\
 shooter:{\
 splattershot:{FireRate:32,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,LateGap:3},\
@@ -326,7 +332,9 @@ octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,
 dualies:{\
 splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:2,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.6,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10},\
 dappledualies:{FireRate:16,Damage:36,Ink:6,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.0006,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:3,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollInk:50,RollCooldown:4,StopTime:9,MaxRolls:2,StopRollTime:3},\
-dualiesquelchers:{FireRate:20,Damage:28,Ink:12,Blur:5,AirBlur:10,MaxBlur:300,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:3,RollSpeed:2,HRollSpeed:-0.03,RollFireRate:20,RollDamageAT:1,RollInk:80,RollCooldown:5,StopTime:11,MaxRolls:2,StopRollTime:10}}}
+dualiesquelchers:{FireRate:20,Damage:28,Ink:12,Blur:5,AirBlur:10,MaxBlur:300,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:3,RollSpeed:2,HRollSpeed:-0.03,RollFireRate:20,RollDamageAT:1,RollInk:80,RollCooldown:5,StopTime:11,MaxRolls:2,StopRollTime:10}},\
+brellas:{\
+splatbrella:{FireRate:90,Damage:15,Ink:50,Blur:1,AirBlur:1,MaxBlur:200,Speed:0.0012,Gravity:1,SSpeed:2,HSpeed:0.1,DamageAT:1,PreGap:2,DeploymentT:4,PurgeT:35,ShieldRT:110,ShieldInk:6,ShieldD:500,PurgeD:100,PurgeInk:100}}}
 
 #対物性能
 data merge storage objectdamage: {\
@@ -338,6 +346,7 @@ sloshers:{slosher:140,trislosher:124,explosher:110},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
 brushes:{inkbrush:60,octobrush:80},\
 dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28},\
+brellas:{splatbrella:20},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
 }
 
@@ -387,7 +396,10 @@ octobrush:{subWeapon:"suctionbomb",specialWeapon:"reefslider",specialPoint:200}}
 dualies:{\
 splatdualies:{subWeapon:"curingbomb",specialWeapon:"triplesplashdown",specialPoint:190},\
 dappledualies:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:190},\
-dualiesquelchers:{subWeapon:"splatbomb",specialWeapon:"wavebreaker",specialPoint:190}}}
+dualiesquelchers:{subWeapon:"splatbomb",specialWeapon:"wavebreaker",specialPoint:190}},\
+brellas:{\
+splatbrella:{subWeapon:"curingbomb",specialWeapon:"tripleinkstrike",specialPoint:200}}}
+
 #モデル
 data merge storage models {\
 shooter:{\

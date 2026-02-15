@@ -1,0 +1,1 @@
+$execute if score @s rightClick matches 0 run function core:weapons/brellas/shieldclose with storage shot_temp: $(XpLevel)

@@ -54,7 +54,7 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
 
 #14式竹筒銃・甲
 item replace entity @s inventory.4 with \
-bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["sprinkler"]}}},\
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["fizzybomb"]}}},\
                         {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["killerwail51"]}}},\
                         {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick_hold"]}}},\
                         {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["middle"]}}},\

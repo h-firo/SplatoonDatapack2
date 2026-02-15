@@ -1,0 +1,1 @@
+$scoreboard players remove @p[level=$(objNum)] shieldHealth $(objDamage)

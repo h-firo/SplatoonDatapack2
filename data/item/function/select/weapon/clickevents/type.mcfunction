@@ -8,3 +8,4 @@ execute if items entity @s player.cursor *[custom_data={item:"button",type:"type
 execute if items entity @s player.cursor *[custom_data={item:"button",type:"type_select",content:"splatlings"}] run function item:select/weapon/open/splatlings
 execute if items entity @s player.cursor *[custom_data={item:"button",type:"type_select",content:"brushes"}] run function item:select/weapon/open/brushes
 execute if items entity @s player.cursor *[custom_data={item:"button",type:"type_select",content:"dualies"}] run function item:select/weapon/open/dualies
+execute if items entity @s player.cursor *[custom_data={item:"button",type:"type_select",content:"brellas"}] run function item:select/weapon/open/brellas

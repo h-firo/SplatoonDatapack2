@@ -120,6 +120,7 @@ scoreboard objectives add snipewriterBullet dummy
 scoreboard objectives add charged dummy
 scoreboard objectives add blastMode dummy
 scoreboard objectives add slosherTime dummy
+scoreboard objectives add swirl dummy
 scoreboard objectives add inkSpeed dummy
 scoreboard objectives add dualiesLR dummy
 scoreboard objectives add isDodgeRoll dummy
@@ -290,9 +291,9 @@ data merge storage playerspawner: {0:{team2:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
 (シェルター:展開時間,パージ時間,カサ復活時間,カサインク消費量,カサ耐久力,パージ継続時間,パージインク消費量)
 data merge storage weapons: {\
 shooter:{\
-splattershot:{FireRate:32,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,LateGap:3},\
+splattershot:{FireRate:32,Damage:37,Ink:9,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,LateGap:3},\
 splattershot_pro:{FireRate:42,Damage:45,Ink:24,Blur:1,AirBlur:1,MaxBlur:100,Speed:0.001,Gravity:0.3,SSpeed:2,HSpeed:0.32,DamageAT:1,PreGap:2,LateGap:3},\
-ftgal:{FireRate:48,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.5,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,LateGap:2},\
+ftgal:{FireRate:48,Damage:52,Ink:13,Blur:8,AirBlur:5,MaxBlur:264,Speed:0.001,Gravity:0.65,SSpeed:2,HSpeed:0.2,DamageAT:0,PreGap:2,LateGap:2},\
 aerospray:{FireRate:21,Damage:24,Ink:10,Blur:1000,AirBlur:5,MaxBlur:1000,Speed:0.0007,Gravity:1,SSpeed:2,HSpeed:0.44,DamageAT:3,PreGap:2,LateGap:2},\
 nzap85:{FireRate:26,Damage:30,Ink:8,Blur:1,AirBlur:1,MaxBlur:206,Speed:0.0013,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:1,PreGap:1,LateGap:2},\
 splooshomatic:{FireRate:26,Damage:38,Ink:8,Blur:100,AirBlur:100,MaxBlur:100,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.47,DamageAT:4,PreGap:1,LateGap:2},\
@@ -323,7 +324,8 @@ grizzcoblaster:{FireRate:30,Damage:50,Ink:90,Blur:1,AirBlur:1,MaxBlur:300,Speed:
 sloshers:{\
 slosher:{FireRate:96,Damage:70,Ink:76,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0005,Gravity:1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
 trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0001,Gravity:0.3,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:2},\
-explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3}},\
+explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
+sloshingmachine:{FireRate:126,Damage:76,Ink:92,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0012,Gravity:0.5,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:4}},\
 splatlings:{\
 minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0013,Gravity:0.7,SSpeed:2,HSpeed:0,DamageAT:1,PreGap:2,ChargeTime:9,CKTime:0,CKRate:0,Duration:28,AirCharge:1,ChargeDamage:32},\
 heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:-0.03,DamageAT:1,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
@@ -344,7 +346,7 @@ shooter:{splattershot:35,splattershot_pro:40,ftgal:48,aerospray:24,nzap85:30,spl
 roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300,flingzaroller:270},\
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,bamboozler:170,grizzcocharger:200},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80,rapidblaster:144,rapidblasterpro:170},\
-sloshers:{slosher:140,trislosher:124,explosher:110},\
+sloshers:{slosher:140,trislosher:124,explosher:110,sloshingmachine:129},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
 brushes:{inkbrush:60,octobrush:80},\
 dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28},\
@@ -389,7 +391,8 @@ rapidblasterpro:{subWeapon:"angleshooter",specialWeapon:"killerwail51",specialPo
 sloshers:{\
 slosher:{subWeapon:"splatbomb",specialWeapon:"tripleinkstrike",specialPoint:50},\
 trislosher:{subWeapon:"toxicmist",specialWeapon:"tripleinkstrike",specialPoint:200},\
-explosher:{subWeapon:"angleshooter",specialWeapon:"triplesplashdown",specialPoint:200}},\
+explosher:{subWeapon:"angleshooter",specialWeapon:"triplesplashdown",specialPoint:200},\
+sloshingmachine:{subWeapon:"fizzybomb",specialWeapon:"triplesplashdown",specialPoint:200}},\
 splatlings:{\
 minisplatling:{subWeapon:"toxicmist",specialWeapon:"bigbubbler",specialPoint:220},\
 heavysplatling:{subWeapon:"sprinkler",specialWeapon:"wavebreaker",specialPoint:200},\

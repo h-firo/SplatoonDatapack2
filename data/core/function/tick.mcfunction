@@ -16,6 +16,7 @@ execute as @e[type=armor_stand,tag=guides] unless score @s inkstrikeTimer matche
 execute as @e[type=armor_stand,tag=guides,scores={inkstrikeTimer=1..}] at @s run function core:specialweapons/tripleinkstrike/strikepoint_tick with entity @s data
 #item_display
 execute as @e[type=item_display,tag=fists] at @s run function core:specialweapons/triplesplashdown/fist_tick with entity @s data
+execute as @e[type=item_display,tag=swirl] at @s run function core:weapons/sloshers/swirl_tick
 #その他
 execute as @e[tag=player,scores={health=..0}] at @s run function core:deaths/main
 execute if score mode tutorialMode matches 0.. run function tutorial:tick

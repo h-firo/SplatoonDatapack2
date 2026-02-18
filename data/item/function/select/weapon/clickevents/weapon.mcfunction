@@ -31,6 +31,7 @@ execute if items entity @s player.cursor *[custom_data~{content:"rapidblasterpro
 execute if items entity @s player.cursor *[custom_data~{content:"slosher"}] run function command:set_weapon {category:sloshers,weapon:slosher}
 execute if items entity @s player.cursor *[custom_data~{content:"trislosher"}] run function command:set_weapon {category:sloshers,weapon:trislosher}
 execute if items entity @s player.cursor *[custom_data~{content:"explosher"}] run function command:set_weapon {category:sloshers,weapon:explosher}
+execute if items entity @s player.cursor *[custom_data~{content:"sloshingmachine"}] run function command:set_weapon {category:sloshers,weapon:sloshingmachine}
 
 execute if items entity @s player.cursor *[custom_data~{content:"minisplatling"}] run function command:set_weapon {category:splatlings,weapon:minisplatling}
 execute if items entity @s player.cursor *[custom_data~{content:"heavysplatling"}] run function command:set_weapon {category:splatlings,weapon:heavysplatling}

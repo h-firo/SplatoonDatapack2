@@ -3,3 +3,4 @@ $execute if data storage shot_temp: {$(num):{name:"trislosher"}} run function co
 $execute if data storage shot_temp: {$(num):{name:"trislosher"}} run function core:weapons/sloshers/trislosher_right with storage shot_temp: $(num)
 $execute if data storage shot_temp: {$(num):{name:"trislosher"}} run function core:weapons/sloshers/trislosher_left with storage shot_temp: $(num)
 $execute if data storage shot_temp: {$(num):{name:"explosher"}} run function core:weapons/sloshers/explosher with storage shot_temp: $(num)
+$execute if data storage shot_temp: {$(num):{name:"sloshingmachine"}} run function core:weapons/sloshers/sloshingmachine with storage shot_temp: $(num)

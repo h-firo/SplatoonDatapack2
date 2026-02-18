@@ -38,3 +38,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
                         item_name={translate:"item.weapon.explosher",bold:true},item_model="explosher",custom_data={item:"button",type:"weapon",content:"explosher"},\
                         lore=[{"color":"gray","translate":"item.weapon.explosher.lore1"},{"color":"gray","translate":"item.weapon.explosher.lore2"}]]
+
+#スクリュースロッシャー
+item replace entity @s inventory.3 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["fizzybomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["triplesplashdown"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["small"]}}}],\
+                        item_name={translate:"item.weapon.sloshingmachine",bold:true},item_model="sloshingmachine",custom_data={item:"button",type:"weapon",content:"sloshingmachine"},\
+                        lore=[{"color":"gray","translate":"item.weapon.sloshingmachine.lore1"},{"color":"gray","translate":"item.weapon.sloshingmachine.lore2"}]]

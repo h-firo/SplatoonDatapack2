@@ -30,6 +30,9 @@ $execute if score @s isSprint matches 1 if predicate core:is_squidmoving run par
 execute if score @s isSprint matches 1 unless score @s isMistEffect matches 1 run scoreboard players add @s health 2
 execute if score @s isSprint matches 1 if score @s health matches 100.. run scoreboard players set @s health 100
 
+#強制スピナー射撃終了
+execute if score @s isSprint matches 1 run scoreboard players set @s splatlingsDurationTime 0
+
 #インク回復
 execute if score @s isSprint matches 1 unless score @s isMistEffect matches 1 run scoreboard players add @s ink 15
 execute if score @s ink matches 999.. run scoreboard players set @s ink 999

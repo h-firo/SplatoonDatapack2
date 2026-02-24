@@ -121,6 +121,9 @@ scoreboard objectives add charged dummy
 scoreboard objectives add blastMode dummy
 scoreboard objectives add slosherTime dummy
 scoreboard objectives add swirl dummy
+scoreboard objectives add _sdt dummy
+scoreboard objectives add changeModeTime dummy
+scoreboard objectives add splatlingsShotDelay dummy
 scoreboard objectives add inkSpeed dummy
 scoreboard objectives add dualiesLR dummy
 scoreboard objectives add isDodgeRoll dummy
@@ -327,9 +330,10 @@ trislosher:{FireRate:76,Damage:42,Ink:60,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.00
 explosher:{FireRate:183,Damage:55,Ink:117,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.001,Gravity:0.1,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:3},\
 sloshingmachine:{FireRate:126,Damage:76,Ink:92,Blur:5,AirBlur:5,MaxBlur:200,Speed:0.0012,Gravity:0.5,SSpeed:2,HSpeed:0.3,DamageAT:0,PreGap:4}},\
 splatlings:{\
-minisplatling:{FireRate:10,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0013,Gravity:0.7,SSpeed:2,HSpeed:0,DamageAT:1,PreGap:2,ChargeTime:9,CKTime:0,CKRate:0,Duration:28,AirCharge:1,ChargeDamage:32},\
-heavysplatling:{FireRate:10,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:-0.03,DamageAT:1,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
-hydrasplatling:{FireRate:10,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:-0.05,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:80,AirCharge:1,ChargeDamage:40}},\
+minisplatling:{FireRate:1,Damage:32,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0013,Gravity:0.7,SSpeed:2,HSpeed:0,DamageAT:1,PreGap:2,ChargeTime:9,CKTime:0,CKRate:0,Duration:28,AirCharge:1,ChargeDamage:32},\
+heavysplatling:{FireRate:1,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0017,Gravity:0.7,SSpeed:2,HSpeed:-0.03,DamageAT:1,PreGap:2,ChargeTime:24,CKTime:0,CKRate:0,Duration:53,AirCharge:1,ChargeDamage:30},\
+hydrasplatling:{FireRate:1,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:-0.05,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:80,AirCharge:1,ChargeDamage:40},\
+ballpointsplatling:{FireRate:1,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0015,Gravity:0.7,SSpeed:2,HSpeed:-0.03,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:80,AirCharge:1,ChargeDamage:40}},\
 brushes:{\
 inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20},\
 octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25}},\
@@ -347,7 +351,7 @@ roller:{splatroller:150,carbonroller:181,dynamoroller:306,wideroller:300,flingza
 charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,bamboozler:170,grizzcocharger:200},\
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80,rapidblaster:144,rapidblasterpro:170},\
 sloshers:{slosher:140,trislosher:124,explosher:110,sloshingmachine:129},\
-splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35},\
+splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35,ballpointsplatling:30},\
 brushes:{inkbrush:60,octobrush:80},\
 dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28},\
 brellas:{splatbrella:20},\
@@ -396,7 +400,8 @@ sloshingmachine:{subWeapon:"fizzybomb",specialWeapon:"triplesplashdown",specialP
 splatlings:{\
 minisplatling:{subWeapon:"toxicmist",specialWeapon:"bigbubbler",specialPoint:220},\
 heavysplatling:{subWeapon:"sprinkler",specialWeapon:"wavebreaker",specialPoint:200},\
-hydrasplatling:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint:200}},\
+hydrasplatling:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint:200},\
+ballpointsplatling:{subWeapon:"fizzybomb",specialWeapon:"splattercolorscreen",specialPoint:200}},\
 brushes:{\
 inkbrush:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:200},\
 octobrush:{subWeapon:"suctionbomb",specialWeapon:"reefslider",specialPoint:200}},\

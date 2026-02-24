@@ -76,6 +76,7 @@ execute unless entity @s[tag=Click] unless score @s snipewriterBullet matches 1.
 #スピナー射撃
 execute if score @s splatlingsDurationTime matches 1.. if items entity @s weapon.mainhand *[custom_data~{item:"weapon"}] run function core:weapons/splatlings/shot_macro with entity @s
 execute if score @s splatlingsDurationTime matches 1.. unless items entity @s weapon.mainhand *[custom_data~{item:"weapon"}] run scoreboard players set @s splatlingsDurationTime 0
+execute unless score @s splatlingsDurationTime matches 1.. unless entity @s[tag=Click] run scoreboard players set @s _sdt 0
 
 #マニューバースライド
 $execute if data storage player: {$(XpLevel):{category:"dualies"}} if entity @s[tag=Click] if predicate core:push_space unless score @s dodgerollCooldown matches 1.. run function core:weapons/dualies/isdodgeroll with storage shot_temp: $(XpLevel)

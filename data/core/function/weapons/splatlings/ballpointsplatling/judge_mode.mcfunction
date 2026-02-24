@@ -1,0 +1,3 @@
+execute if score @s splatlingsDurationTime = @s changeModeTime run playsound block.vault.insert_item master @a ~ ~ ~ 2 1.5
+$execute if score @s splatlingsDurationTime >= @s changeModeTime run function core:weapons/splatlings/ballpointsplatling/shortmode with storage shot_temp: $(XpLevel)
+$execute if score @s splatlingsDurationTime < @s changeModeTime run function core:weapons/splatlings/ballpointsplatling/longmode with storage shot_temp: $(XpLevel)

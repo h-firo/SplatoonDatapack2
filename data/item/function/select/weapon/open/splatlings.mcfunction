@@ -38,3 +38,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
                         item_name={translate:"item.weapon.hydrasplatling",bold:true},item_model="hydrasplatling",custom_data={item:"button",type:"weapon",content:"hydrasplatling"},\
                         lore=[{"color":"gray","translate":"item.weapon.hydrasplatling.lore1"},{"color":"gray","translate":"item.weapon.hydrasplatling.lore2"}]]
+
+#クーゲルシュライバー
+item replace entity @s inventory.3 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["fizzybomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["splattercolorscreen"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick_hold"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["middle"]}}}],\
+                        item_name={translate:"item.weapon.ballpointsplatling",bold:true},item_model="ballpointsplatling",custom_data={item:"button",type:"weapon",content:"ballpointsplatling"},\
+                        lore=[{"color":"gray","translate":"item.weapon.ballpointsplatling.lore1"},{"color":"gray","translate":"item.weapon.ballpointsplatling.lore2"}]]

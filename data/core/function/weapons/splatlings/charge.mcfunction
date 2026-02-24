@@ -1,3 +1,6 @@
+#発射中ならリセット
+execute if score @s splatlingsDurationTime matches 1.. if items entity @s weapon.mainhand *[item_model="ballpointsplatling"] run function core:weapons/splatlings/shot_reset
+
 #チャージ時間あたりのチャージゲージ変化量を計算
 $scoreboard players set @s maxChargeValue $(ChargeTime)
 $scoreboard players set @s maxAirCharge $(AirCharge)
@@ -14,7 +17,6 @@ execute if score @s charge = @s maxChargeValue unless score @s charged matches 1
 
 #チャージ済みにする
 execute if score @s charge = @s maxChargeValue unless score @s charged matches 1 run scoreboard players set @s charged 1
-
 
 #表示
 function core:weapons/chargers/charge_display

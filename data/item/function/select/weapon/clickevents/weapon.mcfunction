@@ -36,6 +36,7 @@ execute if items entity @s player.cursor *[custom_data~{content:"sloshingmachine
 execute if items entity @s player.cursor *[custom_data~{content:"minisplatling"}] run function command:set_weapon {category:splatlings,weapon:minisplatling}
 execute if items entity @s player.cursor *[custom_data~{content:"heavysplatling"}] run function command:set_weapon {category:splatlings,weapon:heavysplatling}
 execute if items entity @s player.cursor *[custom_data~{content:"hydrasplatling"}] run function command:set_weapon {category:splatlings,weapon:hydrasplatling}
+execute if items entity @s player.cursor *[custom_data~{content:"ballpointsplatling"}] run function command:set_weapon {category:splatlings,weapon:ballpointsplatling}
 
 execute if items entity @s player.cursor *[custom_data~{content:"inkbrush"}] run function command:set_weapon {category:brushes,weapon:inkbrush}
 execute if items entity @s player.cursor *[custom_data~{content:"octobrush"}] run function command:set_weapon {category:brushes,weapon:octobrush}

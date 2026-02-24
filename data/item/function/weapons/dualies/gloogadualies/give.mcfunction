@@ -1,0 +1,3 @@
+item replace entity @s hotbar.0 with emerald[consumable={consume_seconds:100,animation:"spyglass",sound:"entity.tropical_fish.ambient",has_consume_particles:false},custom_data={item:"weapon"},\
+                item_model="gloogadualies",item_name={translate:item.weapon.gloogadualies},custom_model_data={strings:["0"]},use_effects={speed_multiplier:0.60}] 1
+item replace entity @s weapon.offhand with emerald[item_model="gloogadualies",item_name={translate:item.weapon.gloogadualies},custom_model_data={strings:["0"]},custom_data={item:"offhand"}] 1

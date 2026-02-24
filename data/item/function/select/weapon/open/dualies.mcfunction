@@ -38,3 +38,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],\
                         item_name={translate:"item.weapon.dualiesquelchers",bold:true},item_model="dualiesquelchers",custom_data={item:"button",type:"weapon",content:"dualiesquelchers"},\
                         lore=[{"color":"gray","translate":"item.weapon.dualiesquelchers.lore1"},{"color":"gray","translate":"item.weapon.dualiesquelchers.lore2"}]]
+
+#ケルビン525
+item replace entity @s inventory.3 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["splashwall"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["trizooka"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["middle"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],\
+                        item_name={translate:"item.weapon.gloogadualies",bold:true},item_model="gloogadualies",custom_data={item:"button",type:"weapon",content:"gloogadualies"},\
+                        lore=[{"color":"gray","translate":"item.weapon.gloogadualies.lore1"},{"color":"gray","translate":"item.weapon.gloogadualies.lore2"}]]

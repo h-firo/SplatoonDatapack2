@@ -14,9 +14,6 @@ execute as @e[type=armor_stand,tag=attackDetection] at @s run function core:ink_
 execute as @e[type=armor_stand,tag=inkstrikes] at @s run function core:specialweapons/tripleinkstrike/inkstrike_tick with entity @s data
 execute as @e[type=armor_stand,tag=guides] unless score @s inkstrikeTimer matches 1.. at @s run function core:specialweapons/tripleinkstrike/guide_tick with entity @s data
 execute as @e[type=armor_stand,tag=guides,scores={inkstrikeTimer=1..}] at @s run function core:specialweapons/tripleinkstrike/strikepoint_tick with entity @s data
-#item_display
-execute as @e[type=item_display,tag=fists] at @s run function core:specialweapons/triplesplashdown/fist_tick with entity @s data
-execute as @e[type=item_display,tag=swirl] at @s run function core:weapons/sloshers/swirl_tick
 #その他
 execute as @e[tag=player,scores={health=..0}] at @s run function core:deaths/main
 execute if score mode tutorialMode matches 0.. run function tutorial:tick
@@ -41,7 +38,10 @@ execute as @e[type=item_display,tag=explshotDisplay] run function core:specialwe
 execute as @e[type=item_display,tag=crabtankDisplay] run function core:specialweapons/crabtank/crabtankdisplay_tick with entity @s data
 execute as @e[type=item_display,tag=kd] at @s run function core:specialweapons/killerwail51/display_tick with entity @s data
 execute as @e[type=armor_stand,tag=bomb] at @s run function core:subweapons/armorstand_tick
-
+execute as @e[type=item_display,tag=fists] at @s run function core:specialweapons/triplesplashdown/fist_tick with entity @s data
+execute as @e[type=item_display,tag=swirl] at @s run function core:weapons/sloshers/swirl_tick
+execute as @e[type=item_display,tag=rainmakerDisplay] at @s run function core:weapons/rainmaker/display_tick with entity @s data
+ 
 execute as @e[tag=player,type=!player] at @s if entity @s[tag=Marking] run function core:marker/marking {XpLevel:100}
 
 #アイテムを捨てるキーで発動するやつら

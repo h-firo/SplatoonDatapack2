@@ -13,4 +13,5 @@ execute if entity @s[tag=explosher] run return run function core:ink_ticks/ink_t
 execute if entity @s[tag=sloshingmachine] run return run function core:ink_ticks/ink_tick_sloshingmachine with entity @s data
 execute if entity @s[tag=dynamoroller] run return run function core:ink_ticks/ws/dynamoroller with entity @s data
 execute if entity @s[tag=vs] run return run function core:ink_ticks/ws/verticalshot with entity @s data
+execute if entity @s[tag=rainmaker] run return run function core:ink_ticks/ink_tick_rainmaker with entity @s data
 function core:ink_ticks/ink_tick_general with entity @s data

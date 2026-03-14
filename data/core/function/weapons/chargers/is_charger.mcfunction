@@ -1,2 +1,3 @@
 $execute if data storage player: {$(XpLevel):{category:charger}} if score @s ink matches 1.. run function core:weapons/chargers/shot with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{category:splatlings}} if score @s ink matches 1.. run function core:weapons/splatlings/set_timer with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{category:others}} if score @s ink matches 1.. run function core:weapons/rainmaker/shot_macro with storage shot_temp: $(XpLevel)

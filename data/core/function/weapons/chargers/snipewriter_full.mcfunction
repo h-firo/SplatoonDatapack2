@@ -26,10 +26,12 @@ $execute positioned ~ ~1.6 ~ run \
 summon armor_stand ^ ^ ^2.0 {Tags:["shot$(team)","ink","owner$(num)","charger"],Invisible:true,Silent:true,Small:true,data:{team:$(team),owner:$(num),shotNum:$(shotNum),damageAT:$(DamageAT),objDamage:$(obj),speed:0.0005},attributes:[{id:"minecraft:gravity",base:0},{id:"minecraft:scale",base:0.1}]}
 
 $execute as @e[type=armor_stand,tag=owner$(num)] run data modify entity @s data.color set from storage team_color: colors.$(team)
-$execute as @e[type=armor_stand,tag=owner$(num)] run scoreboard players operation @s damage = @p[level=$(num)] damage
-$execute as @e[type=armor_stand,tag=owner$(num)] store result entity @s data.damage int 1 run scoreboard players get @s damage 
+$execute as @e[type=armor_stand,tag=owner$(num)] store result entity @s data.damage int 1 run scoreboard players operation @s damage = @p[level=$(num)] damage
 $execute as @e[type=armor_stand,tag=owner$(num)] at @s run function core:weapons/chargers/shot_as with entity @s data
 $execute as @e[type=armor_stand,tag=owner$(num),nbt={data:{shotNum:$(shotNum)}}] at @s run rotate @s facing entity @p[level=$(num)]
+$execute unless score @s chargeTo100 matches 100.. as @e[type=armor_stand,tag=owner$(num)] store result entity @s data.objDamage int 1 run \
+scoreboard players get @s damage
+
 scoreboard players set @s delay 9
 $scoreboard players remove @s ink $(Ink)
 $scoreboard players set @s shotDelay $(FireRate)

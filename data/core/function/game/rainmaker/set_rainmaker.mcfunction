@@ -1,3 +1,5 @@
+
+
 scoreboard players set team1 BarrierDamage 0
 scoreboard players set team2 BarrierDamage 0
 

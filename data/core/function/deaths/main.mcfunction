@@ -12,6 +12,9 @@ execute if entity @s[tag=balloon] run return run function core:deaths/balloon
 execute if entity @s[tag=TutorialTarget] run return run kill @s
 
 #プレイヤー
+#ガチホコを持っていたらその場に落とす
+execute if items entity @s hotbar.0 emerald[item_model=rainmaker] run function core:deaths/lose_rainmaker with storage core: rpplayer
+
 #復活時間設定
 execute if score @s drinkTimer matches 1.. run scoreboard players set @s resurrectionTime 20
 execute unless score @s drinkTimer matches 1.. run scoreboard players set @s resurrectionTime 100

@@ -28,4 +28,13 @@ $execute if entity @s[tag=objAttack] run scoreboard players remove @n[nbt={data:
 $execute if entity @s[tag=objAttack,tag=attackedBrella] run function core:damages/shielddamage {objNum:$(objNum),objDamage:$(objDamage)}
 execute if entity @s[tag=objAttack] run playsound block.vault.hit master @a ~ ~ ~ 0.6 1
 
+#ガチホコバリア
+$execute if entity @n[type=item_display,tag=rainmakerBarrier,distance=..3] if score team1 participationTeam matches $(team) run \
+scoreboard players add team1 BarrierDamage $(objDamage)
+$execute if entity @n[type=item_display,tag=rainmakerBarrier,distance=..3] if score team2 participationTeam matches $(team) run \
+scoreboard players add team2 BarrierDamage $(objDamage)
+$execute if entity @n[type=item_display,tag=rainmakerBarrier,distance=..3] run scoreboard players set num barrierFinalAttacked $(owner) 
+$execute if entity @n[type=item_display,tag=rainmakerBarrier,distance=..3] run playsound entity.player.hurt master @a ~ ~ ~ $(volume) 1.2
+execute if entity @n[type=item_display,tag=rainmakerBarrier,distance=..3] run kill @s
+
 execute if entity @e[tag=objAttack] run kill @s

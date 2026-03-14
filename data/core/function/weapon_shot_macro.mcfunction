@@ -61,5 +61,5 @@ function core:weapons/brellas/shot_macro with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{category:brellas}} if score @s rightHold matches 1.. run \
 function core:weapons/brellas/guard_tick with storage shot_temp: $(XpLevel)
 
-$execute if data storage player: {$(XpLevel):{category:others}} if score @s shotDelay matches ..0 unless score @s charged matches 1 run \
+$execute if data storage player: {$(XpLevel):{category:others}} if score @s shotDelay matches ..0 run \
 function core:weapons/rainmaker/charge with storage shot_temp: $(XpLevel)

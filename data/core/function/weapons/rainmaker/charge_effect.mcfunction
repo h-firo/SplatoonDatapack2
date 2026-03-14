@@ -1,0 +1,3 @@
+execute if score @s charge matches ..49 anchored eyes run particle dust{color:[0.812,0.702,0.000],scale:1.5} ^-0.5 ^ ^0.3 0.2 0.2 0.2 0 1 force @a[distance=1..]
+execute if score @s charge matches 50..70 anchored eyes run particle dust{color:[0.812,0.788,0.106],scale:1.5} ^-0.5 ^ ^0.3 0.2 0.2 0.2 0 2 force @a[distance=1..]
+execute if score @s charge matches 71..100 anchored eyes run particle dust{color:[0.812,0.757,0.267],scale:1.5} ^-0.5 ^ ^0.3 0.2 0.2 0.2 0 3 force @a[distance=1..]

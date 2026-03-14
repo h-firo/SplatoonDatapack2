@@ -49,6 +49,9 @@ scoreboard objectives add areaCount dummy
 scoreboard objectives add areaCountTemp dummy
 scoreboard objectives add areaLowestCount dummy
 scoreboard objectives add areaCountDownTimer dummy
+#ガチホコバトル
+scoreboard objectives add BarrierDamage dummy
+scoreboard objectives add barrierFinalAttacked dummy
 #勝敗判定用
 scoreboard objectives add blockCounts dummy
 scoreboard objectives add blockCountDisplay dummy

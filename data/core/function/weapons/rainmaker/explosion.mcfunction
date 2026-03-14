@@ -5,6 +5,9 @@ execute unless data entity @s {data:{Explosion:true}} run return run kill @s
 #重力を消す
 execute unless score @s explosionTimer matches 1.. run data merge entity @s {NoGravity:true}
 
+#演出
+$execute if score @s explosionTimer matches 1 run function core:weapons/rainmaker/explosion_decoration with storage dustcolor: $(team)
+
 #爆発待機
 $execute if score @s explosionTimer matches 1 run summon item_display ~ ~ ~ {Tags:["rainmakerDisplay$(shotNum)"],data:{team:$(team),owner:$(owner),num:$(shotNum)},item_display:"ground",teleport_duration:1,\
                             transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2,2,2]},interpolation_duration:5,\

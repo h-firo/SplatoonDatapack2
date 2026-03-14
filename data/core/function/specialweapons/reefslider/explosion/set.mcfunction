@@ -4,4 +4,4 @@ $summon armor_stand ~ ~ ~ {Tags:["sphere$(num)","sphereExplosion"],Rotation:[90f
 particle explosion ~ ~ ~ 2 2 2 0 10 force @a
 
 $execute as @n[type=armor_stand,tag=sphere$(num)] at @s run function core:specialweapons/reefslider/explosion/horizontal
-$kill @n[type=armor_stand,tag=sphere$(num)]
+$kill @e[type=armor_stand,tag=sphere$(num)]

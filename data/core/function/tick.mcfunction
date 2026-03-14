@@ -23,6 +23,7 @@ execute as @e[type=item,tag=Parts] unless score @s rareWeaponSummonTime matches 
 
 #コアタイム
 execute if score is isGame matches 1 run function core:game/tick
+function core:game/rainmaker/tick
 execute if score is isJudge matches 1 run function core:game/judge/tick
 execute if score is isJudge matches 2 run function core:game/area/judge/tick
 execute if score value mode matches 3 as @a at @s run function core:game/gaze_particle with entity @s

@@ -5,4 +5,5 @@ execute positioned ~ ~-1 ~ unless entity @p[tag=player,distance=..1] run return 
 execute as @p run function core:game/rainmaker/save_weapon with entity @s
 execute as @p run function command:set_weapon {category:"others",weapon:"rainmaker"}
 playsound block.amethyst_cluster.break master @a ~ ~ ~ 1 1
+playsound block.note_block.chime master @a ~ ~ ~ 1 2
 kill @s

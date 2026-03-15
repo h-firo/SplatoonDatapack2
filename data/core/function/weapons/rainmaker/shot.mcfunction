@@ -20,6 +20,10 @@ scoreboard players set @s delay 9
 $scoreboard players set @s shotDelay $(FireRate)
 $scoreboard players add @s accuracy $(Blur)
 
+#反動
+item replace entity @s armor.feet with iron_boots[enchantments={"core:rainmaker":1},enchantment_glint_override=false,equippable={slot:feet,equip_sound:entity.tropical_fish.ambient}]
+schedule function core:weapons/rainmaker/clear_equip 2t
+
 function core:weapons/rainmaker/charge_reset
 
 #音

@@ -1,0 +1,1 @@
+execute as @a if items entity @s hotbar.0 emerald[item_model="rainmaker"] run item replace entity @s armor.feet with air

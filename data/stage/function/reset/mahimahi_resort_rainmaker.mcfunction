@@ -10,5 +10,5 @@ place template stage4_7 186 -60 -390
 place template stage4_8_rainmaker 186 -60 -342
 place template stage4_9_rainmaker 186 -60 -294
 place template stage4_10 234 -60 -390
-place template stage4_11 234 -60 -342
+place template stage4_11_rainmaker 234 -60 -342
 place template stage4_12 234 -60 -294

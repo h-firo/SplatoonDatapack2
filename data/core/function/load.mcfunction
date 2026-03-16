@@ -42,6 +42,7 @@ scoreboard objectives add rareWeaponSummonTime dummy
 scoreboard objectives add stageGimmick dummy
 #スーパージャンプ用
 scoreboard objectives add x dummy
+scoreboard objectives add y dummy
 scoreboard objectives add z dummy
 #ガチエリア
 scoreboard objectives add areaBlockCount dummy
@@ -54,6 +55,9 @@ scoreboard objectives add areaCountDownTimer dummy
 scoreboard objectives add BarrierDamage dummy
 scoreboard objectives add barrierFinalAttacked dummy
 scoreboard objectives add rainmakerTimerDisplay dummy
+scoreboard objectives add rainmakerGoalPos dummy
+scoreboard objectives add rainmakerZeroDistance dummy
+scoreboard objectives add checkPoint dummy
 #勝敗判定用
 scoreboard objectives add blockCounts dummy
 scoreboard objectives add blockCountDisplay dummy

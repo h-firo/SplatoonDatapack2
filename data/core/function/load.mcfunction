@@ -39,6 +39,7 @@ scoreboard objectives add jumpNum dummy
 scoreboard objectives add isJumpMenuOpen dummy
 scoreboard objectives add isChangeMusic dummy
 scoreboard objectives add rareWeaponSummonTime dummy
+scoreboard objectives add stageGimmick dummy
 #スーパージャンプ用
 scoreboard objectives add x dummy
 scoreboard objectives add z dummy
@@ -247,6 +248,10 @@ title @a times 0 8 0
 #インク同士が当たらないようにする
 team add noCollision
 team modify noCollision collisionRule never
+
+#金網抜け
+team add slipThrough
+team modify slipThrough collisionRule never
 
 #イカランプ
 bossbar add squidlamp {"text":"あああ"}

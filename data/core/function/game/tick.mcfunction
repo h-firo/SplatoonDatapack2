@@ -29,6 +29,9 @@ scoreboard players operation sec gameTime = time gameTime
 scoreboard players operation sec gameTime -= minus gameTime
 scoreboard players operation sec gameTime /= 20 num
 
+#ギミック
+execute if score value stage matches 3 run function stage:gimmick/mahimahi_resort
+
 #レギュラーマッチ時、残り1分になったら音楽を変える
 execute if score value gameRule matches 0 if score time gameTime matches ..1220 unless score is isChangeMusic matches 1 run function core:game/music_change_end
 

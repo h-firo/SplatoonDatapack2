@@ -1,0 +1,1 @@
+title @s actionbar [{"text":"カンモンに置け！！　残り",bold:true,color:red},{"score":{name:"@s",objective:"rainmakerTimerDisplay"}}]

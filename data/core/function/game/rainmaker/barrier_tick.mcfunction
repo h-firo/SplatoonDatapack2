@@ -22,7 +22,7 @@ execute if score team1 BarrierDamage > team2 BarrierDamage store result storage 
 execute if score team2 BarrierDamage > team1 BarrierDamage store result storage temp_ args.team int 1 run scoreboard players get team2 participationTeam
 $execute if score team1 BarrierDamage > team2 BarrierDamage store result storage temp_ args.team int 1 run data merge storage temp_ {args:{color:$(team1)}}
 $execute if score team2 BarrierDamage > team1 BarrierDamage store result storage temp_ args.team int 1 run data merge storage temp_ {args:{color:$(team2)}}
-execute store result storage temp_ args.num int 1 run scoreboard players get @s barrierFinalAttacked
+execute store result storage temp_ args.num int 1 run scoreboard players get player barrierFinalAttacked
 
 #爆発
 function core:specialweapons/reefslider/explosion/set with storage temp_ args

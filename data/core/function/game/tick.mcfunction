@@ -1,5 +1,6 @@
 #ルール特有処理
 execute if score value gameRule matches 1 run function core:game/area/tick with storage core: joinColor
+execute if score value gameRule matches 2 run function core:game/rainmaker/tick with storage core: joinColor
 
 #ゲーム前演出
 scoreboard players add time coreTime 1
@@ -39,6 +40,7 @@ execute if score value gameRule matches 0 if score time gameTime matches ..1220 
 #ゲーム終了
 execute if score time gameTime matches ..0 if score value gameRule matches 0 run function core:game/judge/judge
 execute if score time gameTime matches ..0 if score value gameRule matches 1 run function core:game/area/judge/judge
+execute if score time gameTime matches ..0 if score value gameRule matches 2 run function core:game/rainmaker/judge/judge
 execute if score time gameTime matches ..0 run function core:game/end
 
 #モードが3のとき、目線先にパーティクル

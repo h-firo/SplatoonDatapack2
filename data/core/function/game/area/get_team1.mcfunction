@@ -5,6 +5,8 @@ scoreboard players set value areaOwner 1
 $execute if score value stage matches 0 run fill 5 -61 -199 36 -61 -185 $(team1)_concrete replace #core:concreate
 $execute if score value stage matches 1 run fill 158 -59 -122 173 -59 -113 $(team1)_concrete replace #core:concreate
 $execute if score value stage matches 2 run fill -13 -61 76 1 -61 92 $(team1)_concrete replace #core:concreate
+$execute if score value stage matches 3 run fill 188 -58 -307 197 -58 -296 $(team1)_concrete replace #core:concreate
+
 
 #最新値更新
 execute if score team2 areaCount < team2 areaLowestCount run scoreboard players operation team2 areaLowestCount = team2 areaCount

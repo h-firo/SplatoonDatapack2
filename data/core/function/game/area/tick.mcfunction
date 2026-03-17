@@ -1,10 +1,15 @@
 #ブロック数カウント
 $execute if score value stage matches 0 store result score team1 areaBlockCount run clone 5 -61 -199 36 -61 -185 5 -61 -199 filtered $(team1)_concrete force
 $execute if score value stage matches 0 store result score team2 areaBlockCount run clone 5 -61 -199 36 -61 -185 5 -61 -199 filtered $(team2)_concrete force
+
 $execute if score value stage matches 1 store result score team1 areaBlockCount run clone 158 -59 -122 173 -59 -113 158 -59 -122 filtered $(team1)_concrete force
 $execute if score value stage matches 1 store result score team2 areaBlockCount run clone 158 -59 -122 173 -59 -113 158 -59 -122 filtered $(team2)_concrete force
+
 $execute if score value stage matches 2 store result score team1 areaBlockCount run clone -13 -61 76 1 -61 92 -13 -61 76 filtered $(team1)_concrete force
 $execute if score value stage matches 2 store result score team2 areaBlockCount run clone -13 -61 76 1 -61 92 -13 -61 76 filtered $(team2)_concrete force
+
+$execute if score value stage matches 3 store result score team1 areaBlockCount run clone 188 -58 -307 197 -58 -296 188 -58 -307 filtered $(team1)_concrete force
+$execute if score value stage matches 3 store result score team2 areaBlockCount run clone 188 -58 -307 197 -58 -296 188 -58 -307 filtered $(team2)_concrete force
 
 #割合
 scoreboard players operation team1 areaBlockCount *= 100 num

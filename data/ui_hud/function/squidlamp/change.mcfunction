@@ -27,7 +27,7 @@ function concat:concat_all
 #レギュラーマッチなら、イカランプのみ
 execute if score value gameRule matches 0 run return run function ui_hud:squidlamp/change_regular
 #ガチマッチなら、カウント表示
-execute if score value gameRule matches 1 store result storage squidlamps ruleCount1 int 1 run scoreboard players get team1 areaCount
-execute if score value gameRule matches 1 store result storage squidlamps ruleCount2 int 1 run scoreboard players get team2 areaCount
-execute if score value gameRule matches 1 if score sec gameTime >= 10 num run return run function ui_hud:squidlamp/change_count/sec_greater/out
-execute if score value gameRule matches 1 run function ui_hud:squidlamp/change_count/sec_less/out
+execute if score value gameRule matches 1..2 store result storage squidlamps ruleCount1 int 1 run scoreboard players get team1 areaCount
+execute if score value gameRule matches 1..2 store result storage squidlamps ruleCount2 int 1 run scoreboard players get team2 areaCount
+execute if score value gameRule matches 1..2 if score sec gameTime >= 10 num run return run function ui_hud:squidlamp/change_count/sec_greater/out
+execute if score value gameRule matches 1..2 run function ui_hud:squidlamp/change_count/sec_less/out

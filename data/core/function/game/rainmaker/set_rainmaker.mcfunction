@@ -1,4 +1,6 @@
-
+kill @e[type=item_display,tag=rainmakerObject]
+kill @e[type=item_display,tag=rainmakerBarrier]
+kill @e[type=shulker,tag=rainmarkerBarrierCollider]
 
 scoreboard players set team1 BarrierDamage 0
 scoreboard players set team2 BarrierDamage 0

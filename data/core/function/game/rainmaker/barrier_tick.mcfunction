@@ -11,6 +11,16 @@ data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"item_mod
 $execute if score team2 BarrierDamage > team1 BarrierDamage run \
 data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"item_model":rainmaker_effect,"custom_model_data":{strings:["$(team2)"]}}}}
 
+#ダメージに応じて大きさを変える
+execute if score total BarrierDamage matches 0..299 run \
+data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[3f,3f,3f]}}
+execute if score total BarrierDamage matches 300..699 run \
+data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[4f,4f,4f]}}
+execute if score total BarrierDamage matches 700..899 run \
+data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[5f,5f,5f]}}
+execute if score total BarrierDamage matches 900..999 run \
+data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[6f,6f,6f]}}
+
 #ダメージトータルが一定以上なら爆発
 execute unless score total BarrierDamage matches 1000.. run return fail
 
@@ -20,8 +30,8 @@ data remove storage temp_ args
 execute store result storage temp_ args.shotNum int 1 run scoreboard players get @s shotNum
 execute if score team1 BarrierDamage > team2 BarrierDamage store result storage temp_ args.team int 1 run scoreboard players get team1 participationTeam
 execute if score team2 BarrierDamage > team1 BarrierDamage store result storage temp_ args.team int 1 run scoreboard players get team2 participationTeam
-$execute if score team1 BarrierDamage > team2 BarrierDamage store result storage temp_ args.team int 1 run data merge storage temp_ {args:{color:$(team1)}}
-$execute if score team2 BarrierDamage > team1 BarrierDamage store result storage temp_ args.team int 1 run data merge storage temp_ {args:{color:$(team2)}}
+$execute if score team1 BarrierDamage > team2 BarrierDamage run data merge storage temp_ {args:{color:$(team1)}}
+$execute if score team2 BarrierDamage > team1 BarrierDamage run data merge storage temp_ {args:{color:$(team2)}}
 execute store result storage temp_ args.num int 1 run scoreboard players get player barrierFinalAttacked
 
 #爆発

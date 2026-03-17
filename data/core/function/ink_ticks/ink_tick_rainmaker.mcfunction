@@ -28,6 +28,7 @@ execute if block ~1 ~ ~ #core:can_sticking run function core:weapons/rainmaker/e
 execute if block ~ ~ ~1 #core:can_sticking run function core:weapons/rainmaker/explosion with entity @s data
 execute if block ~-1 ~ ~ #core:can_sticking run function core:weapons/rainmaker/explosion with entity @s data
 execute if block ~ ~ ~-1 #core:can_sticking run function core:weapons/rainmaker/explosion with entity @s data
+execute if block ~ ~ ~ #core:can_sticking run function core:weapons/rainmaker/explosion with entity @s data
 
 #直接攻撃
 function core:ink_damages/ink_damage_charger with entity @s data

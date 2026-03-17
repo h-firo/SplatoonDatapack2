@@ -1,5 +1,4 @@
 
-say c
 #地面にくっつく
 execute if predicate core:is_onground unless score @s isSticking matches 1 run function core:subweapons/sprinkler/sticking with entity @s data
 

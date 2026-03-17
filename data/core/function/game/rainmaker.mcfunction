@@ -5,6 +5,9 @@ execute if score team1 participationTeam = team2 participationTeam store result 
 execute store result storage core: team1 int 1 run scoreboard players get team1 participationTeam
 execute store result storage core: team2 int 1 run scoreboard players get team2 participationTeam
 
+#登場色割り当て
+function core:game/assign_color with storage core:
+
 #スコアセット
 scoreboard players set is isGame 1
 scoreboard players set is isJudge 0
@@ -25,9 +28,12 @@ scoreboard players set team1 areaCount 100
 scoreboard players set team2 areaCount 100
 
 #カンモン位置設定
-say d
 kill @e[type=marker,tag=rainmakerPutPoint]
 function core:game/rainmaker/setup with storage core:
+execute if score value stage matches 0 run scoreboard players set value rainmakerZeroDistance 1521
+execute if score value stage matches 1 run scoreboard players set value rainmakerZeroDistance 1225
+execute if score value stage matches 2 run scoreboard players set value rainmakerZeroDistance 484
+execute if score value stage matches 3 run scoreboard players set value rainmakerZeroDistance 2000
 
 #プレイヤー番号付与
 #function core:set_pnum

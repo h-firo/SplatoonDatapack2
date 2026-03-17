@@ -1,0 +1,1 @@
+execute positioned 192.9 -56 -301.1 run function core:game/rainmaker/set_rainmaker

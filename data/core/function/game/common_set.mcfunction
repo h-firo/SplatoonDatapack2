@@ -18,6 +18,7 @@ function core:squidlamps/link_lamp
 scoreboard players set @a charge 0
 scoreboard players set @a useSpecialWeapon 1
 scoreboard players set @a ink 999
+scoreboard players set @a specialPoint 0
 
 #ステージごとに異なる場所に
 execute store result storage core: stage int 1 run scoreboard players get value stage

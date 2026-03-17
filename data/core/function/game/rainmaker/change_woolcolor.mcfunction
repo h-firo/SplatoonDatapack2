@@ -1,0 +1,1 @@
+$fill ~-3 ~-3 ~-3 ~3 ~3 ~3 $(color)_wool replace white_wool

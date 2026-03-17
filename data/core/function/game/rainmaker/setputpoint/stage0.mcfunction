@@ -1,4 +1,3 @@
-say pok
 execute positioned 28 -55 -171 run function core:game/rainmaker/set_putpoint_checkpoint {team:2}
 execute positioned 18 -57 -170 run function core:game/rainmaker/set_putpoint_checkpoint {team:2}
 execute positioned 27 -55 -154 run function core:game/rainmaker/set_putpoint_goal {team:2}

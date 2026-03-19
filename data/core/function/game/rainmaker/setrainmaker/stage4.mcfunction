@@ -1,0 +1,1 @@
+execute positioned -186 -56 1 run function core:game/rainmaker/set_rainmaker

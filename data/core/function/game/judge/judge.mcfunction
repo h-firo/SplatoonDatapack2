@@ -6,3 +6,4 @@ execute if score value stage matches 0 run function core:game/judge/count_percen
 execute if score value stage matches 1 run function core:game/judge/count_percentage/stage1 with storage core: joinColor
 execute if score value stage matches 2 run function core:game/judge/count_percentage/stage2 with storage core: joinColor
 execute if score value stage matches 3 run function core:game/judge/count_percentage/stage3 with storage core: joinColor
+execute if score value stage matches 4 run function core:game/judge/count_percentage/stage4 with storage core: joinColor

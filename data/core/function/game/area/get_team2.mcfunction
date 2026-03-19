@@ -6,6 +6,7 @@ $execute if score value stage matches 0 run fill 5 -61 -199 36 -61 -185 $(team2)
 $execute if score value stage matches 1 run fill 158 -59 -122 173 -59 -113 $(team2)_concrete replace #core:concreate
 $execute if score value stage matches 2 run fill -13 -61 76 1 -61 92 $(team2)_concrete replace #core:concreate
 $execute if score value stage matches 3 run fill 188 -58 -307 197 -58 -296 $(team2)_concrete replace #core:concreate
+$execute if score value stage matches 4 run fill -193 -61 -4 -179 -61 6 $(team2)_concrete replace #core:concreate
 
 #最新値更新
 execute if score team1 areaCount < team1 areaLowestCount run scoreboard players operation team1 areaLowestCount = team1 areaCount

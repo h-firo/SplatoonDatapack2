@@ -9,4 +9,6 @@ rotate @s ~ ~
 
 #ライド
 effect give @e[type=mannequin,tag=playerAvator] invisibility infinite 1 true
+item replace entity @e[type=mannequin,tag=playerAvator] weapon.mainhand with air
+item replace entity @e[type=mannequin,tag=playerAvator] weapon.offhand with air
 #$ride @s mount @n[type=item_display,tag=spawnerRide$(XpLevel)]

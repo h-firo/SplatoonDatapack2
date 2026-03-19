@@ -5,3 +5,6 @@ $summon area_effect_cloud ~ ~ ~ \
 {custom_particle:{type:"block",block_state:{Name:$(color)_concrete}},Radius:0.8f,Duration:10,Age:3,ReapplicationDelay:10,WaitTime:0,potion_contents:{potion:"minecraft:water",\
 custom_effects:[{id:"minecraft:invisibility",amplifier:1,duration:3,show_icon:false,show_particles:false},\
                 {id:"minecraft:speed",amplifier:3,duration:3,show_icon:false,show_particles:false}]}}
+
+#上に金網があったら金網の上へ
+execute if block ~ ~2 ~ waxed_exposed_copper_grate run tp @s ~ ~3 ~

@@ -7,6 +7,8 @@ execute on passengers at @s if score value stage matches 2 if entity @s[z=55,dz=
 execute on passengers at @s if score value stage matches 2 if entity @s[z=113,dz=-10] on vehicle run kill @s
 execute on passengers at @s if score value stage matches 3 if entity @s[x=160,dx=10] on vehicle run kill @s
 execute on passengers at @s if score value stage matches 3 if entity @s[x=220,dx=-10] on vehicle run kill @s
+execute on passengers at @s if score value stage matches 4 if entity @s[x=-215,dx=10] on vehicle run kill @s
+execute on passengers at @s if score value stage matches 4 if entity @s[x=-154,dx=-10] on vehicle run kill @s
 #前進
 execute if block ~ ~-1 ~ #air if block ~ ~-2 ~ #air if block ~ ~-3 ~ #air run return run tp @s ^ ^ ^3
 scoreboard players set @s isShootReady 0

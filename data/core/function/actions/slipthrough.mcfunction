@@ -1,3 +1,6 @@
-setblock ~ ~ ~ air
-summon shulker ~ ~ ~ {Team:"slipThrough",NoAI:true,Tags:["slipthrough"],Silent:true}
-team join slipThrough
+$execute if block ~1 ~-1 ~ $(color)_concrete run return fail
+$execute if block ~-1 ~-1 ~ $(color)_concrete run return fail
+$execute if block ~ ~-1 ~1 $(color)_concrete run return fail
+$execute if block ~ ~-1 ~-1 $(color)_concrete run return fail
+
+tp @s ~ ~-1 ~

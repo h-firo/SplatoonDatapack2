@@ -21,6 +21,7 @@ execute if score value stage matches 0 run function stage:reset/eeltail_alley_ar
 execute if score value stage matches 1 run function stage:reset/barnacle_dime_area
 execute if score value stage matches 2 run function stage:reset/inkblot_artacademy_area
 execute if score value stage matches 3 run function stage:reset/mahimahi_resort_area
+execute if score value stage matches 4 run function stage:reset/mincemeat_metalworks/area
 scoreboard players set value areaOwner -1
 scoreboard players set team1 areaCount 100
 scoreboard players set team2 areaCount 100
@@ -33,6 +34,7 @@ execute if score value stage matches 0 store result score all areaBlockCount run
 execute if score value stage matches 1 store result score all areaBlockCount run clone 158 -59 -122 173 -59 -113 158 -59 -122 filtered white_wool force
 execute if score value stage matches 2 store result score all areaBlockCount run clone -13 -61 76 1 -61 92 -13 -61 76 filtered white_wool force
 execute if score value stage matches 3 store result score all areaBlockCount run clone 188 -58 -307 197 -58 -296 188 -58 -307 filtered white_wool force
+execute if score value stage matches 4 store result score all areaBlockCount run clone -193 -61 -4 -179 -61 6 -193 -61 -4 filtered white_wool force
 
 #プレイヤー番号付与
 #function core:set_pnum

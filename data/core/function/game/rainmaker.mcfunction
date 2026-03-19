@@ -24,6 +24,7 @@ execute if score value stage matches 0 run function stage:reset/eeltail_alley_ra
 execute if score value stage matches 1 run function stage:reset/barnacle_dime_rainmaker
 execute if score value stage matches 2 run function stage:reset/inkblot_artacademy_rainmaker
 execute if score value stage matches 3 run function stage:reset/mahimahi_resort_rainmaker
+execute if score value stage matches 4 run function stage:reset/mincemeat_metalworks/rainmaker
 scoreboard players set team1 areaCount 100
 scoreboard players set team2 areaCount 100
 
@@ -34,6 +35,7 @@ execute if score value stage matches 0 run scoreboard players set value rainmake
 execute if score value stage matches 1 run scoreboard players set value rainmakerZeroDistance 1225
 execute if score value stage matches 2 run scoreboard players set value rainmakerZeroDistance 484
 execute if score value stage matches 3 run scoreboard players set value rainmakerZeroDistance 2000
+execute if score value stage matches 4 run scoreboard players set value rainmakerZeroDistance 1156
 
 #プレイヤー番号付与
 #function core:set_pnum

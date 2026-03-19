@@ -40,6 +40,7 @@ scoreboard objectives add isJumpMenuOpen dummy
 scoreboard objectives add isChangeMusic dummy
 scoreboard objectives add rareWeaponSummonTime dummy
 scoreboard objectives add stageGimmick dummy
+scoreboard objectives add stageGimmick dummy
 #スーパージャンプ用
 scoreboard objectives add x dummy
 scoreboard objectives add y dummy
@@ -299,7 +300,9 @@ data merge storage playerspawner: {0:{team2:{0:{x:9,y:-6,z:-251,yaw:180},1:{x:14
                                     2:{team1:{0:{x:-26,y:-33,z:136,yaw:180},1:{x:-21,y:-33,z:136,yaw:180},2:{x:-16,y:-33,z:136,yaw:180},3:{x:-11,y:-33,z:136,yaw:180},Zlimit:-88},\
                                       team2:{0:{x:14,y:-35,z:31,yaw:0},1:{x:9,y:-35,z:31,yaw:0},2:{x:4,y:-35,z:31,yaw:0},3:{x:-1,y:-35,z:31,yaw:0},Zlimit:-145}},\
                                     3:{team1:{0:{x:137,y:-30,z:-300,yaw:-90},1:{x:137,y:-30,z:-305,yaw:-90},2:{x:137,y:-30,z:-310,yaw:-90},3:{x:137,y:-30,z:-315,yaw:-90},Zlimit:-88},\
-                                      team2:{0:{x:248,y:-31,z:-302,yaw:90},1:{x:248,y:-31,z:-297,yaw:90},2:{x:248,y:-31,z:-292,yaw:90},3:{x:248,y:-31,z:-287,yaw:90},Zlimit:-145}}}
+                                      team2:{0:{x:248,y:-31,z:-302,yaw:90},1:{x:248,y:-31,z:-297,yaw:90},2:{x:248,y:-31,z:-292,yaw:90},3:{x:248,y:-31,z:-287,yaw:90},Zlimit:-145}},\
+                                    4:{team1:{0:{x:-137,y:-37,z:-15,yaw:90},1:{x:-137,y:-37,z:-11,yaw:90},2:{x:-137,y:-37,z:-7,yaw:90},3:{x:-137,y:-37,z:-3,yaw:90},Zlimit:-88},\
+                                      team2:{0:{x:-233,y:-37,z:16,yaw:-90},1:{x:-233,y:-37,z:12,yaw:-90},2:{x:-233,y:-37,z:8,yaw:-90},3:{x:-233,y:-37,z:4,yaw:-90},Zlimit:-145}}}
 
 #[連射レート(フレーム/3×16),ダメージ,インク消費量(割合×10),拡散,ジャンプ中拡散,最大拡散(拡散/補正悪化量[発]),射程(着弾速度),射程(落下速度,デフォ0.08),イカ速,ヒト速,威力減衰,前隙\
 (ローラー:塗り進み最小,塗り進み最大,塗り進み速度,塗り進みダメージ,縦振りレート,縦振り速度),\

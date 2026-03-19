@@ -113,6 +113,7 @@ scoreboard objectives add accFP dummy
 scoreboard objectives add rateFP dummy
 scoreboard objectives add damage dummy
 scoreboard objectives add damageData_ dummy
+scoreboard objectives add alreadyPreDelaySet dummy
 scoreboard objectives add speed dummy
 scoreboard objectives add rollDamageCoolDown dummy
 scoreboard objectives add isVerticalShot dummy
@@ -134,6 +135,7 @@ scoreboard objectives add swirl dummy
 scoreboard objectives add _sdt dummy
 scoreboard objectives add changeModeTime dummy
 scoreboard objectives add splatlingsShotDelay dummy
+scoreboard objectives add noPreDelaySet dummy
 scoreboard objectives add inkSpeed dummy
 scoreboard objectives add dualiesLR dummy
 scoreboard objectives add isDodgeRoll dummy
@@ -356,7 +358,8 @@ hydrasplatling:{FireRate:1,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.
 ballpointsplatling:{FireRate:1,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0015,Gravity:0.7,SSpeed:2,HSpeed:-0.03,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:80,AirCharge:1,ChargeDamage:40}},\
 brushes:{\
 inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20},\
-octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25}},\
+octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25},\
+painbrush:{FireRate:40,Damage:60,Ink:48,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:8,PreGap:8,MinRange:-1,MaxRange:0,RollingSpeed:0.165,RollingDamage:30}},\
 dualies:{\
 splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:2,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollFireSpeed:0.001,RollDamage:30,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10},\
 dappledualies:{FireRate:16,Damage:36,Ink:6,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.0006,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:3,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollFireSpeed:0.0006,RollDamage:36,RollInk:50,RollCooldown:4,StopTime:9,MaxRolls:2,StopRollTime:3},\
@@ -376,7 +379,7 @@ charger:{eliter4k:360,splatcharger:320,squiffer:280,snipewriter:116,bamboozler:1
 blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblaster:80,rapidblaster:144,rapidblasterpro:170},\
 sloshers:{slosher:140,trislosher:124,explosher:110,sloshingmachine:129},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35,ballpointsplatling:30},\
-brushes:{inkbrush:60,octobrush:80},\
+brushes:{inkbrush:60,octobrush:80,painbrush:60},\
 dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28,gloogadualies:36},\
 brellas:{splatbrella:20,tentabrella:40},\
 others:{rainmaker:60},\
@@ -429,7 +432,8 @@ hydrasplatling:{subWeapon:"angleshooter",specialWeapon:"bigbubbler",specialPoint
 ballpointsplatling:{subWeapon:"fizzybomb",specialWeapon:"splattercolorscreen",specialPoint:200}},\
 brushes:{\
 inkbrush:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:200},\
-octobrush:{subWeapon:"suctionbomb",specialWeapon:"reefslider",specialPoint:200}},\
+octobrush:{subWeapon:"suctionbomb",specialWeapon:"reefslider",specialPoint:200},\
+painbrush:{subWeapon:"curingbomb",specialWeapon:"wavebreaker",specialPoint:200}},\
 dualies:{\
 splatdualies:{subWeapon:"curingbomb",specialWeapon:"triplesplashdown",specialPoint:190},\
 dappledualies:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:190},\

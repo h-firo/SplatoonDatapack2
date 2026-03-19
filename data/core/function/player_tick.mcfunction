@@ -26,16 +26,21 @@ execute if score @s accFP < @s rateFP run scoreboard players operation @s accFP 
 execute unless score @s sprintDelay matches 0 run scoreboard players remove @s sprintDelay 1
 execute if score @s delay matches 0 run scoreboard players set @s accuracy 0
 #$execute if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+
+#射撃前隙
+scoreboard players set @s alreadyPreDelaySet 0
 #スペシャル中に動けるやつらはpreDelayの処理をスペシャル時にも行う
 $execute if data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute if data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute if data storage player: {$(XpLevel):{specialWeapon:"splattercolorscreen"}} if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 #スペシャル中に動けないやつらはpreDelayの処理をスペシャル時以外に行う
 $execute unless data storage player: {$(XpLevel):{specialWeapon:"tacticooler"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute unless data storage player: {$(XpLevel):{specialWeapon:"killerwail51"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute unless data storage player: {$(XpLevel):{specialWeapon:"bigbubbler"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 $execute unless data storage player: {$(XpLevel):{specialWeapon:"wavebreaker"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
+$execute unless data storage player: {$(XpLevel):{specialWeapon:"splattercolorscreen"}} unless score @s useSpecialWeapon matches 0.. if score @s rightHold matches 0 run function core:predelay_set with storage shot_temp: $(XpLevel)
 
 #プレイヤー固定
 $function core:player_fixation with storage player: $(XpLevel)
@@ -143,6 +148,9 @@ execute if score @s rollDamageCoolDown matches 1.. run scoreboard players remove
 
 #Sブラモード
 execute if items entity @s weapon.mainhand emerald[item_model=sblast92] run function core:weapons/blasters/sblast/modechange
+
+#フィンセントの射撃前隙
+#execute if items entity @s weapon.mainhand emerald[item_model=painbrush] if score @s noPreDelaySet matches 1.. run scoreboard players remove @s noPreDelaySet 1
 
 #壁のぼりの処理
 $function core:actions/wall_climb with storage player: $(XpLevel)

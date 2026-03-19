@@ -25,3 +25,16 @@ bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","cust
                         {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],\
                         item_name={translate:"item.weapon.octobrush",bold:true},item_model="octobrush",custom_data={item:"button",type:"weapon",content:"octobrush"},\
                         lore=[{"color":"gray","translate":"item.weapon.octobrush.lore1"},{"color":"gray","translate":"item.weapon.octobrush.lore2"}]]
+
+#フィンセント
+item replace entity @s inventory.2 with \
+bundle[bundle_contents=[{id:"diamond",components:{"item_model":"subweapon","custom_model_data":{strings:["curingbomb"]}}},\
+                        {id:"diamond",components:{"item_model":"carrot_on_a_stick","custom_model_data":{strings:["wavebreaker"]}}},\
+                        {id:"diamond",components:{"item_model":"mouseclick","custom_model_data":{strings:["rightclick_hold_plus"]}}},\
+                        {id:"diamond",components:{"item_model":"length","custom_model_data":{strings:["large"]}}},\
+                        {id:"diamond",components:{"item_model":"rate","custom_model_data":{strings:["low"]}}},\
+                        {id:"diamond",components:{"item_model":"power","custom_model_data":{strings:["strongest"]}}},\
+                        {id:"diamond",components:{"item_model":"ink","custom_model_data":{strings:["high"]}}},\
+                        {id:"diamond",components:{"item_model":"spread","custom_model_data":{strings:["large"]}}}],\
+                        item_name={translate:"item.weapon.painbrush",bold:true},item_model="painbrush",custom_data={item:"button",type:"weapon",content:"painbrush"},\
+                        lore=[{"color":"gray","translate":"item.weapon.painbrush.lore1"},{"color":"gray","translate":"item.weapon.painbrush.lore2"}]]

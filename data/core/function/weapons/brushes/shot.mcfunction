@@ -17,5 +17,6 @@ playsound item.bucket.empty master @a ~ ~ ~ 0.8 1.5
 scoreboard players set @s delay 9
 $scoreboard players remove @s ink $(Ink)
 $scoreboard players set @s shotDelay $(FireRate)
+scoreboard players set @s noPreDelaySet 40
 
 $tag @e[type=armor_stand,tag=sn$(shotNum)] remove sn$(shotNum)

@@ -8,9 +8,8 @@ $execute if score @s rightHold matches $(DeploymentT).. run function core:weapon
 execute unless score @s isGuard matches 1 run return fail
 
 #ガード
-$execute positioned ^ ^ ^1 as @e[tag=ink,distance=..2,tag=!objAttack] unless data entity @s {data:{team:$(team)}} run tag @s add objAttack
-execute positioned ^ ^ ^1 as @e[tag=ink,distance=..2,tag=objAttack] run tag @s add attackedBrella
-$execute positioned ^ ^ ^1 as @e[tag=ink,distance=..2,tag=objAttack] run data merge entity @s {data:{objNum:$(num)}}
+$execute if items entity @s weapon.mainhand emerald[item_model="splatbrella_open"] run function core:weapons/brellas/guard/splatbrella with storage shot_temp: $(num)
+$execute if items entity @s weapon.mainhand emerald[item_model="tentabrella_open"] run function core:weapons/brellas/guard/tentabrella with storage shot_temp: $(num)
 
 #足元を塗る
 $fill ^-0.5 ^-2 ^-0.5 ^0.5 ^1 ^0.5 $(color)_concrete replace #core:can_inking

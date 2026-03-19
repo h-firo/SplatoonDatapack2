@@ -363,7 +363,8 @@ dappledualies:{FireRate:16,Damage:36,Ink:6,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.
 dualiesquelchers:{FireRate:20,Damage:28,Ink:12,Blur:5,AirBlur:10,MaxBlur:300,Speed:0.0014,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:3,RollSpeed:2,HRollSpeed:-0.03,RollFireRate:20,RollDamageAT:1,RollFireSpeed:0.001,RollDamage:28,RollInk:80,RollCooldown:5,StopTime:11,MaxRolls:2,StopRollTime:10},\
 gloogadualies:{FireRate:30,Damage:36,Ink:14,Blur:1,AirBlur:4,MaxBlur:200,Speed:0.0012,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:5,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:30,RollDamageAT:0,RollFireSpeed:0.0014,RollDamage:52,RollInk:80,RollCooldown:5,StopTime:20,MaxRolls:2,StopRollTime:10}},\
 brellas:{\
-splatbrella:{FireRate:90,Damage:15,Ink:50,Blur:1,AirBlur:1,MaxBlur:200,Speed:0.0012,Gravity:1,SSpeed:2,HSpeed:0.1,DamageAT:1,PreGap:2,DeploymentT:4,PurgeT:35,ShieldRT:110,ShieldInk:6,ShieldD:500,PurgeD:100,PurgeInk:100}},\
+splatbrella:{FireRate:90,Damage:15,Ink:50,Blur:1,AirBlur:1,MaxBlur:200,Speed:0.0012,Gravity:1,SSpeed:2,HSpeed:0.1,DamageAT:1,PreGap:2,DeploymentT:4,PurgeT:35,ShieldRT:110,ShieldInk:6,ShieldD:500,PurgeD:100,PurgeInk:100},\
+tentabrella:{FireRate:170,Damage:20,Ink:110,Blur:1,AirBlur:1,MaxBlur:200,Speed:0.0009,Gravity:1,SSpeed:2,HSpeed:0.1,DamageAT:1,PreGap:4,DeploymentT:15,PurgeT:34,ShieldRT:113,ShieldInk:5,ShieldD:700,PurgeD:120,PurgeInk:300}},\
 others:{\
 rainmaker:{FireRate:60,Damage:60,Ink:0,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,LateGap:3}}}
 
@@ -377,7 +378,7 @@ sloshers:{slosher:140,trislosher:124,explosher:110,sloshingmachine:129},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35,ballpointsplatling:30},\
 brushes:{inkbrush:60,octobrush:80},\
 dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28,gloogadualies:36},\
-brellas:{splatbrella:20},\
+brellas:{splatbrella:20,tentabrella:40},\
 others:{rainmaker:60},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
 }
@@ -435,7 +436,8 @@ dappledualies:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:1
 dualiesquelchers:{subWeapon:"splatbomb",specialWeapon:"wavebreaker",specialPoint:190},\
 gloogadualies:{subWeapon:"splashwall",specialWeapon:"trizooka",specialPoint:190}},\
 brellas:{\
-splatbrella:{subWeapon:"curingbomb",specialWeapon:"tripleinkstrike",specialPoint:200}}}
+splatbrella:{subWeapon:"curingbomb",specialWeapon:"tripleinkstrike",specialPoint:200},\
+tentabrella:{subWeapon:"inkmine",specialWeapon:"ultrastamp",specialPoint:200}}}
 
 #モデル
 data merge storage models {\

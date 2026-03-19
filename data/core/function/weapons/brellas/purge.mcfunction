@@ -6,7 +6,7 @@ playsound item.bucket.empty_axolotl master @a ~ ~ ~ 1 2
 #パージ用アマスタ
 $summon armor_stand ~ ~ ~ {Tags:["purge$(num)"],Invisible:true,Invulnerable:true,Small:true,\
 equipment:{chest:{id:"iron_chestplate",components:{enchantment_glint_override:false,enchantments:{"core:purge":1}}}},\
-data:{team:$(team),owner:$(num),color:$(color),num:$(objNum),maxTime:$(PurgeD)}}
+data:{team:$(team),owner:$(num),color:$(color),num:$(objNum),maxTime:$(PurgeD),type:"$(name)"}}
 $rotate @n[type=armor_stand,tag=purge$(num)] ~ ~
 $scoreboard players operation @n[type=armor_stand,tag=purge$(num)] objDamage = @s shieldHealth
 

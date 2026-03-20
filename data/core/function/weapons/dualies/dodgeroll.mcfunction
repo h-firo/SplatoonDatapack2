@@ -14,6 +14,7 @@ playsound item.bucket.empty_fish master @a ~ ~ ~ 2 2
 playsound entity.fishing_bobber.throw master @a ~ ~ ~ 0.5 0.3
 
 #スライドするための防具を着せる
+$execute if predicate core:is_onground run return run function core:weapons/dualies/dodgeroll_ground with storage shot_temp: $(num)
 $execute if predicate core:key_input/forward run \
 return run item replace entity @s armor.chest with iron_chestplate[enchantments={"core:dodgeroll/forward":$(RollSpeed)},enchantment_glint_override=false,equippable={slot:"chest",equip_sound:entity.tropical_fish.ambient}]
 $execute if predicate core:key_input/right run \

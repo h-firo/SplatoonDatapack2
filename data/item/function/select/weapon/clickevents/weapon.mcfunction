@@ -46,6 +46,7 @@ execute if items entity @s player.cursor *[custom_data~{content:"splatdualies"}]
 execute if items entity @s player.cursor *[custom_data~{content:"dappledualies"}] run function command:set_weapon {category:dualies,weapon:dappledualies}
 execute if items entity @s player.cursor *[custom_data~{content:"dualiesquelchers"}] run function command:set_weapon {category:dualies,weapon:dualiesquelchers}
 execute if items entity @s player.cursor *[custom_data~{content:"gloogadualies"}] run function command:set_weapon {category:dualies,weapon:gloogadualies}
+execute if items entity @s player.cursor *[custom_data~{content:"tetradualies"}] run function command:set_weapon {category:dualies,weapon:tetradualies}
 
 execute if items entity @s player.cursor *[custom_data~{content:"splatbrella"}] run function command:set_weapon {category:brellas,weapon:splatbrella}
 execute if items entity @s player.cursor *[custom_data~{content:"tentabrella"}] run function command:set_weapon {category:brellas,weapon:tentabrella}

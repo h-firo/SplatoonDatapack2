@@ -364,7 +364,8 @@ dualies:{\
 splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:2,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollFireSpeed:0.001,RollDamage:30,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10},\
 dappledualies:{FireRate:16,Damage:36,Ink:6,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.0006,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:3,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollFireSpeed:0.0006,RollDamage:36,RollInk:50,RollCooldown:4,StopTime:9,MaxRolls:2,StopRollTime:3},\
 dualiesquelchers:{FireRate:20,Damage:28,Ink:12,Blur:5,AirBlur:10,MaxBlur:300,Speed:0.0014,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:3,RollSpeed:2,HRollSpeed:-0.03,RollFireRate:20,RollDamageAT:1,RollFireSpeed:0.001,RollDamage:28,RollInk:80,RollCooldown:5,StopTime:11,MaxRolls:2,StopRollTime:10},\
-gloogadualies:{FireRate:30,Damage:36,Ink:14,Blur:1,AirBlur:4,MaxBlur:200,Speed:0.0012,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:5,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:30,RollDamageAT:0,RollFireSpeed:0.0014,RollDamage:52,RollInk:80,RollCooldown:5,StopTime:20,MaxRolls:2,StopRollTime:10}},\
+gloogadualies:{FireRate:30,Damage:36,Ink:14,Blur:1,AirBlur:4,MaxBlur:200,Speed:0.0012,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:1,PreGap:2,RollTime:5,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:30,RollDamageAT:0,RollFireSpeed:0.0014,RollDamage:52,RollInk:80,RollCooldown:5,StopTime:20,MaxRolls:2,StopRollTime:10},\
+tetradualies:{FireRate:20,Damage:28,Ink:8,Blur:10,AirBlur:20,MaxBlur:400,Speed:0.0011,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:3,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:16,RollDamageAT:1,RollFireSpeed:0.0011,RollDamage:28,RollInk:30,RollCooldown:7,StopTime:22,MaxRolls:4,StopRollTime:15}},\
 brellas:{\
 splatbrella:{FireRate:90,Damage:15,Ink:50,Blur:1,AirBlur:1,MaxBlur:200,Speed:0.0012,Gravity:1,SSpeed:2,HSpeed:0.1,DamageAT:1,PreGap:2,DeploymentT:4,PurgeT:35,ShieldRT:110,ShieldInk:6,ShieldD:500,PurgeD:100,PurgeInk:100},\
 tentabrella:{FireRate:170,Damage:20,Ink:110,Blur:1,AirBlur:1,MaxBlur:200,Speed:0.0009,Gravity:1,SSpeed:2,HSpeed:0.1,DamageAT:1,PreGap:4,DeploymentT:15,PurgeT:34,ShieldRT:113,ShieldInk:5,ShieldD:700,PurgeD:120,PurgeInk:300}},\
@@ -380,7 +381,7 @@ blasters:{blaster:125,rangeblaster:125,clashblaster:80,sblast92:125,grizzcoblast
 sloshers:{slosher:140,trislosher:124,explosher:110,sloshingmachine:129},\
 splatlings:{minisplatling:32,heavysplatling:30,hydrasplatling:35,ballpointsplatling:30},\
 brushes:{inkbrush:60,octobrush:80,painbrush:60},\
-dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28,gloogadualies:36},\
+dualies:{splatdualies:30,dappledualies:36,dualiesquelchers:28,gloogadualies:36,tetradualies:28},\
 brellas:{splatbrella:20,tentabrella:40},\
 others:{rainmaker:60},\
 specialweapon:{trizooka:1320,crabtank:100,killerwail51:7}\
@@ -438,7 +439,8 @@ dualies:{\
 splatdualies:{subWeapon:"curingbomb",specialWeapon:"triplesplashdown",specialPoint:190},\
 dappledualies:{subWeapon:"splatbomb",specialWeapon:"killerwail51",specialPoint:190},\
 dualiesquelchers:{subWeapon:"splatbomb",specialWeapon:"wavebreaker",specialPoint:190},\
-gloogadualies:{subWeapon:"splashwall",specialWeapon:"trizooka",specialPoint:190}},\
+gloogadualies:{subWeapon:"splashwall",specialWeapon:"trizooka",specialPoint:190},\
+tetradualies:{subWeapon:"fizzybomb",specialWeapon:"reefslider",specialPoint:190}},\
 brellas:{\
 splatbrella:{subWeapon:"curingbomb",specialWeapon:"tripleinkstrike",specialPoint:200},\
 tentabrella:{subWeapon:"inkmine",specialWeapon:"ultrastamp",specialPoint:200}}}

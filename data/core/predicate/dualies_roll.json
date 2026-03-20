@@ -1,0 +1,30 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "input": {
+                "jump": true
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "stats": [],
+              "input": {
+                "sneak": true
+              }
+            }
+          }
+        }
+  ]
+}

@@ -17,7 +17,7 @@ execute if score time coreTime matches 232 as @a at @s run function core:game/sh
 execute if score time coreTime matches 233 as @a at @s run function core:game/shoot/tp with entity @s
 execute if score time coreTime matches 272 as @e[tag=spawnerRides] at @s run function core:game/shoot/rotate with entity @s data
 execute if score time coreTime matches 273..300 as @e[tag=spawnerRides] at @s run function core:game/shoot/shoot with entity @s
-#execute if score time coreTime matches 274 run function core:game/music_select
+execute if score time coreTime matches 274 run function core:game/music_select
 
 #試合時間を減らす
 execute if score time coreTime matches ..274 run return fail

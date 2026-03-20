@@ -7,6 +7,6 @@ scoreboard players set @s isSayDeathMessage 0
 gamemode adventure @s
 
 #スポナー＆射出
-execute unless score is isGame matches 1 run return fail
+execute unless score is isGame matches 1 run return run tp @s -81 -60 -168
 function core:game/shoot/ready with entity @s
 function core:game/shoot/tp with entity @s

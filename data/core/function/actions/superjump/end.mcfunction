@@ -9,5 +9,8 @@ $kill @e[type=text_display,tag=jumpMarkerText$(XpLevel)]
 #ジャンプ先選択画面をクローズ
 function item:jump_menu/close with entity @s
 
+#ゲーム時以外は、type_select_open
+execute unless score is isGame matches 1 run function item:select/weapon/type_select_open
+
 effect clear @s invisibility
 scoreboard players set @s superJumpTime -1

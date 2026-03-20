@@ -245,6 +245,7 @@ scoreboard objectives add tutorial.specialActive dummy
 scoreboard objectives add tutorial.isStarted dummy
 scoreboard objectives add tutorialMode dummy
 scoreboard objectives add tutorialTime dummy
+scoreboard objectives add guide dummy {text:"ガイド",color:gold,bold:true}
 
 #Lobby
 scoreboard objectives add spawnTime dummy
@@ -357,9 +358,9 @@ heavysplatling:{FireRate:1,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.
 hydrasplatling:{FireRate:1,Damage:32,Ink:5,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.002,Gravity:0.7,SSpeed:2,HSpeed:-0.05,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:80,AirCharge:1,ChargeDamage:40},\
 ballpointsplatling:{FireRate:1,Damage:30,Ink:6,Blur:4,AirBlur:1,MaxBlur:200,Speed:0.0015,Gravity:0.7,SSpeed:2,HSpeed:-0.03,DamageAT:1,PreGap:2,ChargeTime:50,CKTime:0,CKRate:0,Duration:80,AirCharge:1,ChargeDamage:40}},\
 brushes:{\
-inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20},\
-octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25},\
-painbrush:{FireRate:40,Damage:60,Ink:48,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:8,PreGap:8,MinRange:-1,MaxRange:0,RollingSpeed:0.165,RollingDamage:30}},\
+inkbrush:{FireRate:0,Damage:33,Ink:20,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0001,Gravity:1,SSpeed:2,HSpeed:-0.070,DamageAT:1,PreGap:0,MinRange:0,MaxRange:0,RollingSpeed:0.18,RollingDamage:20,DamageCoolDown:5},\
+octobrush:{FireRate:11,Damage:40,Ink:30,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.0003,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:1,PreGap:0,MinRange:-1,MaxRange:0,RollingSpeed:0.16,RollingDamage:25,DamageCoolDown:5},\
+painbrush:{FireRate:40,Damage:60,Ink:48,Blur:1,AirBlur:3,MaxBlur:1,Speed:0.001,Gravity:1,SSpeed:2,HSpeed:-0.050,DamageAT:8,PreGap:8,MinRange:-1,MaxRange:0,RollingSpeed:0.165,RollingDamage:30,DamageCoolDown:5}},\
 dualies:{\
 splatdualies:{FireRate:16,Damage:30,Ink:7,Blur:2,AirBlur:3,MaxBlur:240,Speed:0.001,Gravity:0.8,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:4,RollSpeed:2,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollFireSpeed:0.001,RollDamage:30,RollInk:70,RollCooldown:5,StopTime:10,MaxRolls:2,StopRollTime:10},\
 dappledualies:{FireRate:16,Damage:36,Ink:6,Blur:3,AirBlur:3,MaxBlur:240,Speed:0.0006,Gravity:0.7,SSpeed:2,HSpeed:0.4,DamageAT:2,PreGap:2,RollTime:3,RollSpeed:1,HRollSpeed:-0.1,RollFireRate:10,RollDamageAT:1,RollFireSpeed:0.0006,RollDamage:36,RollInk:50,RollCooldown:4,StopTime:9,MaxRolls:2,StopRollTime:3},\

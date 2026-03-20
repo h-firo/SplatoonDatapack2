@@ -1,1 +1,2 @@
-$execute as @p[level=$(XpLevel)] at @e[type=armor_stand,tag=spawnerPos$(XpLevel)] run function core:game/set_avator/set_avator with entity @s
+$data modify storage player: $(XpLevel).UUID set value $(UUID)
+$execute as @p[level=$(XpLevel)] at @e[type=armor_stand,tag=spawnerPos$(XpLevel)] run function core:game/set_avator/set_avator with storage player: $(XpLevel)

@@ -20,9 +20,6 @@ scoreboard players set @a useSpecialWeapon 1
 scoreboard players set @a ink 999
 scoreboard players set @a specialPoint 0
 
-#ガイド
-execute if entity @s[advancements={core:guide/action/shoot_auto=false}] run function core:guide/grant {category:action,name:shoot_auto}
-
 #ステージごとに異なる場所に
 execute store result storage core: stage int 1 run scoreboard players get value stage
 function core:game/stage_view with storage core:

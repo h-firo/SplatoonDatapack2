@@ -10,7 +10,7 @@ scoreboard players set is isGame 1
 scoreboard players set is isJudge 0
 scoreboard players set is isChangeMusic 0
 scoreboard players set time coreTime 0
-scoreboard players set @s isShootReady 0
+scoreboard players set @a isShootReady 0
 scoreboard players set mode coreTime 1
 scoreboard players set time gameTime 3600
 scoreboard players set value gameRule 0
@@ -26,6 +26,9 @@ execute if score value stage matches 1 run function stage:reset/barnacle_dime
 execute if score value stage matches 2 run function stage:reset/inkblot_artacademy
 execute if score value stage matches 3 run function stage:reset/mahimahi_resort
 execute if score value stage matches 4 run function stage:reset/mincemeat_metalworks/normal
+
+#ガイド
+execute if entity @s[advancements={core:guide/rule/regular_battle=false}] run function core:guide/grant {category:rule,name:regular_battle}
 
 #プレイヤー番号付与
 #function core:set_pnum

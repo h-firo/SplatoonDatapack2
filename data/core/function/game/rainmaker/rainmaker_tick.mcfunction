@@ -5,6 +5,9 @@ execute positioned ~ ~-1 ~ unless entity @p[tag=player,distance=..1,scores={useS
 execute as @p run function core:game/rainmaker/save_weapon with entity @s
 execute as @p run function command:set_weapon {category:"others",weapon:"rainmaker"}
 
+#ガイド
+execute as @p if entity @s[advancements={core:guide/weapon/rainmaker=false}] run function core:guide/grant {category:weapon,name:rainmaker}
+
 #スコアセット
 scoreboard players set @p coreTime 1200
 scoreboard players set @p ink 999

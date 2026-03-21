@@ -9,7 +9,7 @@ execute store result storage core: team2 int 1 run scoreboard players get team2 
 scoreboard players set is isGame 1
 scoreboard players set is isJudge 0
 scoreboard players set time coreTime 0
-scoreboard players set @s isShootReady 0
+scoreboard players set @a isShootReady 0
 scoreboard players set mode coreTime 1
 scoreboard players set time gameTime 6000
 scoreboard players set value gameRule 1
@@ -35,6 +35,9 @@ execute if score value stage matches 1 store result score all areaBlockCount run
 execute if score value stage matches 2 store result score all areaBlockCount run clone -13 -61 76 1 -61 92 -13 -61 76 filtered white_wool force
 execute if score value stage matches 3 store result score all areaBlockCount run clone 188 -58 -307 197 -58 -296 188 -58 -307 filtered white_wool force
 execute if score value stage matches 4 store result score all areaBlockCount run clone -193 -61 -4 -179 -61 6 -193 -61 -4 filtered white_wool force
+
+#ガイド
+execute if entity @s[advancements={core:guide/rule/splatzone=false}] run function core:guide/grant {category:rule,name:splatzone}
 
 #プレイヤー番号付与
 #function core:set_pnum

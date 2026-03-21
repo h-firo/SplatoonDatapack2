@@ -1,0 +1,1 @@
+$execute if entity @s[advancements={core:guide/subweapon/$(subWeapon)=false}] run function core:guide/grant {category:subweapon,name:$(subWeapon)}

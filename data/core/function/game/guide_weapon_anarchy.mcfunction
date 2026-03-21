@@ -1,0 +1,1 @@
+$execute if entity @s[advancements={core:guide/weapon/$(category)=false}] if score time gameTime matches ..5999 run function core:guide/grant {category:weapon,name:$(category)}

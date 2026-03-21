@@ -14,3 +14,6 @@ $execute if data storage player: {$(num):{specialWeapon:tripleinkstrike}} run fu
 $execute if data storage player: {$(num):{specialWeapon:triplesplashdown}} run function core:specialweapons/triplesplashdown/start with entity @s
 $execute if data storage player: {$(num):{specialWeapon:splattercolorscreen}} run function core:specialweapons/splattercolorscreen/start with storage player: $(num)
 $execute if data storage player: {$(num):{specialWeapon:ultrastamp}} run function core:specialweapons/ultrastamp/start with storage player: $(num)
+
+#ガイド
+$execute if entity @s[advancements={core:guide/specialweapon/$(specialWeapon)=false}] run function core:guide/grant {category:specialweapon,name:$(specialWeapon)}

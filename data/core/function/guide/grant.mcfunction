@@ -5,4 +5,6 @@ $advancement grant @s only core:guide/$(category)/$(name)
 $function core:guide/$(category)/$(name)
 
 #音
-playsound block.note_block.guitar master @a ~ ~ ~ 2 1
+playsound block.note_block.guitar master @s ~ ~ ~ 2 1
+playsound block.note_block.guitar master @s ~ ~ ~ 2 1
+playsound block.note_block.guitar master @s ~ ~ ~ 2 1

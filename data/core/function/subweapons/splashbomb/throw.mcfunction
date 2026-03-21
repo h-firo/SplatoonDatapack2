@@ -5,3 +5,5 @@ $execute store result storage subw: $(XpLevel).num int 1 run experience query @s
 $data modify storage subw: $(XpLevel).team set from storage player: $(XpLevel).team
 $data modify storage subw: $(XpLevel).color set from storage player: $(XpLevel).color
 $function core:subweapons/splashbomb/throw_macro with storage subw: $(XpLevel)
+
+#execute if entity @s[advancements={core:guide/subweapon/splatbomb=false}] run function core:guide/grant {category:action,name:splatbomb}

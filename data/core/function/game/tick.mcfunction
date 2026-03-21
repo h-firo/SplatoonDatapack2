@@ -30,6 +30,10 @@ scoreboard players operation sec gameTime = time gameTime
 scoreboard players operation sec gameTime -= minus gameTime
 scoreboard players operation sec gameTime /= 20 num
 
+#ガイド
+execute as @a if score value gameRule matches 0 run function core:game/guide_regular with entity @s
+execute as @a if score value gameRule matches 1.. run function core:game/guide_anarchy with entity @s
+
 #ギミック
 execute if score value stage matches 3 run function stage:gimmick/mahimahi_resort
 

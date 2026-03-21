@@ -8,3 +8,6 @@ custom_effects:[{id:"minecraft:invisibility",amplifier:1,duration:3,show_icon:fa
 
 #上に金網があったら金網の上へ
 execute if block ~ ~2 ~ waxed_exposed_copper_grate run tp @s ~ ~3 ~
+
+#ガイド
+execute if entity @s[advancements={core:guide/action/climb=false}] run function core:guide/grant {category:action,name:climb}

@@ -12,7 +12,7 @@ function core:game/assign_color with storage core:
 scoreboard players set is isGame 1
 scoreboard players set is isJudge 0
 scoreboard players set time coreTime 0
-scoreboard players set @s isShootReady 0
+scoreboard players set @a isShootReady 0
 scoreboard players set mode coreTime 1
 scoreboard players set time gameTime 6000
 scoreboard players set value gameRule 2
@@ -36,6 +36,8 @@ execute if score value stage matches 1 run scoreboard players set value rainmake
 execute if score value stage matches 2 run scoreboard players set value rainmakerZeroDistance 484
 execute if score value stage matches 3 run scoreboard players set value rainmakerZeroDistance 2000
 execute if score value stage matches 4 run scoreboard players set value rainmakerZeroDistance 1156
+
+execute if entity @s[advancements={core:guide/rule/rainmaker=false}] run function core:guide/grant {category:rule,name:rainmaker}
 
 #プレイヤー番号付与
 #function core:set_pnum

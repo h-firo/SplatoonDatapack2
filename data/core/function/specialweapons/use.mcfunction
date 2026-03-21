@@ -1,4 +1,4 @@
-execute if score @s specialPoint < @s MaxSpecialPoint run return fail
+execute unless score @s specialPointPerMax matches 100.. run return fail
 scoreboard players set @s ink 999
 $function core:weapons/dualies/dodgerollshot_cancel with storage shot_temp: $(num)
 

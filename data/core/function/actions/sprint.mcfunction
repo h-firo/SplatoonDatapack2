@@ -2,6 +2,8 @@
 execute if predicate core:is_sprint run scoreboard players set @s isSprint 1
 execute if predicate core:is_sneaking run scoreboard players set @s isSprint 1
 execute if predicate core:else_sprint run scoreboard players set @s isSprint 0
+execute if score @s isSprint matches 1 if score @s rightHold matches 1.. if entity @s[advancements={core:guide/action/sprint2=false}] run \
+function core:guide/grant {category:action,name:sprint2}
 execute if score @s rightHold matches 1.. run scoreboard players set @s isSprint 0
 execute if score @s shotDelay matches 1.. run scoreboard players set @s isSprint 0
 execute if score @s charged matches 1.. run scoreboard players set @s isSprint 0
@@ -38,6 +40,9 @@ execute if score @s isSprint matches 1 run scoreboard players set @s splatlingsD
 #インク回復
 execute if score @s isSprint matches 1 unless score @s isMistEffect matches 1 run scoreboard players add @s ink 25
 execute if score @s ink matches 999.. run scoreboard players set @s ink 999
+
+#ガイド
+execute if score @s isSprint matches 1 if entity @s[advancements={core:guide/action/sprint=false}] run function core:guide/grant {category:action,name:sprint}
 
 #効果
 execute if score @s isSprint matches 1 run summon area_effect_cloud ~ ~ ~ \

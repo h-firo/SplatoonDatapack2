@@ -16,7 +16,7 @@ $data modify storage shot_temp: $(XpLevel).category set from storage player: $(X
 
 #インクが足りているかの確認
 $execute store result score @s isInkEnough run function core:is_inkenough with storage shot_temp: $(XpLevel)
-execute if score @s isInkEnough matches -1 run return fail
+execute if score @s isInkEnough matches -1 run return run function core:ink_shortage
 
 #shotNumの増加
 #scoreboard players add num shotNum 1

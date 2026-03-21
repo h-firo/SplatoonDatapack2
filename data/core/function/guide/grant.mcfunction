@@ -1,0 +1,8 @@
+#進捗達成
+$advancement grant @s only core:guide/$(category)/$(name)
+
+#function実行
+$function core:guide/$(category)/$(name)
+
+#音
+playsound block.note_block.guitar master @a ~ ~ ~ 2 1

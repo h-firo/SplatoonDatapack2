@@ -109,6 +109,7 @@ scoreboard players set @a health 100
 scoreboard objectives add accuracy dummy
 scoreboard objectives add accuracy_ dummy
 scoreboard objectives add accuracyRandom_ dummy
+scoreboard objectives add inkShort dummy
 scoreboard objectives add accFP dummy
 scoreboard objectives add rateFP dummy
 scoreboard objectives add damage dummy

@@ -1,0 +1,1 @@
+$function core:guide/haveweapon_guide_macro with storage player: $(XpLevel)

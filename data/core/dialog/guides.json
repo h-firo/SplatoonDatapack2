@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "スプラトゥーンガイド",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "試合中に表示される、このゲームに関する様々なガイド。"
+    }
+  ],
+  "exit_action": {
+    "label": "戻る"
+  },
+  "columns": 1,
+  "button_width": 100,
+  "dialogs": [
+    "core:guide_setting","core:action","core:rule","core:weaponguide","core:subweapon","core:specialweapon"
+  ]
+}

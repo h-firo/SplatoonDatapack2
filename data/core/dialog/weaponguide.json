@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "ブキガイド",
+  "external_title": "ブキ",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "試合で使用できるブキに関するガイド。"
+  },
+  "inputs": [],
+  "exit_action": {
+    "label": "戻る"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "シューター",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/shooter"
+      }
+    },
+    {
+      "label": "ローラー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/roller"
+      }
+    },
+    {
+      "label": "チャージャー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/charger"
+      }
+    },
+    {
+      "label": "ブラスター",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/blasters"
+      }
+    },
+    {
+      "label": "スロッシャー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/sloshers"
+      }
+    },
+    {
+      "label": "スピナー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/splatlings"
+      }
+    },
+    {
+      "label": "フデ",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/brushes"
+      }
+    },
+    {
+      "label": "マニューバー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/dualies"
+      }
+    },
+    {
+      "label": "シェルター",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/brellas"
+      }
+    },
+    {
+      "label": "ガチホコ（ガチホコバトル専用）",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/rainmaker"
+      }
+    }
+  ]
+}

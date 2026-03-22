@@ -1,3 +1,5 @@
+tellraw @s {"text":"今まで表示したガイドがもう一度表示されるようになりました",color:red}
+
 #chatgptってすごい
 advancement revoke @s only core:guide/action/climb
 advancement revoke @s only core:guide/action/ink_shortage

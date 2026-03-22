@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "アクションガイド",
+  "external_title": "アクション",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "試合中にできることのガイド。"
+  },
+  "inputs": [],
+  "exit_action": {
+    "label": "戻る"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "イカ移動",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/sprint"
+      }
+    },
+    {
+      "label": "壁のぼり",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/climb"
+      }
+    },
+    {
+      "label": "インク切れ",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/ink_shortage"
+      }
+    },
+    {
+      "label": "サブウェポン（投げ方）",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/subweapon"
+      }
+    },
+    {
+      "label": "スペシャルポイント",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/specialpoint"
+      }
+    },
+    {
+      "label": "スペシャル（発動の仕方）",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/special_comp"
+      }
+    },
+    {
+      "label": "イカスポーン（試合開始時）",
+      "tooltip": "試合開始時空中からスポーンすること",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/shoot_auto"
+      }
+    },
+    {
+      "label": "イカスポーン（リスポーン時）",
+      "tooltip": "復活時空中からスポーンすること",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/action/shoot_auto"
+      }
+    }
+  ]
+}

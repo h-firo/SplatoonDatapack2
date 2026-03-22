@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "ルールガイド",
+  "external_title": "ルール",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "試合のルールに関するガイド。"
+  },
+  "inputs": [],
+  "exit_action": {
+    "label": "戻る"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "レギュラーマッチ",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/rule/regular_battle"
+      }
+    },
+    {
+      "label": "ガチエリア",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/rule/splatzone"
+      }
+    },
+    {
+      "label": "ガチホコバトル",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/rule/rainmaker"
+      }
+    },
+    {
+      "label": "ガチホコ（ブキ）",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/weapon/rainmaker"
+      }
+    }
+  ]
+}

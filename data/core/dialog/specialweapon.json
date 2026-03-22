@@ -1,0 +1,104 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "スペシャルウェポンガイド",
+  "external_title": "スペシャルウェポン",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "スペシャルポイントがたまった時に使用できる特別なブキに関するガイド。"
+  },
+  "inputs": [],
+  "exit_action": {
+    "label": "戻る"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "ウルトラショット",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/trizooka"
+      }
+    },
+    {
+      "label": "グレートバリア",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/bigbubbler"
+      }
+    },
+    {
+      "label": "カニタンク",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/crabtank"
+      }
+    },
+    {
+      "label": "メガホンレーザー5.1ch",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/killerwail51"
+      }
+    },
+    {
+      "label": "サメライド",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/reefsslider"
+      }
+    },
+    {
+      "label": "エナジースタンド",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/tacticooler"
+      }
+    },
+    {
+      "label": "トリプルトルネード",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/tripleinkstrike"
+      }
+    },
+    {
+      "label": "ホップソナー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/wavebreaker"
+      }
+    },
+    {
+      "label": "ウルトラハンコ",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/ultrastamp"
+      }
+    },
+    {
+      "label": "ウルトラチャクチ",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/triplesplashdown"
+      }
+    },
+    {
+      "label": "スミナガシート",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/specialweapon/splattercolorscreen"
+      }
+    }
+  ]
+}

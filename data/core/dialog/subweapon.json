@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "サブウェポンガイド",
+  "external_title": "サブウェポン",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "爆発するボムや設置物に関するガイド。"
+  },
+  "inputs": [],
+  "exit_action": {
+    "label": "戻る"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "スプラッシュボム",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/splatbomb"
+      }
+    },
+    {
+      "label": "キューバンボム",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/suctionbomb"
+      }
+    },
+    {
+      "label": "クイックボム",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/burstbomb"
+      }
+    },
+    {
+      "label": "カーリングボム",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/curingbomb"
+      }
+    },
+    {
+      "label": "タンサンボム",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/fizzybomb"
+      }
+    },
+    {
+      "label": "ラインマーカー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/angleshooter"
+      }
+    },
+    {
+      "label": "トラップ",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/inkmine"
+      }
+    },
+    {
+      "label": "スプリンクラー",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/sprinkler"
+      }
+    },
+    {
+      "label": "スプラッシュシールド",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/splashwall"
+      }
+    },
+    {
+      "label": "ポイズンミスト",
+      "tooltip": "",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function core:guide/subweapon/toxicmist"
+      }
+    }
+  ]
+}

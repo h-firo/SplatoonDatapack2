@@ -1,3 +1,5 @@
+execute if score @s isEnableGuide matches 0 run return fail
+
 #進捗達成
 $advancement grant @s only core:guide/$(category)/$(name)
 

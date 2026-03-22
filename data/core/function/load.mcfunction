@@ -248,6 +248,10 @@ scoreboard objectives add tutorialMode dummy
 scoreboard objectives add tutorialTime dummy
 scoreboard objectives add guide dummy {text:"ガイド",color:gold,bold:true}
 
+#Dialog
+scoreboard objectives add isEnableGuide dummy
+scoreboard objectives add isReDisplayGuide dummy
+
 #Lobby
 scoreboard objectives add spawnTime dummy
 

@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "ガイド設定"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:boolean",
+      "key": "enabled",
+      "label": {
+        "text": "ガイドを有効にする",
+        "hover_event": {
+          "action": "show_text",
+          "value": "試合のヒントが表示されるようになるか設定する。"
+        }
+      },
+      "initial": true,
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "no_redisplay",
+      "label": {
+        "text": "一度表示したガイドを表示する",
+        "hover_event": {
+          "action": "show_text",
+          "value": "表示されたガイドを、別の試合でも表示するか設定する。"
+        }
+      },
+      "initial": false,
+      "on_true": "1",
+      "on_false": "0"
+    }
+  ],
+  "yes": {
+    "label": "決定",
+    "tooltip": "設定内容を確定し、画面を閉じる。",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function core:guide/setting {Enable:$(enabled),ReDisplay:$(no_redisplay)}"
+    }
+  },
+  "no": {
+    "label": "ガイドの表示履歴をリセット",
+    "tooltip": "今まで表示されたガイドが、もう一度表示されるようになる。",
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "function core:guide/revoke"
+    }
+  }
+}
